@@ -19,6 +19,8 @@ jobs:
         with:
           hugo-version: '0.80.0'
           extended: true
+
+      - run: npm install
           
       - name: Caching
         uses: actions/cache@v2
@@ -28,7 +30,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
 
-      - run: npm install
       - run: hugo --gc --minify
 
       - name: Deploy
