@@ -1,25 +1,25 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Apunte CC5325"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "Introducción al Hacking Competitivo"
+description = "DCC universidad de Chile"
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
-twitterSite = "henkverlinde"
-twitterCreator = "henkverlinde"
-facebookAuthor = "verlinde.henk"
-facebookPublisher = "verlinde.henk"
-ogLocale = "en_US"
+twitterSite = "dccuchile"
+twitterCreator = "dccuchile"
+facebookAuthor = "DCCUChile"
+facebookPublisher = "DCCUChile"
+ogLocale = "es_CL"
 
 ## JSON-LD
 schemaType = "Organization"
 schemaLogo = "logo-doks.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
-schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaGitHub = "https://github.com/h-enk"
+schemaTwitter = "https://twitter.com/dccuchile"
+schemaLinkedIn = "https://www.linkedin.com/in/dccuchile/"
+schemaGitHub = "https://github.com/cc5325"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -36,12 +36,12 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "Sitio generado con <a href=\"https://gohugo.io/\">Hugo</a> y <a href=\"https://getdoks.org/\">Doks</a>"
 
 # Alert
-alert = false
-alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+alert = true
+alertText = "Revisa la fecha de las entregas en U-Cursos."
 
 # Edit Page
-docsRepo = "https://github.com/h-enk/doks"
-editPage = false
+docsRepo = "https://github.com/cc5325/apunte"
+editPage = true
