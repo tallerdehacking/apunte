@@ -26,10 +26,10 @@ jobs:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
           restore-keys: |
-            ${{ runner.os }}-hugomod-
-            
-      - name: Build
-        run: hugo --gc
+            ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+
+      - run: npm install
+      - run: hugo --gc --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
