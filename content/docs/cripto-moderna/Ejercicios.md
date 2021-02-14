@@ -1,5 +1,5 @@
 ---
-title : "Intro a Criptografía Moderna"
+title : "Ejercicios"
 description: "TODO"
 lead: ""
 date: 2020-10-06T08:48:45+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "cripto-moderna"
-weight: 010
+weight: 050
 ---
 
 
