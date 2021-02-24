@@ -9,10 +9,10 @@ images: []
 menu:
   docs:
     parent: "apps-web"
-weight: 010
+weight: 020
 ---
 
-# Motivación
+## Motivación
 
 En este capítulo hablaremos de algunas de las técnicas más básicas utilizadas para en análisis web.
 Para estas no se requiere ningún o casi ningún conocimiento sobre el funcionamiento o características del sitio,
@@ -25,7 +25,7 @@ encontrando archivos, usuarios y otros recursos que pueden estar escondidos. Si 
 esto también puede resultar en la divulgación de información privada, sensible o crítica,
 o incluso pueden ganar privilegios si logran encontrar contraseñas.
 
-# Enumeración
+## Enumeración
 
 La enumeración es un proceso en el cual se itera por una lista de valores (llamadas diccionarios), intentando
 encontrar información nueva. Esto se puede aplicar a subdirectorios de un sitio web, subdominios,
@@ -35,7 +35,7 @@ para encontrar otros inputs con comportamientos diferentes.
 
 Este proceso funciona enviando las distintas peticiones al servidor y analizando sus respuestas. No se
 suele encontrar muchas vulnerabilidades de esta forma, pero sí se logra recopilar información
-y funcionalidades previamente no vistas. 
+y funcionalidades previamente no vistas.
 
 Las herramientas comúnmente usadas en el área web son:
 * [Gobuster](https://github.com/OJ/gobuster)
@@ -46,7 +46,7 @@ Las herramientas comúnmente usadas en el área web son:
 * [Wfuzz](https://github.com/xmendez/wfuzz)
 * [Ffuf](https://github.com/ffuf/ffuf)
 
-# Fuerza Bruta
+## Fuerza Bruta
 
 Similar a la enumeración, pero en este caso se intenta pasar por todos o casi todos los valores posibles
 de un parámetro, aunque en muchos casos también se utiliza diccionarios. Se diferencian principalmente

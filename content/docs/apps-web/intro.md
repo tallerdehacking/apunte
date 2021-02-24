@@ -12,7 +12,7 @@ menu:
 weight: 010
 ---
 
-# Motivación
+## Motivación
 
 Web es uno de los temas más amplios en las competencias de CTF.
 Los challenges se basan principalmente en la explotación de vulnerabilidades reales en los sistemas,
@@ -32,7 +32,7 @@ servidor, y hasta pueden estar escondidas en una base de datos o en un archivo n
 Pero dentro de toda esta inmensidad de posibilidades, ustedes se deben guiar por las vulnerabilidades
 y los recursos ganados al explotarlas.
 
-# Análisis Básico de Aplicaciones Web
+## Análisis Básico de Aplicaciones Web
 
 El análisis de aplicaciones web abarca temas muy amplios y se puede volver muy complejo, pero en su objetivo
 fundamental es siempre el mismo: realizar acciones (ya sea leer, crear o modificar datos, ejecutar comandos,
@@ -41,7 +41,7 @@ la página. Existen muchas técnicas, herramientas y procedimientos distintos qu
 pero en su forma más básica (similar al debugging de cualquier software),
 esto se divide en análisis estático y análisis dinámico.
 
-## Análisis Estático
+### Análisis Estático
 
 Se refiere al análisis de elementos estáticos de un sitio web, como archivos HTML y JavaScript, código fuente,
 restricciones de uso para ciertos campos (por ejemplo largo de la entrada, caracteres permitidos, etc).
@@ -53,7 +53,7 @@ Este tipo de análisis es bastante simple y usualmente no se necesita más que u
 en el área de seguridad es [FireFox](https://www.mozilla.org/en-US/firefox/new/), ya que se suele comportar
 un poco mejor con las otras herramientas que se utiliza.
 
-## Análisis Dinámico
+### Análisis Dinámico
 
 El análisis dinámico incluye toda la revisión de requests hechas al servidor, junto a sus respuestas respectivas,
 la generación de requests diferentes a los usualmente utilizados por el servicio, y en general a todo lo que
@@ -67,7 +67,35 @@ Este no solo sirve de proxy, sino que además incluye algunas otras herramientas
 e interactuar con el servidor. Durante este curso lo usaremos bastante, por lo que es recomendado instalarlo,
 junto a algún plugin para redirigir las consultas, como por ejemplo [FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/).
 
-# OWASP
+## Vulnerabilidades
+
+Hasta ahora hemos mencionado a las vulnerabilidades, pero no hemos visto qué son. En resumen, una vulnerabilidad
+se refiere a cualquier acción, proceso o interacción que, en teoría, produce comportamiento no deseado en el sistema,
+el cual tiene el potencial de perjudicar a alguno de los agentes involucrados (dueños del sistema, usuarios, terceros,
+etc).
+
+La implementación de un ataque que se aprovecha de una vulnerabilidad se denomina explotación o _exploit_.
+El request (o parte del request) que envía este exploit al servidor y que causa el comportamiento
+no deseado se llama _payload_.
+
+Una mitigación es una contramedida que en teoría elimina una vulnerabilidad, o la vuelve significativamente
+más difícil de explotar. La implementación de una mitigación se denomina parche o _patch_.
+
+### Tipos de Vulnerabilidades
+
+En términos generales, las vulnerabilidades surgen por una de estas tres razones:
+* Por bugs: es decir que hay un error en el código y este produce comportamiento inesperado.
+* Por lógica: lo que significa que el diseño de la aplicación en sí es vulnerable. No necesariamente existen bugs.
+* Por dependencias: alguna de las librerías utilizadas tiene una vulnerabilidad que es explotable dentro del sistema.
+
+Tener estas diferenciaciones en mente sirve para entender de mejor manera cómo explotar una vulnerabilidad.
+Las vulnerabilidades por bugs usualmente se explotan mediante la generación de errores, o explorando un camino de
+interacción no previsto por los desarrolladores. En cambio para las vulnerabilidades por lógica es necesario entender
+la arquitectura del servicio y encontrar hoyos en esta. Finalmente, las vulnerabilidades por dependencias suelen
+ser explotadas mediante código hecho específicamente para esto, los cuales se pueden encontrar en Github u otros
+repositorios como Metasploit.
+
+## OWASP
 
 [The Open Web Application Security Project](https://owasp.org/) es una organización sin fines de lucro que intenta
 mejorar la seguridad del software en general. Desarrollan diferentes proyectos para ayudar a
@@ -75,12 +103,13 @@ las personas a generar mejores sistemas y código. Estos comprenden guías de de
 definiciones de estándares y herramientas automatizadas, lo cual facilita el desarrollo de software
 seguro y de calidad.
 
-## Top 10 Web Application Security Risks
+### Top 10 Web Application Security Risks
 
 El [OWASP Top 10](https://owasp.org/www-project-top-ten/) es un proyecto que recopila los 10 riesgos de
 seguridad más comunes en aplicaciones web. Estos riesgos usualmente se traducen en vulnerabilidades bajo ciertas
 condiciones, por lo que es importante que al menos conozcan que existen y entiendan por qué surgen.
-Estos riesgos son:
+Con la excepción de algunos casos muy particulares, todas las vulnerabilidades que ustedes encuentren
+corresponderán a uno (o a veces más de uno) de los riesgos en la lista. Estos son:
 1. Injection
 2. Broken Authentication
 3. Sensitive Data Exposure
@@ -95,14 +124,14 @@ Estos riesgos son:
 La mayoría de los nombres son bastante autodescriptivos, sin embargo si desean conocer estos riesgos
 más en detalle, por favor visiten el proyecto de OWASP y lean su documentación.
 
-## Web Security Testing Guide
+### Web Security Testing Guide
 
 La [Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) es una guía que intenta
 estandarizar la forma de realizar pruebas de seguridad a una aplicación web. Es particularmente útil para
 las personas que quieran seguir en esta área, ya que entra en harto detalle sobre cómo funciona cada ataque
 y de qué forma se puede realizar.
 
-## Otros Proyectos de OWASP
+### Otros Proyectos de OWASP
 
 Otros proyectos de OWASP incluyen:
 
