@@ -12,11 +12,19 @@ menu:
 weight: 040
 ---
 
+![Criptografía de llave pública](../public_key_crypto.png)
 
-# Definiciones
+La **criptografía asimétrica** o **criptografía de llave pública** se diferencia de la criptografía simétrica en que se usan valores distintos como llaves de cifrado y descifrado, lo que nos permite publicar una (la de cifrado) con el objetivo de que otras personas puedan enviarnos mensajes que solo nosotros podremos revisar (usando la llave de descifrado). Algo similar ocurre con la criptografía asimétrica usada para firmas digitales. Se usa una llave para "demostrar" que un mensaje fue enviado por nosotros mientras se publica la otra para comprobar que la firma fue realizada de forma correcta.
 
-# RSA
+# Cifrado de datos
+## RSA
 
-# Curva Elíptica
+## Diffie-Hellman
+## Curvas Elípticas
 
-# Firmas con criptografía asimétrica
+# Firmas Digitales
+
+## RSA
+
+## Curvas Elípticas
+
