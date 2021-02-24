@@ -38,3 +38,23 @@ p.meta {
   margin-top: 0.5rem;
   font-size: $font-size-base;
 }
+
+code.has-jax {
+  -webkit-font-smoothing: antialiased;
+  background: inherit !important;
+  border: none !important;
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+table td {
+  border: 1px solid #000;
+}
+
+td code {
+  background-color: inherit;
+  color: #999;
+}
