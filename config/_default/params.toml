@@ -1,13 +1,14 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Apunte CC5325"
+title = "Taller de Hacking Competitivo"
 titleSeparator = "-"
+logo = "images/banner.svg"
 titleAddition = "Introducción al Hacking Competitivo"
 description = "DCC universidad de Chile"
 
 ## Open Graph + Twitter Cards
-images = ["doks.png"]
+images = ["logo_redondo.png"]
 twitterSite = "dccuchile"
 twitterCreator = "dccuchile"
 facebookAuthor = "DCCUChile"

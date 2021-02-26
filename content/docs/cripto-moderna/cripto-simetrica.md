@@ -265,7 +265,7 @@ Existen ciertos algoritmos para cifrar datos que integran una rutina de autentif
 
 **Galois-Counter Mode** es un modo de cifrado de bloque que además autentifica el mensaje cifrado. Este modo permite autentificar datos anexos a $P$ que necesiten ser autentificados, pero no cifrados. A esta información adicional no cifrada se le suele denominar $A$.
 
-![../gcm.png](Gallois-Counter mode)
+![Galois-Counter Mode](../gcm.png)
 
 Más información sobre el algoritmo de autentificación [en Wikipedia](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
 
