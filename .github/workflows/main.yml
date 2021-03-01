@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
 
-      - run: hugo --gc --minify
+      - run: hugo --gc --minify -d docs/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
