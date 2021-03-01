@@ -4,6 +4,7 @@
 title = "Taller de Hacking Competitivo"
 titleSeparator = "-"
 logo = "images/banner.svg"
+logoDark = "images/banner_dark.svg"
 titleAddition = "Introducción al Hacking Competitivo"
 description = "DCC universidad de Chile"
 
