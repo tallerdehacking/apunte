@@ -127,5 +127,5 @@ prefetcher.href=url
 document.head.appendChild(prefetcher)
 prefetches.add(url)}
 ;
-document.getElementById('mode').addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('theme',document.body.classList.contains('dark')?'dark':'light');});if(localStorage.getItem('theme')==='dark'){document.body.classList.add('dark');}
-var clipboard=new ClipboardJS('.btn-clipboard');clipboard.on('success',function(e){e.clearSelection();});clipboard.on('error',function(e){console.error('Action:',e.action);console.error('Trigger:',e.trigger);});
+if(localStorage.getItem('theme')==='dark'){document.body.classList.add('dark');}
+document.getElementById('mode').addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('theme',document.body.classList.contains('dark')?'dark':'light');});
