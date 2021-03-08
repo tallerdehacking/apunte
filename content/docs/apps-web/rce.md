@@ -17,6 +17,9 @@ El Remote Code Execution (RCE) se refiere a la ejecución de comandos de sistema
 terminal ni algún otro canal permitido para ejecutar comandos. El alcance de este ataque depende del sistema
 operativo, frameworks, lenguajes y filtros que se tenga instalados en el servidor.
 
+Similar a las inyecciones SQL de segundo orden, **la ejecución de comandos remotos pueden y suelen requerir
+múltiples pasos**.
+
 Existen muchas formas de explotar esta vulnerabilidad, pero las más comunes son:
 * **Subir archivos ejecutables**: Por ejemplo PHP, que al ser visualizados en el navegador, el servidor ejecuta
   su código.
@@ -63,5 +66,6 @@ en el archivo `file`, para luego terminar ese comando y eliminar todo dentro del
 
 Otro ejemplo es un servidor al cual se puede subir archivos y luego visualizarlos. Existen muchos archivos,
 llamados _webshells_, los cuales están hechos con este propósito. Varían dependiendo del lenguaje utilizado
-en el servidor, pero las más comunes son PHP. [Aquí](https://github.com/tennc/webshell) pueden encontrar un
-repositorio con webshells para muchos lenguajes diferentes.
+en el servidor, y solo funcionan para lenguajes ejecutados en el lado del servidor.
+[Aquí](https://github.com/tennc/webshell) pueden encontrar un repositorio con webshells para
+muchos lenguajes diferentes.
