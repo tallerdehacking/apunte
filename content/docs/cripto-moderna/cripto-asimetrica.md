@@ -27,8 +27,8 @@ Fue el primer esquema de cifrado de llave pública. Se destaca por el uso de ari
 * $x$ es nuestro __mensaje en texto plano__, codificado como un número perteneciente a $Z_n^*$. Debido a lo anterior, el tamaño de nuestro mensaje se encuentra limitado por la magnitud de $n$.
 * $Z_n^*$ es un grupo multiplicativo de enteros módulo $n$.
 * $e$ es nuestro __exponente público__ y corresponde a un número menor que $(p-1)(q-1)$.
-* $d$ es el inverso multiplicativo de e en el grupo $Z_n^*$, o sea, $d = 1/e (mod_n)$.
-* $y$ es nuestro __mensaje cifrado__ y se calcula como $x^e (mod_n)$.
+* $d$ es el inverso multiplicativo de e en el grupo $Z_n^*$, o sea, $d = 1/e \mod n$.
+* $y$ es nuestro __mensaje cifrado__ y se calcula como $x^e \mod n$.
 
 La __Llave pública__ en RSA es el par de elementos $(n, e)$, mientras que la __llave privada__ es el valor $d$.
 
@@ -75,7 +75,7 @@ El proceso de descifrado requerirá seguir los pasos anteriores en orden inverso
 
 ### Firmas
 
-En el caso de RSA, para un documento M, se define su firma $S = M^d mod_n$, donde M es el mensaje a firmar. Para verificar la firma, es necesario calcular $S^e mod_n$ y comparar este valor con el documento recibido. 
+En el caso de RSA, para un documento M, se define su firma $S = M^d \mod n$, donde M es el mensaje a firmar. Para verificar la firma, es necesario calcular $S^e \mod n$ y comparar este valor con el documento recibido. 
 
 Hay que tener en consideración que, al igual que en el caso de cifrado RSA, el tamaño del mensaje a cifrar está limitado por el tamaño de $n$.
 
@@ -111,7 +111,7 @@ En este caso, se consideran como llave pública los valores $g^a$ y $g^b$, y com
 
 ![Diffie Hellman según Serious Cryptography](../dh.jpg)
 
-Para obtener el valor compartido que usarán como llave simétrica para comunicarse, primero Alicia envía a Bob el número $g^a$ y Bob envía a Alicia el número $g^b$. Si existiese una persona entre medio observando el intercambio, no tendría como deducir $a$ o $b$ a partir de $g^a$ o $g^b$ (al problema de obtener $x$ a partir de un $g^x$ $mod_{p}$ se le conoce como de [el problema del logaritmo discreto](https://en.wikipedia.org/wiki/Discrete_logarithm) y se considera que no existe un método general de resolución para él). 
+Para obtener el valor compartido que usarán como llave simétrica para comunicarse, primero Alicia envía a Bob el número $g^a$ y Bob envía a Alicia el número $g^b$. Si existiese una persona entre medio observando el intercambio, no tendría como deducir $a$ o $b$ a partir de $g^a$ o $g^b$ (al problema de obtener $x$ a partir de un $g^x \mod p$ se le conoce como de [el problema del logaritmo discreto](https://en.wikipedia.org/wiki/Discrete_logarithm) y se considera que no existe un método general de resolución para él). 
 
 Finalmente, para calcular el secreto compartido, cada parte eleva el valor recibido por su número aleatorio secreto. De esta forma, Alicia obtendrá $g^a^b = g^{ab}$, mientras que Bob obtendrá $g^b^a = g^{ba} = g^{ab}$. Ahora, ambas partes pueden usar ese valor compartido para cifrar mensajes.
 

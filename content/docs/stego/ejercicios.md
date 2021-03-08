@@ -11,3 +11,14 @@ menu:
 weight: 040
 
 ---
+
+
+## Codificaciones
+
+## Criptografía Clásica
+
+## Stego en Texto
+
+## Stego en Audio
+
+## Stego en imágenes
