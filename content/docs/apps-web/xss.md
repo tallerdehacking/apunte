@@ -28,6 +28,44 @@ Existen 3 tipos:
 * **DOM**: Este tipo de XSS no puede ser ejecutado por medio de variables ni datos almacenados, sino que se debe
 realizar una serie de acciones específicas en el mismo navegador de la víctima.
 
+## JavaScript
+
+JavaScript (JS) es un lenguaje de programación orientado a objetos que usualmente se utiliza para añadir
+componentes dinámicas a un sitio web. [Aquí](https://www.w3schools.com/js/DEFAULT.asp)
+pueden encontrar un tutorial de JS si lo necesitan.
+El código JS en una página se ejecuta en el navegador del usuario, no en el servidor.
+Existen varias formas _"oficiales"_ de insertar JS en un sitio. El primero es tener el código directamente en
+el HTML, delimitado por tags `<script></script>`, por ejemplo:
+
+    <html>
+        <head>
+            <script>
+                ...code...
+            </script>
+        </head>
+    </html>
+
+La otra forma es hacer una referencia a un archivo que contenga el código, como por ejemplo:
+
+    <html>
+        <head>
+            <script src="/code.js"></script>
+        </head>
+    </html>
+
+Finalmente, se puede introducir JS bajo ciertos eventos, como `onclick`, `onerror`, `onmouseover`, etc.
+
+    <html>
+        <body>
+            <button onclick="...code..."></button>
+        </body>
+    </html>
+
+Existen otras formas de introducir código JS a un sitio web, pero se utilizan más que nada en ataques donde las
+formas comunes están siendo bloqueadas o filtradas. Estas se escapan del ámbito de este curso, pero si están
+interesados, pueden revisar la
+[guía de evasión de filtros XSS](https://owasp.org/www-community/xss-filter-evasion-cheatsheet) de OWASP.
+
 ## Ejemplos
 
 Uno de los usos más peligrosos de este tipo de ataques es el robo de sesiones. El código introducido toma la
