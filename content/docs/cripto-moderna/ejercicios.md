@@ -11,16 +11,13 @@ menu:
 weight: 050
 ---
 
+## Recursos Generales
+
+* [**Cryptopals**](https://cryptopals.com/): Ejercicios de implementación de herramientas para ejecutar ataques criptográficos
 
 ## Hashing
 
 ## Criptografía Simétrica
 
-### EnCoding Better
 
-Interceptamos las comunicaciones del **Frente Hacker Antorcha** y obtuvimos este mensaje cifrado. Además, nuestro espía infiltrado logró conseguir el fuente del programa que usan para cifrar sus mensajes. Necesitamos que nos ayudes a recuperar el mensaje en texto plano.
-
-![Mensaje Cifrado](#)
-![Código Fuente](#)
-
-### Hashing
+## Criptografía Asimétrica
