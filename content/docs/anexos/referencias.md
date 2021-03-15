@@ -38,6 +38,24 @@ A continuación se mencionan las referencias usadas para la realización de cada
 
 ## Aplicaciones Web
 
+### Usadas en el apunte
+
+* [OWASP](https://github.com/rapid7/metasploit-framework):
+  * [Top 10](https://owasp.org/www-project-top-ten/)
+  * [Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+  * [Dependency Track](https://owasp.org/www-project-dependency-track/)
+  * [Juice Shop](https://owasp.org/www-project-juice-shop/)
+  * [Mobile Security Testing Guide](https://owasp.org/www-project-mobile-security-testing-guide/)
+  * [ModSecurity Core Rule Set](https://owasp.org/www-project-modsecurity-core-rule-set/)
+  * [Software Assurance Maturity Model (SAMM)](https://owasp.org/www-project-samm/)
+  * [Security Knowledge Framework](https://owasp.org/www-project-security-knowledge-framework/)
+  * [Zed Attack Proxy (ZAP)](https://owasp.org/www-project-zap/)
+  * [Guía de Evasión de Filtros XSS](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
+* [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)
+* [Tutorial de JavaScript](https://www.w3schools.com/js/DEFAULT.asp)
+* [Tutorial de SQL](https://www.w3schools.com/sql/default.asp)
+
+
 ## Análisis Forense
 
 ## Ingeniería Reversa

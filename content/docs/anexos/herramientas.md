@@ -19,6 +19,17 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 
 ## Aplicaciones Web
 
+* [FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
+* [Burp Suite Community Edition](https://portswigger.net/burp/communitydownload)
+* [Dirsearch](https://github.com/maurosoria/dirsearch)
+* [Wfuzz](https://github.com/xmendez/wfuzz)
+* [Hydra](https://github.com/vanhauser-thc/thc-hydra)
+* [Sqlmap](https://github.com/sqlmapproject/sqlmap)
+* [Repo de Reverse Shells](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+* [Pwncat](https://github.com/calebstewart/pwncat)
+* [Metasploit](https://github.com/rapid7/metasploit-framework)
+* [Searchsploit](https://www.exploit-db.com/searchsploit)
+
 ## Análisis Forense
 
 ## Ingeniería Reversa
