@@ -10,8 +10,6 @@ menu:
 weight: 020
 ---
 
-## Motivación
-
 En este capítulo hablaremos de algunas de las técnicas más básicas utilizadas para en análisis web.
 Para estas no se requiere ningún o casi ningún conocimiento sobre el funcionamiento o características del sitio,
 y pueden ser aplicadas de manera casi inmediata. Usualmente se utiliza herramientas muy simples, que

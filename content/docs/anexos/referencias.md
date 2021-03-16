@@ -63,3 +63,9 @@ A continuación se mencionan las referencias usadas para la realización de cada
 ## Pwning
 
 ## OSINT
+
+### Usadas en el apunte
+
+* [Google Hacking](https://en.wikipedia.org/wiki/Google_hacking)
+* [Google Dorks](https://gbhackers.com/latest-google-dorks-list/)
+* [Github Search](https://github.com/search/advanced)

@@ -10,8 +10,6 @@ menu:
 weight: 060
 ---
 
-## Descripción General
-
 En el capítulo anterior vimos cómo ejecutar comandos de manera remota en un servidor, sin tener acceso a una
 terminal. Esto es muy útil en un comienzo, pero rápidamente se vuelve evidente la lentitud, torpeza y limitaciones
 que significa este medio. Sería mucho más cómodo si de alguna forma se pudiese obtener acceso a una terminal,

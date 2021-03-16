@@ -10,8 +10,6 @@ menu:
 weight: 070
 ---
 
-## Descripción General
-
 Muchas veces ustedes se encontrarán con sistemas (web u otro tipo) que utilizan software con vulnerabilidades
 conocidas (punto 9 del OWASP Top 10). Estas vulnerabilidades se catalogan como _Common Vulnerabilities and
 Exposures_ (CVE), el cual es un sistema que intenta proveer información y documentación sobre

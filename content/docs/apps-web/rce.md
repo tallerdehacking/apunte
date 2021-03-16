@@ -10,14 +10,14 @@ menu:
 weight: 050
 ---
 
-## Descripción General
-
 El Remote Code Execution (RCE) se refiere a la ejecución de comandos de sistema, o de algún lenguaje instalado, sin tener acceso a una
 terminal ni algún otro canal permitido para ejecutar comandos. El alcance de este ataque depende del sistema
 operativo, frameworks, lenguajes y filtros que se tenga instalados en el servidor.
 
 Similar a las inyecciones SQL de segundo orden, **la ejecución de comandos remotos pueden y suelen requerir
 múltiples pasos**.
+
+## Formas de RCE
 
 Existen muchas formas de explotar esta vulnerabilidad, pero las más comunes son:
 * **Subir archivos ejecutables**: Por ejemplo PHP, que al ser visualizados en el navegador, el servidor ejecuta

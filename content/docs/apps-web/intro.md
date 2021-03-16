@@ -49,7 +49,11 @@ que no deberían estar visibles y que divulgan cierta información.
 
 Este tipo de análisis es bastante simple y usualmente no se necesita más que un navegador. El más utilizado
 en el área de seguridad es [FireFox](https://www.mozilla.org/en-US/firefox/new/), ya que se suele comportar
-un poco mejor con las otras herramientas que se utiliza.
+un poco mejor con las otras herramientas que se utiliza. En particular, se utiliza las herramientas de
+desarrollador (Developer Tools), a las cuales pueden acceder presionando F12. Aquí nos interesa principalmente
+el _Debugger_ para ver las dependencias y diferentes recursos utilizados por el sitio, el _Inspector_ para analizar
+el código fuente HTML, la _Console_ en donde pueden aparecer mensajes o información relevante, y el _Storage_
+en donde se almacena cookies y otra información de manera local.
 
 ### Análisis Dinámico
 
@@ -82,9 +86,9 @@ más difícil de explotar. La implementación de una mitigación se denomina par
 ### Tipos de Vulnerabilidades
 
 En términos generales, las vulnerabilidades surgen por una de estas tres razones:
-* Por bugs: es decir que hay un error en el código y este produce comportamiento inesperado.
-* Por lógica: lo que significa que el diseño de la aplicación en sí es vulnerable. No necesariamente existen bugs.
-* Por dependencias: alguna de las librerías utilizadas tiene una vulnerabilidad que es explotable dentro del sistema.
+* **Por bugs**: es decir que hay un error en el código y este produce comportamiento inesperado.
+* **Por lógica**: lo que significa que el diseño de la aplicación en sí es vulnerable. No necesariamente existen bugs.
+* **Por dependencias**: alguna de las librerías utilizadas tiene una vulnerabilidad que es explotable dentro del sistema.
 
 Tener estas diferenciaciones en mente sirve para entender de mejor manera cómo explotar una vulnerabilidad.
 Las vulnerabilidades por bugs usualmente se explotan mediante la generación de errores, o explorando un camino de

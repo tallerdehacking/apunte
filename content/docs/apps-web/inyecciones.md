@@ -10,8 +10,6 @@ menu:
 weight: 040
 ---
 
-## Descripción General
-
 En términos generales, una inyección (punto 1 del OWASP Top 10) es un ataque que intenta confundir al servidor
 de forma que interprete datos como si fueran código. Esto tiene un potencial muy grande de explotación, aunque
 usualmente está restringido por factores como filtros, configuraciones de seguridad y tecnologías usadas.
@@ -61,7 +59,8 @@ para obtener la información. Esto usualmente significa consultar caracter por c
 La herramienta [sqlmap](https://github.com/sqlmapproject/sqlmap) se utiliza mucho para hacer un análisis
 automatizado de este tipo de inyecciones. Envía un conjunto de requests estándar, el cual se adapta a la
 información recolectada y otros parámetros, con lo cual puede detectar la gran mayoría de las inyecciones
-simples.
+simples. Muchas veces esta herramienta sola no es suficiente, por lo que deberán crear scripts de _tamper_
+específicos para su situación, o realizar en análisis de otra forma.
 
 ## Otros Tipos
 

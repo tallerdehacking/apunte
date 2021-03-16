@@ -25,6 +25,7 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 * [Wfuzz](https://github.com/xmendez/wfuzz)
 * [Hydra](https://github.com/vanhauser-thc/thc-hydra)
 * [Sqlmap](https://github.com/sqlmapproject/sqlmap)
+* [Repo de Web Shells](https://github.com/tennc/webshell)
 * [Repo de Reverse Shells](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
 * [Pwncat](https://github.com/calebstewart/pwncat)
 * [Metasploit](https://github.com/rapid7/metasploit-framework)
@@ -37,3 +38,7 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 ## Pwning
 
 ## OSINT
+
+* [Have I Been Pwned](https://haveibeenpwned.com/)
+* [theHarvester](https://github.com/laramies/theHarvester)
+* [Shodan](https://www.shodan.io/)
