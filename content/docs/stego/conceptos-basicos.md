@@ -122,7 +122,7 @@ Hay una cantidad innumerable de formas de codificar datos en uso actualmente, mu
 
 ![Imagen por Meteoorkip en Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/6/67/Cistercian_digits_%28vertical%29.svg)
 
-* [**Código morse**](): El
+* [**Código morse**](): El código morse fue inventado por Samuel Morse como codificación para su uso en el Telégrafo, otro invento de la misma persona. Este código consiste en la codificación de letras en 3 diferentes señales: puntos (tonos cortos), rayas (tonos largos) y pausas (tiempo sin tonos). A continuación se muestran las codificaciones para cada letra.
 
 ![](../morse_code.svg)
 
