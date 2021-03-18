@@ -54,7 +54,10 @@ A continuación se mencionan las referencias usadas para la realización de cada
 * [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)
 * [Tutorial de JavaScript](https://www.w3schools.com/js/DEFAULT.asp)
 * [Tutorial de SQL](https://www.w3schools.com/sql/default.asp)
-
+* [CVSS](https://nvd.nist.gov/vuln-metrics/cvss)
+* [Exploit DB](https://www.exploit-db.com/)
+* [VulDB](https://vuldb.com/)
+* [CVE Details](https://www.cvedetails.com/)
 
 ## Análisis Forense
 

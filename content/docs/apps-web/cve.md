@@ -13,7 +13,49 @@ weight: 070
 Muchas veces ustedes se encontrarán con sistemas (web u otro tipo) que utilizan software con vulnerabilidades
 conocidas (punto 9 del OWASP Top 10). Estas vulnerabilidades se catalogan como _Common Vulnerabilities and
 Exposures_ (CVE), el cual es un sistema que intenta proveer información y documentación sobre
-vulnerabilidades conocidas públicamente.
+vulnerabilidades conocidas públicamente. Esto se suele documentar junto a su puntaje
+[CVSS](https://nvd.nist.gov/vuln-metrics/cvss) (_Common Vulnerabilities Scoring System_).
+
+## CVSS
+
+Es un sistema abierto para comunicar las características y severidad de vulnerabilidades conocidas en software.
+Produce un puntaje de 0 a 10 indicando la explotabilidad de la vulnerabilidad en cuestión.
+Estos puntajes se categorizan de la siguiente manera:
+
+* **Informative** (0.0): La vulnerabilidad no es explotable pero puede entregar información o recursos que
+permiten o facilitan la explotación de otra vulnerabilidad. Ejemplo: revelar rutas absolutas de archivos
+  en el servidor.
+
+* **Low** (0.1 - 3.9): La vulnerabilidad es muy difícil de explotar, o los recursos ganados luego de explotarla
+no son muy relevantes. Ejemplo: divulgación o enumeración de usuarios del sistema.
+
+* **Medium** (4.0 - 6.9): No se requiere tanto esfuerzo para explotar la vulnerabilidad, pero los componentes
+comprometidos no son críticos. Ejemplo: poder interceptar información no sensible ni privada de otros usuarios.
+
+* **High** (7.0 - 8.9): Se puede comprometer un ámbito completo del sistema (confidencialidad, integridad
+  o disponibilidad). Ejemplo: poder leer toda la información de todos los usuarios.
+
+* **Critical** (9.0 - 10): Se compromete el sistema completo, permitiéndole al atacante leer y modificar
+toda la información y componentes o denegar el servicio. Ejemplo: obtener acceso a la cuenta de administrador
+  del sistema.
+
+Este puntaje se calcula de manera pseudo objetiva, teniendo en cuenta las siguientes datos:
+
+* **Attack Vector** (Network, Adjacent, Local, Physical).
+
+* **Attack Complexity** (Low, High).
+
+* **Privileges Required** (None, Low, High).
+
+* **User Interaction** (None, Required).
+
+* **Scope** (Unchanged, Changed).
+
+* **Confidentiality** (None, Low, High).
+
+* **Integrity** (None, Low, High).
+
+* **Availability** (None, Low, High).
 
 ## Herramientas
 
@@ -24,10 +66,11 @@ y pruebas de concepto para algunos CVE que no aparecen en Metasploit.
 
 Sin embargo no todos los CVEs están en esas herramientas, y tendrán que buscarlos en internet.
 Algunos sitios útiles son:
-* https://www.exploit-db.com/
-* https://vuldb.com/
-* https://medium.com/
-* https://github.com/
+* [https://www.exploit-db.com/](https://www.exploit-db.com/)
+* [https://vuldb.com/](https://vuldb.com/)
+* [https://www.cvedetails.com/](https://www.cvedetails.com/vulnerability-list/vendor_id-16542/Laravel.html)
+* [https://medium.com/](https://medium.com/)
+* [https://github.com/](https://github.com/)
 
 En estos podrán encontrar códigos, pruebas de concepto, y guías paso a paso sobre cómo funcionan algunas
 vulnerabilidades.
@@ -48,7 +91,8 @@ de la búsqueda.
 Recuerden que **las vulnerabilidades varían entre versiones de cada software**, por lo que no necesariamente
 podrán explotarlas siempre.
 
-Pueden encontrar un tutorial bastante completo de Metasploit [aquí](https://www.tutorialspoint.com/metasploit/index.htm).
+Pueden encontrar un tutorial bastante completo de Metasploit
+[aquí](https://www.tutorialspoint.com/metasploit/index.htm).
 
 Para buscar exploits en searchsploit, simplemente usar el comando `searchsploit <keyword>`:
 

@@ -66,17 +66,17 @@ específicos para su situación, o realizar en análisis de otra forma.
 
 Existen muchos otros tipos de inyecciones que no veremos en este curso, pero es bueno que sepan que existen.
 
-* NoSQL: Similar a las SQLi, pero en sistemas NoSQL. Esto tiene diferencias de sintaxis y añade comandos y
+* **NoSQL**: Similar a las SQLi, pero en sistemas NoSQL. Esto tiene diferencias de sintaxis y añade comandos y
 funciones no disponibles en SQL.
 
-* XML: El Extensible Markup Language (XML) se utiliza en muchos lados y es notorio por sus riesgos de seguridad,
+* **XML**: El Extensible Markup Language (XML) se utiliza en muchos lados y es notorio por sus riesgos de seguridad,
 ya que tiene hartas funcionalidades explotables. Algunas categorías de inyección XML son:
   * Tag Injection
   * XML eXternal Entities (XXE)
   * XML Entity Expansion (XEE)
   * XPath
 
-* Lightweight Directory Access Protocol (LDAP): Este es una especie de motor de búsqueda dentro de directorios
+* **Lightweight Directory Access Protocol** (LDAP): Este es una especie de motor de búsqueda dentro de directorios
   y archivos, y de vez en cuando se utiliza para procesar consultas web.
 
 ## Técnicas Avanzadas
@@ -84,11 +84,11 @@ ya que tiene hartas funcionalidades explotables. Algunas categorías de inyecci�
 Existen técnicas avanzadas de inyección que se escapan del ámbito del curso. Si se interesan, a continuación
 pueden encontrar un pequeño resumen.
 
-### Out Of Bounds (OOB)
+### Out Of Band (OOB)
 
 Muchas veces el sistema que está siendo analizado es efectivamente vulnerable a inyecciones, pero no es posible
 obtener los resultados, ni siquiera con métodos ciegos. En estos casos se puede intentar una inyección fuera
-de banda o _Out Of Bounds_ (OOB). El objetivo es obtener los resultados a la consulta por medio de un canal
+de banda o _Out Of Band_ (OOB). El objetivo es obtener los resultados a la consulta por medio de un canal
 diferente al cual se realizó la inyección.
 
 Por ejemplo, supongamos que además de la inyección, es posible
@@ -104,8 +104,16 @@ orden porque se explotan por medio de 2 requests:
 1. Se envía el payload, el cual queda almacenado.
 2. Se intenta acceder a los datos almacenados, en donde se realiza la inyección.
 
-Para ilustrar esto, imaginemos un sitio en donde nos registramos con el usuario `user' or '1'='1`. Luego,
-ingresamos al portal y vemos nuestro perfil, en donde el servidor realiza la consulta:
+Estas vulnerabilidades surgen porque los desarrolladores usualmente consideran los valores controlados
+por el usuario inseguros, pero una vez que ya se almacenan en la base de datos son confiables.
+Esto no necesariamente es así, ya que un valor almacenado en la base de datos puede haber sido
+alterado por un usuario. Es decir, ningún valor es confiable, y las consultas a la base de datos
+siempre se deben hacer de manera segura sin importar de dónde provengan los datos.
+
+Para ilustrar esto, imaginemos un sitio vulnerable a inyecciones SQL de segundo orden,
+en donde nos registramos con el usuario `user' or '1'='1`. Esto no causa una inyección, pues los formularios
+de registro y de login están bien sanitizados.
+Luego, ingresamos al portal y vemos nuestro perfil, en donde el servidor realiza la consulta:
 
     SELECT data FROM users WHERE username = '$username';
 
