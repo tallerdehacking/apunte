@@ -89,7 +89,7 @@ Cuando queremos transmitir datos arbitrarios (generalmente binarios) por un medi
 
 En algunos CTF se codifican mensajes utilizando [**lenguajes de programación esotéricos** (esolangs)](https://en.wikipedia.org/wiki/Esoteric_programming_language). A continuación mencionamos algunos conocidos:
 
-* [**Brainf*ck**](https://en.wikipedia.org/wiki/Brainfuck): Lenguaje de programación minimalista que tiene solamente 8 comandos, representados por 8 caracteres: $[+;-;[;];>;<;.;,]$. En caso de ver un texto con esos símbolos, puede ser necesario correrlo con un intérprete del lenguaje, como [este](https://franklin.dyer.me/htmlpage/brainfuck.html).
+* [**Brainf*ck**](https://en.wikipedia.org/wiki/Brainfuck): Lenguaje de programación minimalista que tiene solamente 8 comandos, representados por 8 caracteres: $[+;-;[;];>;<;.;,]$. En caso de ver un texto con esos símbolos, puede ser necesario correrlo con un intérprete del lenguaje, como [este](https://franklin.dyer.me/htmlpage/brainfuck.html). Otro enlace útil es [este](https://fatiherikli.github.io/brainfuck-visualizer/), el cual muestra paso a paso la interpretación de un programa en Brainf*ck.
 
 * [**Piet**](https://www.bertnase.de/npiet/): Lenguaje de programación cuyos archivos interpretables son imágenes
 * [**Whitespace**](https://naokikp.github.io/wsi/whitespace.html): El intérprete considera solamente los simbolos espacio, tab y enter en un archivo de texto, lo que es bastante útil para esconder programas dentro de un archivo aparentemente inofensivo.
