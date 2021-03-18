@@ -114,7 +114,7 @@ En otros casos más complejos, puede convenir usar un depurador de código e ir 
 
 Hay una cantidad innumerable de formas de codificar datos en uso actualmente, muchas de las cuales pertenecen a nichos determinados. A continuación mencionamos unas pocas, solo para ejemplificar la variedad que se suele utilizar en problemas de CTF.
 
-* [**DTMF**]: Siglas de _Dual-tone Multi-frequency Signaling_, es el sistema de señales que usan los teléfonos fijos hasta el día de hoy. Se basa en la asignación de un tono específico a cada fila y columna de una matriz de 4x4, en la cual se colocan los números de marcado de estos teléfonos. Para determinar cuál es la tecla que se presiona, se calcula la fila y la columna del sonido que esta emite según su tono. A continuación, se muestra la matriz para calcular estos valores.
+* [**DTMF**](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling): Siglas de _Dual-tone Multi-frequency Signaling_, es el sistema de señales que usan los teléfonos fijos hasta el día de hoy. Se basa en la asignación de un tono específico a cada fila y columna de una matriz de 4x4, en la cual se colocan los números de marcado de estos teléfonos. Para determinar cuál es la tecla que se presiona, se calcula la fila y la columna del sonido que esta emite según su tono. A continuación, se muestra la matriz para calcular estos valores.
 
 ![](../dtmf.jpg)
 
