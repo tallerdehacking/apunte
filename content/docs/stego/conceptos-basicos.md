@@ -106,6 +106,7 @@ En otros casos, el CTF puede requerir desofuscar una línea de código, para lo 
 Así como existen ofuscadores, también hay utilidades que permiten desofuscar código:
 
   * [de4js (Javascript)](https://lelinhtinh.github.io/de4js/) 
+  * [jsnice](https://jsnice.org)
 
 En otros casos más complejos, puede convenir usar un depurador de código e ir analizando lo que produce el script línea por línea.
 
