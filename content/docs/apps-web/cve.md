@@ -14,7 +14,7 @@ Muchas veces ustedes se encontrarán con sistemas (web u otro tipo) que utilizan
 conocidas (punto 9 del OWASP Top 10). Estas vulnerabilidades se catalogan como _Common Vulnerabilities and
 Exposures_ (CVE), el cual es un sistema que intenta proveer información y documentación sobre
 vulnerabilidades conocidas públicamente. Esto se suele documentar junto a su puntaje
-[CVSS](https://nvd.nist.gov/vuln-metrics/cvss) (_Common Vulnerabilities Scoring System_).
+[CVSS](https://www.first.org/cvss/v3.1/specification-document) (_Common Vulnerabilities Scoring System_).
 
 ## CVSS
 
@@ -39,7 +39,13 @@ comprometidos no son críticos. Ejemplo: poder interceptar información no sensi
 toda la información y componentes o denegar el servicio. Ejemplo: obtener acceso a la cuenta de administrador
   del sistema.
 
-Este puntaje se calcula de manera pseudo objetiva, teniendo en cuenta las siguientes datos:
+Este puntaje se calcula de manera pseudo objetiva, teniendo en cuenta métricas base, temporales y
+ambientales.
+
+### Métricas Base
+
+Las métricas base intentan describir a la vulnerabilidad de manera aislada y teórica,
+utilizando los siguientes datos:
 
 * **Attack Vector** (Network, Adjacent, Local, Physical).
 
@@ -56,6 +62,45 @@ Este puntaje se calcula de manera pseudo objetiva, teniendo en cuenta las siguie
 * **Integrity** (None, Low, High).
 
 * **Availability** (None, Low, High).
+
+### Métricas Temporales
+
+Las métricas temporales incluyen factores sobre el estado de los exploits para la vulnerabilidad en cuestión
+en la actualidad, los que varían en el tiempo:
+
+* **Exploit Code Maturity** (Not defined, Unproven that exploit exists, Proof of concept code,
+  Functional exploit exists, High).
+
+* **Remediation Level** (Not Defined, Official fix, Temporary fix, Workaround, Unavailable).
+
+* **Report Confidence** (Not Defined, Unknown, Reasonable, Confirmed).
+
+### Métricas Ambientales
+
+Finalmente, las métricas de tipo ambientales son específicas para los dueños del sistema afectado, e intentan
+cuantificar la importancia de la vulnerabilidad en el entorno en el cual se encuentra.
+
+* **Attack Vector** (Not Defined, Network, Adjacent Network, Local, Physical).
+
+* **Attack Complexity** (Not Defined, Low, High).
+
+* **Privileges Required** (Not Defined, None, Low, High).
+
+* **User Interaction** (Not Defined, None, Required).
+
+* **Scope** (Not Defined, Unchanged, Changed).
+
+* **Confidentiality** (Not Defined, None, Low, High).
+
+* **Integrity** (Not Defined, None, Low, High).
+
+* **Availability** (Not Defined, None, Low, High).
+
+* **Confidentiality Requirement** (Not Defined, Low, Medium, High).
+
+* **Integrity Requirement** (Not Defined, Low, Medium, High).
+
+* **Availability Requirement** (Not Defined, Low, Medium, High).
 
 ## Herramientas
 

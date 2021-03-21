@@ -18,6 +18,9 @@ la cual retorna información sobre los repositorios públicos.
 
 De manera similar a Google Dorks, Github tiene un sistema de flags en su búsqueda para filtrar los resultados.
 Pueden encontrar documentación sobre esto [aquí](https://docs.github.com/en/github/searching-for-information-on-github/getting-started-with-searching-on-github).
+En este caso, los flags disponibles están más enfocados a filtrar características importantes de un
+repositorio (por ejemplo la cantidad de forks con `fork:<n>`). También se puede buscar repos cuyos archivos
+cumplan ciertas características, como en su extensión (`extension:<ext>`).
 
 ## Ejemplo
 

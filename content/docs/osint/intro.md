@@ -31,3 +31,8 @@ a buscar. Por ejemplo, el challenge puede contener simplemente el nombre de una 
 deberán utilizar todas las herramientas disponibles hasta encontrar la flag. Otras veces también se explicita
 el dato que deben encontrar, como la ubicación de esta persona en una hora específica,
 con lo cual disminuye el rango de opciones.
+
+En algunos casos puede ser necesario realizar búsquedas en redes sociales, ya sea las clásicas (Facebook,
+Twitter, Instagram, Linkedin, etc) o en otras más rebuscadas y poco conocidas.
+La forma de buscar dependerá fuertemente de la red social en específico que están viendo, y usualmente
+el proceso tendrá que ser hecho de manera manual.
