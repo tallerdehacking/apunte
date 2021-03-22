@@ -21,7 +21,7 @@ mientras que la resolución de los challenges surgirá casi como un efecto secun
 Ya que este tema hace un fuerte uso de vulnerabilidades reales, al practicar para este tipo de challenges
 también están estudiando para hacer análisis de seguridad a sitios web de verdad. De hecho,
 el penetration testing, o pentesting, de páginas web es el trabajo más solicitado a los especialistas en seguridad computacional.
-Es más, algunas empresas buscan activamente a gente con habilidades en estos temas por medio de CTF,
+Es más, algunas empresas buscan activamente a gente con habilidades en estos temas por medio de CTFs,
 para luego ofrecerles trabajo.
 
 Similarmente a los otros temas que hemos visto en este curso, las flags de los challenges web pueden estar
@@ -72,12 +72,12 @@ junto a algún plugin para redirigir las consultas, como por ejemplo [FoxyProxy]
 ## Vulnerabilidades
 
 Hasta ahora hemos mencionado a las vulnerabilidades, pero no hemos visto qué son. En resumen, una vulnerabilidad
-se refiere a cualquier acción, proceso o interacción que, en teoría, produce comportamiento no deseado en el sistema,
+se refiere a cualquier debilidad que, en teoría, produce comportamiento no deseado en el sistema,
 el cual tiene el potencial de perjudicar a alguno de los agentes involucrados (dueños del sistema, usuarios, terceros,
 etc).
 
 La implementación de un ataque que se aprovecha de una vulnerabilidad se denomina explotación o _exploit_.
-El request (o parte del request) que envía este exploit al servidor y que causa el comportamiento
+El request (o parte del request) que gatilla este exploit al servidor y que causa el comportamiento
 no deseado se llama _payload_.
 
 Una mitigación es una contramedida que en teoría elimina una vulnerabilidad, o la vuelve significativamente
