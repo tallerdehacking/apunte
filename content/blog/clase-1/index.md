@@ -8,6 +8,8 @@ weight: 50
 
 {{< youtube zrRPSccovi0 >}}
 
+[Diapositivas (PDF)](../stego-1.pdf)
+
 ## Enlaces útiles
 
 * [Enlace Esolangs](https://gist.github.com/eriverosr/bb4e39ff91879bd30bb9d6417cd9057f)

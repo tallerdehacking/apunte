@@ -11,13 +11,14 @@ weight: 040
 
 ---
 
-
-## Codificaciones
-
 ## Criptografía Clásica
+
+* [**Classic, yet complicated** (Hack The Box)](https://app.hackthebox.eu/challenges/22)
+* [**xorxorxor** (Hack The Box)](https://app.hackthebox.eu/challenges/191) 
 
 ## Stego en Texto
 
 ## Stego en Audio
 
 ## Stego en imágenes
+
