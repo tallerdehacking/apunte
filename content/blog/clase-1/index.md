@@ -8,7 +8,7 @@ weight: 50
 
 {{< youtube zrRPSccovi0 >}}
 
-[Diapositivas (PDF)](../stego-1.pdf)
+[Diapositivas (PDF)](stego-1.pdf)
 
 ## Enlaces útiles
 
