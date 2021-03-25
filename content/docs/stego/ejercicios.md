@@ -20,6 +20,12 @@ weight: 040
 
 ### HackTheBox
 
+#### Retirados
+
+* [Widescreen](https://app.hackthebox.eu/challenges/15)
+* [Milkshake](https://app.hackthebox.eu/challenges/23)
+#### Activos
+
 * [Secret of a Queen](https://app.hackthebox.eu/challenges/133)
 * [Digital Cube](https://app.hackthebox.eu/challenges/24)
 * [Forest](https://app.hackthebox.eu/challenges/32)
