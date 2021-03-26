@@ -7,10 +7,10 @@ images: []
 menu:
   docs:
     parent: "anexos"
-weight: 055
+weight: 045
 ---
 
-Una _Shell_ o _Terminal en la práctica es una interfaz de usuario de texto que permite la ejecución de comandos y programas de tipo script.
+Una _Shell_ o _Terminal_ en la práctica es una interfaz de usuario de texto que permite la ejecución de comandos y programas de tipo script.
 
 En sistemas Linux modernos, puedes interactuar con la _Shell_ usando un emulador de terminal. En varias distribuciones actuales, el emulador de terminal por defecto es `bash`. Sin embargo, en Kali Linux la shell usada por defecto es `zsh`. 
 
