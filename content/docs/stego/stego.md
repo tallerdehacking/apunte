@@ -54,6 +54,7 @@ Otro tipo de problemas esteganográficos esconden mensajes en archivos de audio 
 * [**CyberChef**](https://gchq.github.io/CyberChef/#recipe=Extract_ID3()): En específico, la herramienta de revisión de etiquetas ID3.
 * [**Steghide**](http://steghide.sourceforge.net/): Programa incluido en Kali Linux que permite esconder datos en imágenes y audios, extraíbles con una contraseña.
 * [**Audiotap y WAV-PRG**](http://wav-prg.sourceforge.net/screenshots.html) Transforman audios WAV En archivos ejecutables de Commodore 64.
+* [**SoX**](https://sox.sourceforge.net): Heramienta que permite convertir archivos de audio en otros formatos. Entre ellos, convierte un audio en un espectrograma de forma fácil.
 
 ### Recomendaciones para detectarlo
 
@@ -79,6 +80,7 @@ En el caso de imágenes rasterizadas, en general es posible encontrar que cada p
 * [**Stegsolve**](https://github.com/Giotino/stegsolve) Programa que permite aplicar filtros a imágenes con el objetivo de extraer información de ellas.
 * [**Cyberchef**](https://gchq.github.io/CyberChef): Cyberchef cuenta con hartos filtros para procesar y revisar imágenes.
 * [**Stegonline**](https://stegonline.georgeom.net/checklist): Herramienta con opciones similares a stegsolve, además de un checklist para CTFs.
+* [**Stegseek**](https://github.com/RickdeJager/stegseek): Permite ejecutar ataques de fuerza bruta sobre un archivo que contiene información extraíble por `Steghide`.
 
 ### Recomendaciones para detectarlo
 

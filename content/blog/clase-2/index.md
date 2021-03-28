@@ -6,9 +6,9 @@ draft: false
 weight: 50
 ---
 
-{{< youtube knSWE5n0cKw >}}
+{{< youtube fR8ZA-Qghfo >}}
 
-[Diapositivas (PDF)](../stego-2.pdf)
+[Diapositivas (PDF)](stego-2.pdf)
 
 ## Enlaces útiles
 
