@@ -112,7 +112,7 @@ En este caso, se consideran como llave pública los valores $g^a$ y $g^b$, y com
 
 Para obtener el valor compartido que usarán como llave simétrica para comunicarse, primero Alicia envía a Bob el número $g^a$ y Bob envía a Alicia el número $g^b$. Si existiese una persona entre medio observando el intercambio, no tendría como deducir $a$ o $b$ a partir de $g^a$ o $g^b$ (al problema de obtener $x$ a partir de un $g^x \mod p$ se le conoce como de [el problema del logaritmo discreto](https://en.wikipedia.org/wiki/Discrete_logarithm) y se considera que no existe un método general de resolución para él). 
 
-Finalmente, para calcular el secreto compartido, cada parte eleva el valor recibido por su número aleatorio secreto. De esta forma, Alicia obtendrá $g^a^b = g^{ab}$, mientras que Bob obtendrá $g^b^a = g^{ba} = g^{ab}$. Ahora, ambas partes pueden usar ese valor compartido para cifrar mensajes.
+Finalmente, para calcular el secreto compartido, cada parte eleva el valor recibido por su número aleatorio secreto. De esta forma, Alicia obtendrá $g^{a^b} = g^{ab}$, mientras que Bob obtendrá $g^{b^a} = g^{ba} = g^{ab}$. Ahora, ambas partes pueden usar ese valor compartido para cifrar mensajes.
 
 ### Problemas de seguridad DH
 
