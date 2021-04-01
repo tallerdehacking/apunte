@@ -16,7 +16,13 @@ weight: 050
 
 ## Hashing
 
+
+
 ## Criptografía Simétrica
 
+### Hack The Box
+
+[Flippin Bank](https://app.hackthebox.eu/challenges/Flippin-Bank)
+[Broken Decryptor](https://app.hackthebox.eu/challenges/Broken-Decryptor)
 
 ## Criptografía Asimétrica

@@ -24,6 +24,7 @@ weight: 040
 
 * [Widescreen](https://app.hackthebox.eu/challenges/15)
 * [Milkshake](https://app.hackthebox.eu/challenges/23)
+* [Classic, yet Complicated](https://app.hackthebox.eu/challenges/Classic,-yet-complicated!)
 #### Activos
 
 * [Secret of a Queen](https://app.hackthebox.eu/challenges/133)
