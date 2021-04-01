@@ -22,7 +22,8 @@ weight: 050
 
 ### Hack The Box
 
-[Flippin Bank](https://app.hackthebox.eu/challenges/Flippin-Bank)
-[Broken Decryptor](https://app.hackthebox.eu/challenges/Broken-Decryptor)
+* [Flippin Bank](https://app.hackthebox.eu/challenges/Flippin-Bank)
+
+* [Broken Decryptor](https://app.hackthebox.eu/challenges/Broken-Decryptor)
 
 ## Criptografía Asimétrica
