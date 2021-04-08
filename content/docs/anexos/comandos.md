@@ -12,7 +12,7 @@ weight: 045
 
 Una _Shell_ o _Terminal_ en la práctica es una interfaz de usuario de texto que permite la ejecución de comandos y programas de tipo script.
 
-En sistemas Linux modernos, puedes interactuar con la _Shell_ usando un emulador de terminal. En varias distribuciones actuales, el emulador de terminal por defecto es `bash`. Sin embargo, en Kali Linux la shell usada por defecto es `zsh`. 
+En sistemas Linux modernos, puedes interactuar con la _Shell_ usando un emulador de terminal. En varias distribuciones actuales, el emulador de terminal por defecto es `bash`. Sin embargo, en Kali Linux la shell usada por defecto es `zsh`.
 
 ## Abrir una ventana de terminal
 
@@ -30,11 +30,11 @@ Las shell tienen dos tipos de comandos que pueden ejecutar:
         * `cd hola` ingresa a la carpeta `hola`.
 * **Comandos externos** o aplicaciones, los cuales corresponden a aplicaciones guardadas en rutas del computador específicas (las cuales están definidas en la variable `$PATH`). Si el programa no está guardado en una ruta específica, hay que escribir la ruta completa.
 
-Para ejecutar un comando externo (programa), debo escribir la _ruta absoluta_ (se explica más adelante este concepto) de la ubicación del programa, o escribir una _ruta relativa_ si es que el programa no se encuentra en la misma carpeta en la que estoy. 
+Para ejecutar un comando externo (programa), debo escribir la _ruta absoluta_ (se explica más adelante este concepto) de la ubicación del programa, o escribir una _ruta relativa_ si es que el programa no se encuentra en la misma carpeta en la que estoy.
 
 Si el programa se encuentra en la misma carpeta en la que estoy, debo ejecutarlo así: `./programa , donde _programa_ es el nombre del programa en la misma carpeta. (más adelante se explica por qué esto funciona).
 
-Si el programa se encuentra en una ruta definida en el `$PATH`, puedo escribir su nombre solo. 
+Si el programa se encuentra en una ruta definida en el `$PATH`, puedo escribir su nombre solo.
 
 ## Variables
 
@@ -42,7 +42,7 @@ En la shell, es posible crear variables definiéndolas con `NOMBRE_VAR=$(valor)`
 
 Para usar esa variable en otro comando, debo anteponerle el símbolo `$`
 
-**Ejemplo**: 
+**Ejemplo**:
 
 ```bash
 VAR=$(echo HOLA)
@@ -63,7 +63,7 @@ Para moverme entre carpetas, puedo escribir `cd _ruta_`, donde _ruta_ es la ruta
 
 En los terminales existen dos formas de escribir rutas:
 
-* **Rutas Relativas**: son las rutas que parten sin slash. Para usar estas rutas se considera el directorio actual (`$PWD`), al cual se le concatena la ruta relativa. 
+* **Rutas Relativas**: son las rutas que parten sin slash. Para usar estas rutas se considera el directorio actual (`$PWD`), al cual se le concatena la ruta relativa.
     * **Ejemplos**:
         * Si escribo `cd Downloads` apenas abra el terminal, me moveré a `/home/kali/Downloads`
         * Si escribo `cd home` apenas abra el terminal, probablemente me tire un error (porque en la carpeta `/home/kali` no existe la carpeta `home`).
@@ -82,7 +82,7 @@ En todas las carpetas de Linux hay 2 carpetas especiales:
 
 ### Ejecutar como superusuario
 
-No entraremos mucho en detalle en esta parte, pero en Linux existe un tipo de usuario con poderes ilimitados, el cual es conocido como _superusuario_. En general, suele llamarse _root_, pero también es posible asignar a usuarios distintos poderes similares a los del superusuario. 
+No entraremos mucho en detalle en esta parte, pero en Linux existe un tipo de usuario con poderes ilimitados, el cual es conocido como _superusuario_. En general, suele llamarse _root_, pero también es posible asignar a usuarios distintos poderes similares a los del superusuario.
 
 Cuando estos poderes están asignados (en Kali Linux están asignados por defecto al usuario _kali_), puedes ejecutar programas con estos poderes anteponiendo la palabra `sudo` al comando que quieres ejecutar. A veces para confirmar la ejecución, la terminal te pide la contraseña del usuario actual.
 
@@ -166,11 +166,11 @@ No entraremos en detalle de cómo crear scripts de shell acá, pero les recomend
 
 La siguiente lista de comandos útiles irá creciendo con el tiempo, según los comandos que veamos en el curso.
 
-`man [comando]` - _Muestra información sobre el comando_
-`cat [archivo]` - _Muestra el contenido de un archivo_
-`grep` - _Buscar patrones en un texto_
-`strings [archivo]` - _Muestra los caracteres ascii dentro de un archivo_
-`whatis` - _Muestra en una linea el uso de un comando_
-`unzip [archivo]` - _Descomprime un archivo .zip_
-`file [archivo]` - _Dice que tipo de archivo es el archivo dado_
+`man [comando]` - _Muestra información sobre el comando_ \
+`cat [archivo]` - _Muestra el contenido de un archivo_ \
+`grep` - _Buscar patrones en un texto_ \
+`strings [archivo]` - _Muestra los caracteres ascii dentro de un archivo_ \
+`whatis` - _Muestra en una linea el uso de un comando_ \
+`unzip [archivo]` - _Descomprime un archivo .zip_ \
+`file [archivo]` - _Dice que tipo de archivo es el archivo dado_ \
 `xxd [archivo]` - _Muestra todo el contenido del archivo, pero en hexadecimal con su representación ascii a la derecha_

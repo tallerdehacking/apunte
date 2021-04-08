@@ -35,6 +35,12 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 
 ## Ingeniería Reversa
 
+* [Radare2](https://rada.re/n/radare2.html)
+* [Ghidra](https://ghidra-sre.org/)
+* [JD-GUI](https://java-decompiler.github.io/)
+* [uncompyle6](https://pypi.org/project/uncompyle6/)
+* [decompyle3](https://github.com/rocky/python-decompile3)
+
 ## Pwning
 
 ## OSINT

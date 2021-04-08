@@ -1,5 +1,5 @@
-El objetivo de este sitio es servir como apunte para el curso CC5312 - Taller de Hacking Competitivo de la [Universidad de Chile](https://uchile.cl).
-Al mismo tiempo, 
+El objetivo de este sitio es servir como apunte para el curso CC5325 - Taller de Hacking Competitivo de la [Universidad de Chile](https://uchile.cl).
+Al mismo tiempo,
 
 # Creadores y Licencia
 

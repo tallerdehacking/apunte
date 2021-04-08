@@ -89,6 +89,10 @@ A continuación se mencionan las referencias usadas para la realización de cada
 
 ## Ingeniería Reversa
 
+* [Assembler](https://www.tutorialspoint.com/assembly_programming/index.htm)
+* [Documentación radare2](https://book.rada.re/index.html)
+* [Tutorial radare2](https://www.megabeets.net/a-journey-into-radare-2-part-1/)
+
 ## Pwning
 
 ## OSINT
