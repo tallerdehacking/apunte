@@ -20,6 +20,7 @@ La esteganografía en texto consiste en esconder información dentro de un archi
 ### Ejemplos de técnicas
 
 * **Espacios y tabs Extra**: Es posible esconder mensajes combinando tabs y espacios al final de cada línea del mensaje. Una forma de hacer esto sería considerar que los espacios son 0s y los tabs son 1s, codificando un mensaje en binario no detectable a simple vista. En este caso, sería necesario hacer un programa personalizado que procesara el texto.
+  * Un ejemplo de aplicación que automatiza esto es [**StegSnow**](https://wiki.bi0s.in/steganography/stegsnow/), la cual permite esconder mensajes de texto al final de líneas de otros mensajes de texto.
 * **Zero-Width Joiner y Zero-Width Non-Joiner**: Dos caracteres especiales de unicode usados en el idioma Persa, los cuales no se notan visualmente pero podrían ser usados para codificar 0s y 1s, al igual que en el ejemplo anterior.  
 * [**Caracteres Unicode**](https://www.irongeek.com/i.php?page=security/unicode-steganography-homoglyph-encoder): Esta página permite esconder y extraer mensajes en un archivo de texto, usando tres técnicas distintas:
   * **Caracteres invisibles**: Escondidos al final del texto o entre espacios de palabras, corresponde a un rango de 128 caracteres Unicode que no se muestran pero cuentan como tales. Estos caracteres codifican un mensaje ASCII con sus últimos bytes.
