@@ -22,9 +22,9 @@ En general, estos sistemas usan propiedades aritméticas para crear problemas ma
 
 Fue el primer esquema de cifrado de llave pública. Se destaca por el uso de aritmética modular, definiendo los siguientes parámetros:
 
-* $n$ es un número formado por la multiplicación de dos números primos $p$ y $q$.
-* $x$ es nuestro __mensaje en texto plano__, codificado como un número perteneciente a $Z_n^*$. Debido a lo anterior, el tamaño de nuestro mensaje se encuentra limitado por la magnitud de $n$.
+* $n$ es un número formado por la multiplicación de dos números primos obtenidos al azar $p$ y $q$.
 * $Z_n^*$ es un grupo multiplicativo de enteros módulo $n$.
+* $x$ es nuestro __mensaje en texto plano__, codificado como un número perteneciente a $Z_n^*$. Debido a lo anterior, el tamaño de nuestro mensaje se encuentra limitado por la magnitud de $n$ (o sea, mientras más grande queramos que sea el mensaje a cifrar, más grande debe ser n).
 * $e$ es nuestro __exponente público__ y corresponde a un número menor que $(p-1)(q-1)$.
 * $d$ es el inverso multiplicativo de e en el grupo $Z_n^*$, o sea, $d = 1/e \mod n$.
 * $y$ es nuestro __mensaje cifrado__ y se calcula como $x^e \mod n$.
@@ -33,9 +33,9 @@ La __Llave pública__ en RSA es el par de elementos $(n, e)$, mientras que la __
 
 La gracia de saber que $n=pq$ es que esto nos permite calcular $d$ de forma eficiente, usando el [algoritmo euclidiano extendido](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm):
 
-$extended_gcd(a,b) = ax + by$ 
+$extended\_gcd(a,b) = ax + by$ 
 
-En el algoritmo anterior, el valor de $d$ es igual al valor de $a$ al ejecutar $extended_gcd(e, (p-1)(q-1))$.
+En el algoritmo anterior, el valor de $d$ es igual al valor de $a$ al ejecutar $extended\_gcd(e, (p-1)(q-1))$.
 
 Les recomendamos leer el capítulo 10 del libro *Serious Cryptography* para entender por qué ocurre esto.
 

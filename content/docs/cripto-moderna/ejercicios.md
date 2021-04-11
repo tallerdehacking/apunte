@@ -14,10 +14,6 @@ weight: 050
 
 * [**Cryptopals**](https://cryptopals.com/): Ejercicios de implementación de herramientas para ejecutar ataques criptográficos
 
-## Hashing
-
-
-
 ## Criptografía Simétrica
 
 ### Hack The Box
@@ -26,4 +22,17 @@ weight: 050
 
 * [Broken Decryptor](https://app.hackthebox.eu/challenges/Broken-Decryptor)
 
+### Otros
+
+* [Laboratorio 1, Pregunta 2, Curso CC5312 2020/1](https://users.dcc.uchile.cl/~eriveros/cc5312/laboratorios/laboratorio-1/)
+
 ## Criptografía Asimétrica
+
+### Hack The Box
+
+* []
+
+### Otros
+
+
+* [Laboratorio 1, Pregunta 1, Curso CC5312 2020/1](https://users.dcc.uchile.cl/~eriveros/cc5312/laboratorios/laboratorio-1/)
