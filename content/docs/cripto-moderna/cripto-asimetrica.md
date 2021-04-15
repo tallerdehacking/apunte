@@ -14,9 +14,15 @@ weight: 040
 
 La **criptografía asimétrica** o **criptografía de llave pública** se diferencia de la criptografía simétrica en que se usan llaves distintas para cifrar y descifrar mensajes, lo que hace posible publicar la llave de cifrado  con el objetivo de que otras personas puedan enviarnos mensajes que solo nosotros podremos descifrar, usando la llave de descifrado. Algo similar ocurre con la criptografía asimétrica usada para firmas digitales. Se usa una llave para "demostrar" que un mensaje fue enviado por nosotros mientras se publica la otra para que cualquiera pueda comprobar que la firma es válida.
 
-En general, estos sistemas usan propiedades aritméticas para crear problemas matemáticos que son muy difíciles de resolver con información limitada, pero que conociendo un parámetro secreto puedes resolver de forma fácil.
+En general, estos sistemas usan propiedades aritméticas para crear problemas matemáticos que son muy difíciles de resolver con información limitada, pero que conociendo un parámetro secreto puedes resolver de forma fácil. A este parámetro se le suele conocer como _trapdoor_.
+
+## Person-in-the-Middle en Criptografía Asimétrica
+
+Los protocolos de criptografía asimétrica más básicos no consideran el problema de validar que la llave pública recibida es de quien dice ser. Nada evita que una tercera entidad que controle el canal de comunicación (Eva) pueda hacerse pasar por Bob frente a Alice, y por Alice frente a bob, generando su propio par de llaves asimétricas $PK$, $SK$ y presentando la llave pública como si fuera la de los interlocutores respectivos de Alice y Bob. Eva recibiría mensajes de Alicia y Bob cifrados con su llave pública, los descifrará con la llave privada y los recifrará con la llave pública de sus interlocutores. Para evitar este problema, se podría firmar la llave pública enviada a la contraparte utilizando algún otro metodo de criptografía de llave pública o privada negociado con anterioridad.
 
 ## RSA
+
+Recibe su nombre por las iniciales de sus tres creadores: Rivest, Shamir y Adleman. Es uno de los sistemas criptográficos de llave pública más viejos.
 
 ### Cifrado
 
@@ -26,7 +32,7 @@ Fue el primer esquema de cifrado de llave pública. Se destaca por el uso de ari
 * $Z_n^*$ es un grupo multiplicativo de enteros módulo $n$.
 * $x$ es nuestro __mensaje en texto plano__, codificado como un número perteneciente a $Z_n^*$. Debido a lo anterior, el tamaño de nuestro mensaje se encuentra limitado por la magnitud de $n$ (o sea, mientras más grande queramos que sea el mensaje a cifrar, más grande debe ser n).
 * $e$ es nuestro __exponente público__ y corresponde a un número menor que $(p-1)(q-1)$.
-* $d$ es el inverso multiplicativo de e en el grupo $Z_n^*$, o sea, $d = 1/e \mod n$.
+* $d$ es el inverso multiplicativo de e en el grupo $Z_{(p-1)(q-1)}^*$, o sea, $d = 1/e \mod (p-1)(q-1)$.
 * $y$ es nuestro __mensaje cifrado__ y se calcula como $x^e \mod n$.
 
 La __Llave pública__ en RSA es el par de elementos $(n, e)$, mientras que la __llave privada__ es el valor $d$.
@@ -51,7 +57,7 @@ Una mala implementación de RSA puede generar problemas de seguridad que permiti
 * **$n$ muy pequeño**: En general, se suele usar un $n$ de tamaño 2048 bits o más para que el nivel de seguridad del valor cifrado sea similar a un cifrado con llave simétrica de 112 bits. En la práctica, un $n$ de tamaño 300 bits o menos, éste es fácilmente factorizable en un computador de uso personal.
 * **$e$ muy pequeño y mensajes sin padding**: Si $e$ es un valor muy pequeño, $x < n^d$ y el mensaje cifrado $y$ no tiene `padding`, es posible calcular la raíz $e$ésima de $y$ para calcular $x$.
 * **Mala generación de números primos**: Es muy importante que los números primos $p$ y $q$ se generen de forma aleatoria. En caso que esto no sea así, se corre el riesgo de encontrarlos, y con esto poder derivar el valor secreto $d$.
-* **Problemas de maleabilidad en valores cifrados**: Supongamos que ciframos con la misma llave pública dos valores pequeños $x_1$ y $x_2$, obteniéndose $y_1$ e $y_2$ respectivamente. Si $y_1y_2 < n$, una persona externa podría calcular el valor cifrado de $x_1x_2$ simplemente multiplicando los valores cifrados de $x_1$ y $x_2$. Para evitar este problema, se suele aplicar un `padding` especial a todos los valores cifrados con RSA, de forma que su representación numérica corresponda a un número grande.
+* **Problemas de maleabilidad en valores cifrados**: Supongamos que ciframos con la misma llave pública dos valores $x_1$ y $x_2$, obteniéndose $y_1$ e $y_2$ respectivamente. Una persona externa podría calcular el valor cifrado de $x_1x_2$ sin conocer $x_1$ y $x_2$ simplemente multiplicando los valores $y_1$ e $y_2$. Para evitar este problema, se suele aplicar un `padding` especial a todos los valores cifrados con RSA, de forma que su representación numérica corresponda a un número grande.
 * **Computación Cuántica** El problema de factorización en el cual se basa la seguridad de RSA es resolvible en tiempo polinomial con computadores cuánticos usando el [algoritmo de Shor](https://en.wikipedia.org/wiki/Shor%27s_algorithm). Afortunadamente, todavía no se conoce públicamente la existencia de un computador cuántico con la capacidad de factorizar números del tamaño de los usados en RSA.
 
 
@@ -65,7 +71,8 @@ El diagrama anterior, obtenido del libro **Serious Cryptography**, muestra en t�
 
 ![OAEP](../oaep_2.jpg)
 
-* Se genera $M = H || 000 ... 001 || K$ ($||$ significa concatenar), donde $H$ es una constante conocida, seguida de tantos bytes $00$ como sea necesario para que el tamaño de $M$ en bytes sea el mismo que el de $n$, seguido de un byte $01$. Finalmente, se coloca el mensaje original $K$.
+* Se genera $M = H || 000 ... 001 || K$ ($||$ significa concatenar), donde $H$ es una constante conocida de tamaño $h$, seguida de tantos bytes $00$ como sea necesario para que el tamaño de $M$ en bytes sea el mismo que el de $n$, seguido de un byte $01$. Finalmente, se coloca el mensaje original $K$.
+* Se genera un valor $R$ aleatorio de tamaño $h$.
 * La función $Hash1$ recibe de entrada un valor de largo igual al de $H$ y devuelve un valor de largo igual al de $M$. Llamaremos a este valor $A$
 * La función $Hash2$ recibe de entrada un valor de largo igual al de $M$ y devuelve un valor de largo igual al de $H$. Llamaremos a este valor $B$
 * El valor paddeado $P$ se construye de la siguiente forma: $P = 00 || B || A$. Este es el valor que se cifra con RSA finalmente.
@@ -104,21 +111,18 @@ En general se considera que Withfeld Diffie y Martin Hellman son los creadores d
 
 * Un número primo grande $p$ de forma de definir un grupo multiplicativo $Z_p^*$ sobre el cual trabajar.
 * Un número generador $g$, perteneciente a $Z_p^*$. En general se suele usar $g = 2$.
-* Cada parte que desea comunicarse debe elegir un número aleatorio en $Z_p^*$. Los denominaremos $a$ y $b$ para $Alicia$ y $Bob$ respectivamente.
+* Cada parte que desea comunicarse debe elegir un número aleatorio en $Z_p^*$. Los denominaremos $a$ y $b$ para $Alicia$ y $Bob$ respectivamente. Estos valores son secretos y nunca se intercambian.
 
 En este caso, se consideran como llave pública los valores $g^a$ y $g^b$, y como llave privada los valores $a$ y $b$.
 
 ![Diffie Hellman según Serious Cryptography](../dh.jpg)
 
-Para obtener el valor compartido que usarán como llave simétrica para comunicarse, primero Alicia envía a Bob el número $g^a$ y Bob envía a Alicia el número $g^b$. Si existiese una persona entre medio observando el intercambio, no tendría como deducir $a$ o $b$ a partir de $g^a$ o $g^b$ (al problema de obtener $x$ a partir de un $g^x \mod p$ se le conoce como de [el problema del logaritmo discreto](https://en.wikipedia.org/wiki/Discrete_logarithm) y se considera que no existe un método general de resolución para él). 
+* Para obtener el valor compartido que usarán como llave simétrica para comunicarse, primero Alicia envía a Bob el número $g^a$ y Bob envía a Alicia el número $g^b$. Si existiese una persona entre medio observando el intercambio, no tendría como deducir $a$ o $b$ a partir de $g^a$ o $g^b$ (al problema de obtener $x$ a partir de un $g^x \mod p$ se le conoce como de [el problema del logaritmo discreto](https://en.wikipedia.org/wiki/Discrete_logarithm) y se considera que no existe un método general de resolución para él). 
 
-Finalmente, para calcular el secreto compartido, cada parte eleva el valor recibido por su número aleatorio secreto. De esta forma, Alicia obtendrá $g^{a^b} = g^{ab}$, mientras que Bob obtendrá $g^{b^a} = g^{ba} = g^{ab}$. Ahora, ambas partes pueden usar ese valor compartido para cifrar mensajes.
+* Finalmente, para calcular el secreto compartido, cada parte eleva el valor recibido por su número aleatorio secreto. De esta forma, Alicia obtendrá $g^{a^b} = g^{ab}$, mientras que Bob obtendrá $g^{b^a} = g^{ba} = g^{ab}$. Ahora, ambas partes pueden usar ese valor compartido para cifrar mensajes.
 
 ### Problemas de seguridad DH
 
-![MITM en Diffie Hellman según Serious Cryptography](../dh_mitm.jpg)
-
-* **Man-In-The-Middle Attack (Ataque de Entidad al medio de la comunicación)**: DH provee un mecanismo para negociar un valor secreto entre dos partes, pero no tiene en cuenta la necesidad de autentificar que la persona con la que hablas es quien dice ser. Nada evita que una tercera entidad que controle el canal de comunicación (Eva) pueda hacerse pasar por Bob frente a Alice, y por Alice frente a bob, generando dos números aleatorios $c$ y $d$ y sus respectivas llaves públicas $g^c$ y $g^d$. Eva recibiría tanto $g^a$ como $g^b$ y los guardaría, mientras envía $g^c$ y $g^d$ a Alicia y Bob respectivamente. El secreto compartido entre Alicia y Eva será $g^{ac}$ mientras que el secreto compartido entre Bob y Eva será $g^{bd}$. Cada vez que Alicia o Bob envíen un mensaje a Eva, ella podrá descifrarlo usando el secreto del emisor, y luego recifrarlo con el secreto del receptor. Para evitar este problema, se podría firmar la llave pública enviada a la contraparte utilizando algún otro metodo de criptografía de llave pública negociado con anterioridad.
 * **Replay Attacks (Ataques de Repetición)**: Incluso si se pudiera autenticar el mensaje, no hay forma de demostrar si el mensaje que viene de Alicia fue emitido ahora o fue emitido hace tiempo, pero ahora Eva lo está reenviando. Una forma de evitar este problema es agregando interactividad al protocolo de generación del secreto compartido, por ejemplo, pidiendo recibir un "valor de confirmación" que utilice tanto la llave pública de Alicia como la de Bob en ese momento para su generación. 
 * **Uso directo de $g^{ab}$ como secreto compartido**: Sabemos por lo visto que $g^ab$ es un número aleatorio del grupo $Z_p^*$. Sin embargo, esto no significa que sea un número aleatorio (en el sentido que la probabilidad de cada bit de ser 0 o 1 sea la misma), dado que el grupo que forma el generador $g$ podría tener algún sesgo en la codificación de los números generados. Para evitar esta posibilidad, se suele hashear el valor $g^{ab}$ con alguna función resistente a colisiones, como SHA3 o alguna KDF.
 
