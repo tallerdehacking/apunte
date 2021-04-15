@@ -12,5 +12,5 @@ weight: 50
 
 ## Enlaces útiles
 
-* [RSA Numbers](https://crypto.stackexchange.com/questions/66085/bit-flipping-attack-on-cbc-mode)
+* [RSA Numbers](https://en.wikipedia.org/wiki/RSA_numbers)
 * [Laboratorio 1 CC5312](https://users.dcc.uchile.cl/~eriveros/cc5312/laboratorios/laboratorio-1/)
