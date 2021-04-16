@@ -22,9 +22,10 @@ weight: 50
     * Archivos de código si es que eran necesarios para resolverlo.
     * Enlaces a todas las herramientas usadas.
 * Al inicio del archivo Markdown mencionado anteriormente, debe escribir su nombre, su grupo y si era o no la persona encargada de resolver ese problema. 
-* También debe entregar una solución con código y _Writeup_ para todos los problemas en los que no estuvo encargado.
+* Recuerden que también deben entregar una solución con código y _Writeup_ para todos los problemas en los que no estuvieron encargados.
 
 [Formato de Writeup](./writeup.txt)
+
 [Cómo se ve al exportarlo en Joplin](./writeup.pdf)
 
 ## Problemas
@@ -34,7 +35,7 @@ weight: 50
 En su travesía a Mordor, la Comunidad del Anillo debe pasar por Khazad-dûm. Sin embargo, han encontrado con un obstáculo que no les permite continuar. 
 ¿Puedes ayudarlos a abrir las puertas y continuar su camino a destruir el anillo?
 
-[Archivo](./p1.txt)
+[Archivo](./p1.zip)
 
 
 ### P2: Morsifrador
