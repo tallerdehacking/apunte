@@ -6,11 +6,11 @@ draft: false
 weight: 50
 ---
 
-# Tarea 1
+# Tarea 1: Stego y Cripto Moderna.
 
 ## Indicaciones generales
 
-* Cuentan con **4 semanas** para desarrollar y ejecutar esta tarea desde el día de su lanzamiento.
+* Cuentan con **4 semanas** para desarrollar y ejecutar esta tarea desde el día de su lanzamiento. Revisen U-Cursos para ver la fecha de entrega más actualizada.
 * La ejecución de esta tarea es **grupal**, con el grupo armado a inicios del curso.
 * Se requiere que cada integrante del grupo esté "a cargo" de un problema de los entregados. Se debe explicitar el problema del cual cada integrante esté a cargo.
 * Dentro de un mismo grupo, **se pueden discutir libremente los problemas durante la ejecución de la tarea**. Sin embargo, **los problemas no se pueden discutir entre integrantes de grupos distintos, salvo en situaciones guiadas por el equipo docente en bloque de clase** (como por ejemplo, horarios de consultas en auxiliares o cátedras).
@@ -25,6 +25,7 @@ weight: 50
 * También debe entregar una solución con código y _Writeup_ para todos los problemas en los que no estuvo encargado.
 
 [Formato de Writeup](./writeup.txt)
+[Cómo se ve al exportarlo en Joplin](./writeup.pdf)
 
 ## Problemas
 
@@ -33,7 +34,7 @@ weight: 50
 En su travesía a Mordor, la Comunidad del Anillo debe pasar por Khazad-dûm. Sin embargo, han encontrado con un obstáculo que no les permite continuar. 
 ¿Puedes ayudarlos a abrir las puertas y continuar su camino a destruir el anillo?
 
-[Archivo](./p1_speak.txt)
+[Archivo](./p1.txt)
 
 
 ### P2: Morsifrador
@@ -61,8 +62,14 @@ lo que trama el equipo competidor.
 **Hint**: _Partan analizando el servicio que encontramos y cifra los mensajes. ¿Qué pueden descubrir
 de la codificación utilizada?_
 
-[Mensaje Cifrado](./p2_ciphered.txt)
+[Mensaje Cifrado](./p2.txt)
 
-## P3: En Construcción
+## P3: DesesperanRSA
 
-😲
+La flag se perdió para siempre 😥 La ciframos para evitar que se la robaran, pero la llave privada que usamos para cifrarla se perdió cuando formateamos el pendrive que mantenía su única copia.
+
+No te molestes en intentar encontrar la flag. Está cifrada con RSA de 2048 bits y perdida en un millar de frases sin sentido.
+
+Pero bueno, lo último que se pierde es la esperanRSA.
+
+[Código fuente y mensaje cifrado](./p3.zip)

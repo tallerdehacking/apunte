@@ -69,10 +69,10 @@
   url = "/writeups/misc/registro_htb"
   weight = 25
 
-#  [[main]]
-#  name = "Tareas"
-#  url = "/tareas/"
-#  weight = 27
+  [[main]]
+  name = "Tareas"
+  url = "/tareas/"
+  weight = 27
 
 
 [[main]]
