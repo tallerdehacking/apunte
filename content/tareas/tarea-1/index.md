@@ -5,9 +5,6 @@ date: 2021-04-11T09:19:42+01:00
 draft: false
 weight: 50
 ---
-
-# Tarea 1: Stego y Cripto Moderna.
-
 ## Indicaciones generales
 
 * Cuentan con **4 semanas** para desarrollar y ejecutar esta tarea desde el día de su lanzamiento. Revisen U-Cursos para ver la fecha de entrega más actualizada.
