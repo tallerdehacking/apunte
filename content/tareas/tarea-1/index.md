@@ -34,7 +34,7 @@ En su travesía a Mordor, la Comunidad del Anillo debe pasar por Khazad-dûm. Si
 
 [Archivo](./p1.zip)
 
-**Nota:** Esta flag no contiene la estructura `CC5325{FLAG}`. 
+**Nota:** Esta flag no contiene la estructura `CC5325{FLAG}` al encontrarla. Sabrán cual es la flag porque el mismo texto se los indicará.
 
 ### P2: Morsifrador
 
