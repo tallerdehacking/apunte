@@ -55,13 +55,14 @@ el cual cifra los mensajes en texto plano que se le envíen (considerando los ta
 el servicio no los codifica en código Morse). Este servicio lo pueden encontrar en `server.cc5325.xor.cl`,
 puerto `25102` y pueden usarlo sin preocupaciones, ya que no parece estar monitoreado.
 
-**Nota:** Recuerden estar conectados a la VPN del CEC.
-
 Requerimos que descifren el mensaje adjunto interceptado por nuestro equipo, y nos indiquen qué es
 lo que trama el equipo competidor.
 
 **Hint**: _Partan analizando el servicio que encontramos y cifra los mensajes. ¿Qué pueden descubrir
 de la codificación utilizada?_
+
+**Nota:** Recuerden estar conectados a la VPN del CEC.
+
 
 [Mensaje Cifrado](./p2.txt)
 
