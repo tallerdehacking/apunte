@@ -35,11 +35,39 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 
 ## Ingeniería Reversa
 
-* [Radare2](https://rada.re/n/radare2.html)
-* [Ghidra](https://ghidra-sre.org/)
-* [JD-GUI](https://java-decompiler.github.io/)
-* [uncompyle6](https://pypi.org/project/uncompyle6/)
-* [decompyle3](https://github.com/rocky/python-decompile3)
+* Decompilación
+  * [Radare2](https://rada.re/n/radare2.html)
+  * [Ghidra](https://ghidra-sre.org/)
+  * [JD-GUI](https://java-decompiler.github.io/)
+  * [uncompyle6](https://pypi.org/project/uncompyle6/)
+  * [decompyle3](https://github.com/rocky/python-decompile3)
+
+* Deobfuscación
+  * JavaScript
+    * [de4js](https://lelinhtinh.github.io/de4js/)
+    * [JS Nice](http://jsnice.org/)
+    * [dCode](https://www.dcode.fr/javascript-unobfuscator)
+    * [Code Amaze](https://codeamaze.com/code-beautifier/javascript-deobfuscator)
+    * [Deobfuscate JavaScript](http://deobfuscatejavascript.com/)
+
+  * Python
+    * [Bytecode Simplifier](https://github.com/extremecoders-re/bytecode_simplifier)
+    * [deopy](https://pypi.org/project/deopy/) (Python3.6+)
+
+  * PHP
+    * [UnPHP](https://www.unphp.net/)
+    * [PHPDeobfuscator](https://github.com/simon816/PHPDeobfuscator)
+    * [FOPO PHP Deobfuscator](https://github.com/Antelox/FOPO-PHP-Deobfuscator)
+    * [PHP Deobfuscator](http://jonhburn2.freehostia.com/decode/)
+
+  * Java
+    * [Deobfuscator](https://github.com/java-deobfuscator/deobfuscator)
+    * [jdec](https://jdec.app/)
+    * [All-in-one deobfuscator](https://github.com/D3Hunter/deobfuscator)
+
+  * .NET
+    * [de4dot](https://github.com/de4dot/de4dot)
+    * [Lista de deobfuscadores opensource](https://github.com/NotPrab/.NET-Deobfuscator)
 
 ## Pwning
 
