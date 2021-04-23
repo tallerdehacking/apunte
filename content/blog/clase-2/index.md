@@ -3,7 +3,7 @@ title: "Stego 2: Stego en texto, imágenes y audio"
 description: "Algunas técnicas de stego básicas."
 date: 2021-03-23T09:19:42+01:00
 draft: false
-weight: 50
+weight: 20
 ---
 
 {{< youtube fR8ZA-Qghfo >}}

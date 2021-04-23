@@ -3,7 +3,7 @@ title: "Stego 1: Conceptos básicos"
 description: "Codificaciones, Esolangs, ofuscación y criptografía clásica."
 date: 2021-03-22T09:19:42+01:00
 draft: false
-weight: 50
+weight: 10
 ---
 
 {{< youtube zrRPSccovi0 >}}

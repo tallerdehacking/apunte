@@ -3,7 +3,7 @@ title: "Criptografía 1: Hashing y Cripto Simétrica"
 description: "Conceptos muy básicos de criptografía y su aplicación en problemas de CTF"
 date: 2021-04-01T09:19:42+01:00
 draft: false
-weight: 50
+weight: 30
 ---
 
 {{< youtube jQaWe4L2O8w >}}

@@ -3,7 +3,7 @@ title: "Aplicaciones Web 2: XSS, inyecciones y RCE"
 description: "Introducción a aplicaciones web y técnicas básicas"
 date: 2021-04-13T09:19:42+01:00
 draft: false
-weight: 70
+weight: 60
 ---
 
 {{< youtube of6PEerz85k >}}
