@@ -47,6 +47,7 @@ A continuación se mencionan las referencias usadas para la realización de cada
   * [Especificación Oficial JPEG](https://jpeg.org/jpeg/)
   * [SVG (Wikipedia)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
   * [Especificación Oficial SVG](https://www.w3.org/TR/SVG2/)
+  
 ## Criptografía Moderna
 
   * Libro ["Serious Cryptography: A Practical Introduction to Modern Encryption" de Jean-Philippe Aumasson](https://www.amazon.com/Serious-Cryptography-Practical-Introduction-Encryption-ebook/dp/B0722MTGQV)
@@ -86,6 +87,26 @@ A continuación se mencionan las referencias usadas para la realización de cada
 * [CVE Details](https://www.cvedetails.com/)
 
 ## Análisis Forense
+
+### Comandos Útiles
+
+* [Tutorial de AWK](http://www.hcs.harvard.edu/~dholland/computers/awk.html)
+
+### Versionamiento
+
+* [Git (Wikipedia)](https://en.wikipedia.org/wiki/Git)
+* [Mercurial (Wikipedia)](https://en.wikipedia.org/wiki/Mercurial)
+* [Subversion (Wikipedia)](https://en.wikipedia.org/wiki/Apache_Subversion)
+
+### Recuperación de archivos
+
+* [**Testdisk** (Linux, software libre)](https://www.cgsecurity.org/wiki/TestDisk)
+* [**ddrescue** (GNU/Linux, software libre)](https://www.gnu.org/software/ddrescue/)
+* [**FSCK** (Linux, software libre)](https://en.wikipedia.org/wiki/Fsck)
+* [**CHKDSK** (Windows)](https://en.wikipedia.org/wiki/CHKDSK)
+* [**Recuva** (Windows, software privativo)](https://www.ccleaner.com/recuva)
+
+### Wireshark
 
 ## Ingeniería Reversa
 
