@@ -98,6 +98,21 @@ A continuación se mencionan las referencias usadas para la realización de cada
 * [Mercurial (Wikipedia)](https://en.wikipedia.org/wiki/Mercurial)
 * [Subversion (Wikipedia)](https://en.wikipedia.org/wiki/Apache_Subversion)
 
+### Almacenamiento en Linux
+
+* [Device Files (Wikipedia)](https://en.wikipedia.org/wiki/Device_file)
+* [Loop Devices (Wikipedia)](https://en.wikipedia.org/wiki/Loop_device)
+* [Particionado (Wikipedia)](https://en.wikipedia.org/wiki/Disk_partitioning)
+* [MBR (Wikipedia)](https://en.wikipedia.org/wiki/Master_boot_record)
+* [GPT (Wikipedia)](https://en.wikipedia.org/wiki/GUID_Partition_Table)
+* [FAT (Wikipedia)](https://en.wikipedia.org/wiki/File_Allocation_Table)
+* [ext4 (Wikipedia)](https://en.wikipedia.org/wiki/Ext4)
+* [NTFS (Wikipedia)](https://en.wikipedia.org/wiki/NTFS)
+* [ZFS (Wikipedia)](https://en.wikipedia.org/wiki/ZFS)
+* [Btrfs (Wikipedia)](https://en.wikipedia.org/wiki/Btrfs)
+* [HFS+ (Wikipedia)](https://en.wikipedia.org/wiki/HFS_Plus)
+* [APFS (Wikipedia)](https://en.wikipedia.org/wiki/Apple_File_System)
+
 ### Recuperación de archivos
 
 * [**Testdisk** (Linux, software libre)](https://www.cgsecurity.org/wiki/TestDisk)

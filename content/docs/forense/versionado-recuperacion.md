@@ -56,6 +56,44 @@ Además, define los siguientes conceptos para manejar el versionamiento:
 
 La forma más fácil de hacerlo es con un programa de interfaz gráfica, como por ejemplo, `gitk`. En clases veremos cómo usar este programa.
 
+## Almacenamiento en Linux
+
+En esta parte del apunte hablaremos un poco acerca del manejo de dispositivos de almacenamiento en Linux. También mostraremos algunos comandos para ejecutar tareas básicas para crear, listar y borrar particiones.
+
+### Conceptos Generales
+
+* **Dispositivo de Almacenamiento Secundario**: Cualquier dispositivo que permita almacenar información de forma persistente. Algunos ejemplos de este tipo de dispositivos son los discos duros, las unidades de estado sólido (SSD), las tarjetas flash (SD, MMC, cartuchos de videojuegos), diskettes, CDs (no permiten reescritura), DVDs, etc.
+* **Tabla de Particiones**: Un dispositivo de almacenamiento secundario puede dividirse en una o más unidades lógicas de almacenamiento, las cuales se conocen como particiones. La cantidad de particiones y su ubicación en el espacio físico de almacenamiento se definen en la **tabla de particiones**. Las siguientes son tipos de tablas de particiones comunes:
+  * **MBR**: (Master boot record) Tabla de particiones usada en versiones antiguas de Windows y Linux. Tenía varias limitaciones, como tamaño máximo de particiones y cantidad de particiones por disco.
+  * **GPT**: (GUID Partition Table) Tabla de particiones usada en computadores modernos con Windows y Linux. Es más 
+* **Sistemas de Archivos**: Guardar información en un dispositivo de almacenamiento no es una tarea directa. En general, aparte de la información a guardar, uno desea guardar metainformación extra asociada a cada archivo, como nombre, fecha de creación o modificación, propietario, permisos, ubicación, etc. Al mismo tiempo, uno podría querer que el mismo dispositivo se encargue de algunas tareas comunes, como llevar respaldo de los archivos a medida se modifican u optimizar el uso de espacio en casos en que hay mucha información redundante. Este tipo de funcionalidades se pueden definir a nivel del sistema de archivos asociado a la partición. Algunos sistemas de archivos conocidos son:
+  * **FAT, FAT12, FAT16, FAT32 y exFAT**:  File Allocation Table es un sistema de archivos creado a fines de los años 70. Cada versión mencionada se diferencia en el tamaño máximo de los archivos que puede almacenar y del tamaño máximo de la partición. FAT32 soporta volúmenes de hasta 2 TeraBytes, mientras que exFAT soporta hasta 128 PetaBytes.
+  * **NTFS**: Sistema de Archivos propietario de Microsoft y usado principalmente en la familia de sistemas operativos Windows NT. Soporta una mayor cantidad de metadatos, el uso de listas de control de acceso y el uso de [Journaling](https://en.wikipedia.org/wiki/Journaling_file_system) para evitar errores de escritura.
+  * **ext2, ext3 y ext4**: Sistemas de archivos usados en Linux principalmente. ext3 y ext4 se caracterizan por ser  _journaled_. Las versiones más nuevas soportan además volúmenes más grandes.
+  * **ZFS**: Sistema de archivos con hartas características que lo hacen ideal para el manejo de respaldos o grandes volúmenes de datos.
+  * **BTRFS**: Sistema de archivos con capacidades de integridad y respaldo de archivos.
+  * **HFS, HFS+ y APFS**:  Sistemas de archivos usados principalmente en sistemas operativos OSX/macOS. HFS+ y APFS son _journaled_. APFS posee funcionalidades de respaldos, cifrado, optimizaciones para SSDs y revisión de integridad de archivos como parte de las funcionalidades básicas del sistema de archivos.
+
+* **Montar/Desmontar un sistema de archivos**: Para utilizar un sistema de archivos en Linux, es necesario montarlo en una carpeta del sistema. Luego de hacerlo, los archivos del sistema de archivos se verán en esa carpeta.
+
+* **_Block Devices_**: En Linux, varios dispositivos se comportan como si fueran archivos en el sistema. En el caso de los dispositivos de almacenamiento, estos se suelen mostrar como dos tipos de archivos. En la práctica, los _Block Devices_ permiten leer y escribir directamente de o en los dispositivos de almacenamiento. Por ejemplo, si quisiera copiar un disco completo identificado en el sistema como el archivo `/dev/sda`, basta con _copiar_ esa ruta por completo (con un comando especial). Lo mismo si quisiera cargar un respaldo en un disco (debo _escribir_ en ese archivo la imagen de respaldo).
+
+* **Dispositivos loop**: Son seudo dispositivos de almacenamiento, los cuales permiten hacer que un archivo común y corriente actúe como un dispositivo de bloques. Si se montan con un comando especial, aparecerán como dispositivos de bloque.
+
+### Herramientas útiles
+* `lsblk`: Muestra todos los dispositivos de almacenamiento de bloque en el sistema.
+* `gparted`: Permite crear particiones con una interfaz gráfica muy simple de usar.
+* `gnome-disks`: Permite revisar dispositivos de almacenamiento conectados, crear imágenes de ellos y montar imágenes virtuales. También tiene funcionalidades limitadas para formatear y crear particiones y tablas de particiones.
+* `dd`: Permite copiar a bajo nivel información de sistemas de archivos en respaldos u otros sistemas de archivos. Debido a que trabaja en muy bajo nivel (byte a byte en el dispositivo), su mal uso puede ser muy peligroso.
+  * Ej: `dd if=/dev/sda of=backup.img status=progress`: Copia el dispositivo de bloque `/dev/sda` al archivo backup.img
+* `losetup`: Permite configurar _loop devices_:
+  * Ej: `sudo losetup /dev/loop0 backup.img` transforma la imagen en un dispositivo _loop_. 
+* `mount`: Permite montar un sistema de archivos en una carpeta.
+  * Ej: `sudo mount /dev/sda /mnt` Monta el dispositivo de bloque `/dev/sda` en la carpeta `/mnt`
+* `umount`: Permite desmontar una carpeta a la que previamente se le montó un sistema de archivos.
+  * Ej: `sudo umount /dev/sda` desmonta el dispositivo de bloque `/dev/sda`.
+  * Ej2: `sudo umount /mnt` desmonta el dispositivo de bloque que se montó previamente en `/mnt`.
+
 ## Recuperación de archivos
 
 En problemas de forense, puede que sea necesario tratar con soportes de almacenamiento dañados o con archivos borrados. A continuación se nombran algunos de estos problemas posibles y qué programas podemos usar para resolverlos.
@@ -76,10 +114,10 @@ En problemas de forense, puede que sea necesario tratar con soportes de almacena
 * [**CHKDSK** (Windows)](https://en.wikipedia.org/wiki/CHKDSK)
 * [**Recuva** (Windows, software privativo)](https://www.ccleaner.com/recuva)
 
+
 ## Otros tipos de recuperación de información
 
 Lamentablemente, en el curso no alcanzaremos a ver los siguientes conceptos. Sin embargo, les dejamos algunas referencias para que, en caso que les interesen, los puedan ver por su cuenta:
 
 * **Recuperación de información en RAM**: La memoria RAM en un computador se destaca por ser de rápido acceso (comparada con la memoria secundaria), pero volátil. Al cortar la energía del computador, los datos almacenados en RAM se pierden en forma parcial o total. En los casos en los que se requiera recuperar información presente en RAM, suele generarse una imagen del estado completo del sistema (almacenamiento secundario y RAM), para posteriormente analizarla con mayor tranquilidad. 
 * **Recuperación de información en máquinas virtuales**: En algunos problemas de CTF, se entregan imágenes del estado completo de una máquina virtual, las cuales contienen fundamentalmente la RAM del sistema al momento de estar ejecutándose. Existen programas especiales para revisar esta información.
-
