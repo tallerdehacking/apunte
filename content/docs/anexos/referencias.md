@@ -47,7 +47,7 @@ A continuación se mencionan las referencias usadas para la realización de cada
   * [Especificación Oficial JPEG](https://jpeg.org/jpeg/)
   * [SVG (Wikipedia)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
   * [Especificación Oficial SVG](https://www.w3.org/TR/SVG2/)
-  
+
 ## Criptografía Moderna
 
   * Libro ["Serious Cryptography: A Practical Introduction to Modern Encryption" de Jean-Philippe Aumasson](https://www.amazon.com/Serious-Cryptography-Practical-Introduction-Encryption-ebook/dp/B0722MTGQV)
@@ -136,3 +136,15 @@ A continuación se mencionan las referencias usadas para la realización de cada
 * [Google Hacking](https://en.wikipedia.org/wiki/Google_hacking)
 * [Google Dorks](https://gbhackers.com/latest-google-dorks-list/)
 * [Github Search](https://github.com/search/advanced)
+
+## Hacking y Seguridad en General
+
+### Escritas
+* [The Hacker News](https://thehackernews.com/): Noticias relacionadas a seguridad.
+* [Phrack](http://www.phrack.org/): Revista de hackers y especialistas en seguridad.
+
+### YouTube
+* [IppSec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA): Resolución de máquinas retiradas en HTB.
+* [LiveOverflow](https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w): CTFs y hacking de todo tipo.
+* [Stacksmashing](https://www.youtube.com/channel/UC3S8vxwRfqLBdIhgRlDRVzw): Reversing y hardware hacking.
+* [PwnFunction](https://www.youtube.com/channel/UCW6MNdOsqv2E9AjQkv9we7A): Explica distintos tipos de ataques de manera simplificada.
