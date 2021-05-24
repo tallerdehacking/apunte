@@ -26,6 +26,15 @@ weight: 60
 
 [Cómo se ve al exportarlo en Joplin](./writeup.pdf)
 
+## Recursos para enumeración y fuerza bruta
+
+Para que todos tengan las mismas listas de enumeración y fuerza bruta, les entregamos estos archivos.
+Puede o puede que no sea necesaria la fuerza bruta o la enumeración para la resolución de los problemas.
+
+* [Enumeración web](./web.txt)
+* [Nombres de usuario](./users.txt)
+* [Contraseñas](./passwords.txt)
+
 ## Problemas
 
 ### P1: Panel de Monitoreo
