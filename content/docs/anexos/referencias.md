@@ -121,7 +121,18 @@ A continuación se mencionan las referencias usadas para la realización de cada
 * [**CHKDSK** (Windows)](https://en.wikipedia.org/wiki/CHKDSK)
 * [**Recuva** (Windows, software privativo)](https://www.ccleaner.com/recuva)
 
+### Modelo de Internet
+
+* [Modelo de Internet (Wikipedia)](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+* [Capa de Enlace (Wikipedia)](https://en.wikipedia.org/wiki/Link_layer)
+* [Capa de Red (Wikipedia)](https://en.wikipedia.org/wiki/Internet_layer)
+* [Capa de Transporte (Wikipedia)](https://en.wikipedia.org/wiki/Transport_layer)
+* [Capa de Aplicación (Wikipedia)](https://en.wikipedia.org/wiki/Application_layer)
+
 ### Wireshark
+
+* [Página Principal de Wireshark](https://www.wireshark.org/)
+* [Manual de Wireshark](https://www.wireshark.org/docs/wsug_html/)
 
 ## Ingeniería Reversa
 
