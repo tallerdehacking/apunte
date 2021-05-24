@@ -3,7 +3,7 @@ title: "Tarea 2 2021/1"
 description: "Apps web y forénsico"
 date: 2021-04-11T09:19:42+01:00
 draft: false
-weight: 50
+weight: 60
 ---
 ## Indicaciones generales
 
@@ -37,7 +37,7 @@ Ya que somos expertos en el tema sabemos que este sistema es _inhackeable_.
 
 [Link a la plataforma](http://server.cc5325.xor.cl:4657/)
 
-### P2:
+### P2: Hacker Job
 
 Un grupo hacker quiere tomar el control de este sitio, y ustedes están a cargo de hacerlo.
 El objetivo es ganar privilegios de uno de los administradores.
