@@ -142,6 +142,13 @@ A continuación se mencionan las referencias usadas para la realización de cada
 
 ## Pwning
 
+### Escalamiento de Privilegios
+
+* [`setuid` y `setgid` (Wikipedia)](https://en.wikipedia.org/wiki/Setuid)
+* [`sudo` (Wikipedia)](https://en.wikipedia.org/wiki/Sudo)
+* [Referencia a `/etc/sudoers`](https://toroid.org/sudoers-syntax)
+
+
 ## OSINT
 
 * [Google Hacking](https://en.wikipedia.org/wiki/Google_hacking)
