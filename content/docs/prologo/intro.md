@@ -1,5 +1,5 @@
 ---
-title : "Prólogo"
+title: "Prólogo"
 lead: ""
 date: 2020-10-06T08:48:45+00:00
 draft: false
@@ -8,9 +8,7 @@ menu:
   docs:
     parent: "prologo"
 weight: 010
-
 ---
-
 
 Este apunte recoge los contenidos planificados para el curso **CC5325 - Taller de Hacking Competitivo** del [Departamento de Ciencias de la Computación](https://dcc.uchile.cl) de la [Facultad de Ciencias Físicas y Matemáticas](https://ingenieria.uchile.cl) de la [Universidad de Chile](https://uchile.cl). El objetivo de este curso es entregar a el o la estudiante las herramientas básicas necesarias para introducirse en el mundo de competencias y desafíos de ciberseguridad, además de motivarle a conocer más varios conceptos relacionados con ciberseguridad en el mundo profesional.
 
@@ -19,6 +17,8 @@ Este apunte también funciona como un documento vivo, en el que se le invita a q
 El apunte está basado en muchas fuentes de información disponibles en Internet, así como también algunos libros relacionados al tema. Estos documentos se citan en el anexo Referencias.
 
 ## ¿Por donde partir?
+
+En caso que no estés tomando el curso, te recomendamos seguir estos pasos para aprovechar el apunte:
 
 ### Contenido del curso
 
