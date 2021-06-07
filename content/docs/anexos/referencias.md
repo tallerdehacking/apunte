@@ -148,6 +148,7 @@ A continuación se mencionan las referencias usadas para la realización de cada
 - [Consejos para Escalamiento de Privilegios de d00mfist1](https://d00mfist1.gitbooks.io/ctf/content/privilege_escalation_-_linux.html)
 - [Guía de escalamiento de privilegios de Iamnasef](http://iamnasef.com/walkthrough/linesc/)
 - [Repositorio con muchos scripts de escalamiento de privilegios](https://github.com/Ignitetechnologies/Privilege-Escalation)
+- [GTFOBins](https://gtfobins.github.io/)
 
 ## OSINT
 

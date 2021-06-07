@@ -66,7 +66,7 @@ A continuación mencionaremos algunos ejemplos de programas comunes que podrían
 - **less**: `less` es un programa que sirve para ver archivos de texto extensos de forma paginada. Si se presiona la tecla `v` luego de abrir un archivo con `less`, se abrirá `vim` con los mismos permisos que `less`.
 - **more**: Al igual que `less`, `more` permite leer archivos extensos. Si `more` abre un archivo cuya cantidad de líneas es mayor a la cantidad de líneas de la ventana de terminal, es posible levantar una shell escribiendo `!/bin/bash`.
 
-Muchos otros ejemplos aparecen en [este apunte](https://d00mfist1.gitbooks.io/ctf/content/privilege_escalation_-_linux.html), en la sección _Abusing sudo-rights_.
+Muchos otros ejemplos aparecen en [este apunte](https://d00mfist1.gitbooks.io/ctf/content/privilege_escalation_-_linux.html), en la sección _Abusing sudo-rights_. Además, [este sitio](https://gtfobins.github.io/) agrupa una lista colaborativa de cientos de binarios con estas características.
 
 La recomendación general es que al encontrar algún otro programa con `setuid` y `owner root`, investiguen si existe una forma de ejecutar código arbitrario. Si el programa es conocido, busquen en su documentación o sitios de referencia y ayuda. Si el programa es un script propio de la máquina, revisen su código fuente para ver cómo abusar de sus funcionalidades para ejecutar código arbitrario.
 
