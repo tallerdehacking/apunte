@@ -22,7 +22,7 @@ El SO también permite contar con "grupos", los cuales están definidos en el ar
 
 Los grupos suelen servir para definir permisos tanto en archivos como en ejecución de comandos (como cuando se agrega un usuario al grupo `wheel` para tener permisos de superusuario). Más adelante explicaremos como se hace esto.
 
-### Owners y Groups
+### Owners y Groups de archivos
 
 En sistemas de archivo compatibles con Linux, cada archivo creado tiene las siguientes propiedades:
 
@@ -44,7 +44,7 @@ Cada archivo o carpeta posee 9 bits para definir permisos:
 - 3 bit están asociados a todos los demás usuarios (`other`) (o sea, que no cumplan alguna de las otras dos condiciones).
 
 ```
-| R W X | R W X | R W X |
+| r w x | r w x | r w x |
 | x x x | x x x | x x x |
 | Owner | Group | Other |
 ```
@@ -58,7 +58,7 @@ Las acciones de permisos son las siguientes:
 Los permisos suelen ser representados como números en octal:
 
 ```
-| R W X | R W X | R W X |
+| r w x | r w x | r w x |
 | 1 0 0 | 1 1 1 | 0 0 0 |
 | Owner | Group | Other |
 ```
@@ -85,7 +85,7 @@ En sistemas basados en Unix, existe un usuario con privilegios totales, denomina
 
 Para resolver este problema, existe un comando llamado `sudo`, el cual permtie ejecutar otros comandos que requieran privilegios de superusuario si y solo sí se está incluído en un archivo especial: `/etc/sudoers`. Varios sistemas operativos tienen configurado este archivo por defecto para que los usuarios incluidos en el grupo `sudo` o `wheel` puedan ejecutar comandos de superusuario, pero nada evita que uno pueda editar `/etc/sudoers` para cambiar este comportamiento.
 
-### Archivo `/etc/sudoers`
+#### Archivo `/etc/sudoers`
 
 El archivo `/etc/sudoers` tiene una sintaxis especial para permitir a un usuario, a un grupo de usuarios o a todos los usuarios ejecutar uno o más comandos con permisos de superusuario. A continuación unos ejemplos de configuración, pero es posible leer más sobre ella en [este artículo](https://toroid.org/sudoers-syntax):
 
@@ -105,15 +105,15 @@ Esto quiere decr que el usuario `User` puede ejecutar el comando `Command` como 
 
 ### `setuid`, `setgid` y `sticky bit`
 
-Existen bits de permisos especiales en sistemas operativos basados en Unix, los cuales permiten la ejecución de un programa como si se fuera otro usuario o se estuviera en otro grupo. Estos se llaman `setuid` y `setgid` (para usuarios y grupos, respectivamente). Algunos comandos necesitan tener estos bits seteados para que puedan ser usados por cualquier otro usuario en el sistema.
+Existen bits de permisos especiales en sistemas operativos basados en Unix, los cuales permiten la ejecución de un programa como si se fuera el usuario owner del archivo o se estuviera en el group del archivo. Estos se llaman `setuid` y `setgid` (para usuarios y grupos, respectivamente). Algunos comandos necesitan tener estos bits seteados para que puedan ser usados por cualquier otro usuario en el sistema.
 
 También existe el `sticky bit`, el cual en Linux permite configurar un directorio para que solamente su propietario pueda renombrar o eliminar archivos en él.
 
 Su orden es el siguiente
 
-# | U | G | S |
-
+```
 | setuid | setgid | sticky |
+```
 
 Para activar estos bits es necesario declarar un número octal extra al usar chmod. Por ejemplo, `chmod 6755` cambia los permisos del archivo a `755`, pero al mismo tiempo setea los bit `setuid`, `setgid` y `sticky`. Estos bit se verán de la siguiente forma al hacer `ls`:
 
@@ -123,10 +123,9 @@ total 0
 drwxr-xr-x  2 eriveros eriveros  60 May 31 01:44 .
 drwxrwxrwt 24 root     root     720 May 31 01:44 ..
 -rwsr-sr-t  1 eriveros eriveros   0 May 31 01:44 file
-[eriveros@arcozen cc5325]$
 ```
 
-Por si no se nota, los bits `x` de `user` y `group` cambian a `s` para indicar que se cuenta con los bits `setuid` y `setgid` fijados. En el caso del sticky bit, este se verá como una `t` en el bit de ejecución del archivo.
+Por si no se nota, los bits `x` de `user` y `group` cambian a `s` (o `S` si la flag `x` del usuario o grupo no están seteadas) para indicar que se cuenta con los bits `setuid` y `setgid` fijados. En el caso del sticky bit, este se verá como una `t` en el bit de ejecución `other` del archivo (o una `T` si es que other no tiene permiso de ejecución).
 
 - **En archivos**:
   - `setuid`: Activar este bit sirve para que el usuario ejecute el programa como si fuera el usuario dueño del programa.
