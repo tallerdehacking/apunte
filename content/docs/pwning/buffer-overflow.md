@@ -29,7 +29,7 @@ Como ya se vio en el capítulo de Reversing, el código que escribimos al progra
 
 ### Manejo de Memoria
 
-![Manejo de Memoria](2021-06-17-00-17-38.png)
+![Manejo de Memoria](../2021-06-17-00-17-38.png)
 
 La imagen superior muestra cómo se ordena la memoria en un sistema x86. La imagen muestra las direcciones de memoria partiendo abajo y creciendo hacia arriba. Estas tienen un tamaño de 32 bits (4 bytes) y se acceden de 4 en 4 bytes.
 
@@ -52,11 +52,11 @@ Al entrar a un nuevo frame, se guarda la dirección de memoria actual dentro de 
 
 El siguiente conjunto de imágenes muestra cómo se opera en la pila y cómo se crean frames.
 
-![](2021-06-17-00-41-38.png)
+![](../2021-06-17-00-41-38.png)
 
-![](2021-06-17-00-41-49.png)
+![](../2021-06-17-00-41-49.png)
 
-![](2021-06-17-00-42-07.png)
+![](../2021-06-17-00-42-07.png)
 
 Para eliminar un frame, se siguen los pasos inversos de la segunda imagen, es decir, se cargan los valores de más arriba de la pila como `esp`, `ebp` y `eip`.
 
