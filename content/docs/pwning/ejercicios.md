@@ -10,3 +10,11 @@ menu:
 weight: 050
 ---
 
+### Escalamiento de Privilegios
+
+[Día 8 (Task 14) del Advent of Cyber 2019 (TryHackMe)](https://tryhackme.com/room/25daysofchristmas)
+
+[Linux PrivEsc Arena](https://tryhackme.com/room/linuxprivescarena)
+
+### Buffer Overflow
+

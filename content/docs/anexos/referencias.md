@@ -149,6 +149,7 @@ A continuación se mencionan las referencias usadas para la realización de cada
 - [Guía de escalamiento de privilegios de Iamnasef](http://iamnasef.com/walkthrough/linesc/)
 - [Repositorio con muchos scripts de escalamiento de privilegios](https://github.com/Ignitetechnologies/Privilege-Escalation)
 - [GTFOBins](https://gtfobins.github.io/)
+- [Caso de Estudio práctico de Buffer Overflow](https://padraignix.github.io/reverse-engineering/2019/09/28/buffer-overflow-practical-case-study/)
 
 ## OSINT
 

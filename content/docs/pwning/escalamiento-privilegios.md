@@ -80,3 +80,7 @@ Existen muchas herramientas de código abierto que automatizan algunas de las re
 - [LinPrivchecker.py](https://github.com/reider-roque/linpostexp/blob/master/linprivchecker.py)
 
 Les recomendamos revisar también [este enlace](https://github.com/Ignitetechnologies/Privilege-Escalation) para encontrar harto material de escalamiento de privilegios.
+
+### Reverse Shell
+
+En algunas ocasiones, si bien no podemos escalar privilegios directamente en el sistema, sí podemos hacer que el usuario root ejecute (a través de un trabajo periódico o de otra forma) un comando a nuestra elección. En estos casos, nos conviene levantar una `reverse shell`, es decir, hacer que el usuario root abra una sesión de shell y la deje disponible para que nos conectemos a ella vía `nc`. Pueden ver la sección dedicada a `reverse shells` en la unidad de Aplicaciones Web para encontrar una explicación más detallada de esta técnica.
