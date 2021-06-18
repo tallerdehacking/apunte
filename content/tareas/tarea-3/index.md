@@ -37,7 +37,7 @@ Para conseguir la clave de acceso, infectamos el computador de un querido y cono
 
 Lamentablemente, nos descubrieron a mitad de la exfiltración, por lo que tuvimos que destruir el contenido de los servidores que recibían las llaves para eliminar las pruebas de nuestro ataque. Debido a esto, solo logramos rescatar de la operación un archivo .pcap. ¿Habrá alguna forma de descifrar el tráfico web y conseguir la contraseña del servidor web del DCC?
 
-[Archivo PCAP](../t3.pcapng)
+[Archivo PCAP](./t3.pcapng)
 
 ### P2: Paranoia
 
