@@ -142,6 +142,8 @@ A continuación se mencionan las referencias usadas para la realización de cada
 
 ## Pwning
 
+### Escalamiento de Privilegios
+
 - [`setuid` y `setgid` (Wikipedia)](https://en.wikipedia.org/wiki/Setuid)
 - [`sudo` (Wikipedia)](https://en.wikipedia.org/wiki/Sudo)
 - [Referencia a `/etc/sudoers`](https://toroid.org/sudoers-syntax)
@@ -149,6 +151,10 @@ A continuación se mencionan las referencias usadas para la realización de cada
 - [Guía de escalamiento de privilegios de Iamnasef](http://iamnasef.com/walkthrough/linesc/)
 - [Repositorio con muchos scripts de escalamiento de privilegios](https://github.com/Ignitetechnologies/Privilege-Escalation)
 - [GTFOBins](https://gtfobins.github.io/)
+
+### Buffer Overflow
+- [Jumps x86](http://unixwiz.net/techtips/x86-jumps.html)
+- [Shellcode](https://en.wikipedia.org/wiki/Shellcode)
 - [Caso de Estudio práctico de Buffer Overflow](https://padraignix.github.io/reverse-engineering/2019/09/28/buffer-overflow-practical-case-study/)
 
 ## OSINT

@@ -21,11 +21,24 @@ Partiremos este capítulo explicando cómo funciona el manejo de memoria en sist
 Como ya se vio en el capítulo de Reversing, el código que escribimos al programar en un lenguaje compilado es transformado en un código equivalente en funcionalidad pero mucho más simple de interpretar, denominado _Assembler_ (ASM). Este código corre con varias restricciones que no aplican en lenguajes de programación de más alto nivel:
 
 * Las variables utilizables de forma directa se llaman **registros** y son limitadas en número y capacidad. Dependiendo de la arquitectura y del tipo de procesador, un registro puede guardar entre 8 y 256 bits. Los registros más importantes para conocer son: 
-  - `EAX`, `EBX`, `ECX`, `EDX`: Registros de 32 bits utilizados de forma general, por ejemplo, para almacenar argumentos de una función. Si se les quita la `E` que llevan de prefijo, representan registros de 16 bits, y si se les cambia la `E` por una `R`.
-  - `EBP`, `ESP`, `EDI`, `ESI`, `EIP`: Punteros, es decir, apuntan direcciones de memoria RAM en las cuales se encuentran datos a utilizar. La utilidad específica de algunos de ellos se explicará más adelante.
+  - `eax`, `ebx`, `ecx`, `edx`: Registros de 32 bits utilizados de forma general, por ejemplo, para almacenar argumentos de una función. Si se les quita la `e` que llevan de prefijo, representan registros de 16 bits, y si se les cambia la `E` por una `r`.
+  - `ebp`, `esp`, `edi`, `esi`, `eip`: Punteros, es decir, apuntan direcciones de memoria RAM en las cuales se encuentran datos a utilizar. La utilidad específica de algunos de ellos se explicará más adelante.
   - Operaciones `add`, `sub`, `mul`, `div`, `and`, `xor`: Sirven para operar entre 2 registros o constantes. El valor se guarda en un tercer registro definido en la misma instrucción.
   - Operaciones de pila `push` y `pop`: permiten sacar y agregar datos de una **pila**, la cual se definirá en la siguiente sección
-  - Operaciones de control de flujo `cmp`, `je`, `jne`, `jz`, `jg`, `jl`: Permiten condicionar la ejecución de código según un resultado de comparación previo (con `cmp`). También permiten implementar **loops**.
+  - Operaciones de control de flujo `cmp`, `je`, `jne`, `jg`, `jl`: Permiten condicionar la ejecución de código según un resultado de comparación previo (con `cmp`). También permiten implementar **loops**.
+  - `flags` es un [registro especial](https://en.wikipedia.org/wiki/FLAGS_register) donde se guarda información sobre el estado del procesador. Algunas de las cosas que se guardan en él son:
+    - `OF` o _Overflow Flag_, muestra si la última operación aritmética hizo overflow (hay reserva)
+    - `PF` o _Parity Flag_, indica si el número de bits en valor 1 de la última operación binaria realizada es par o impar.
+    - `ZF` o _Zero Flag_, indica que un resultado aritmético previo tenía valor 0.
+    - `SF` o _Sign Flag_, indica el signo de la última operación aritmética
+    - `CF` o _Carry Flag_, es usada para guardar una reserva en una operación aritmética, de forma de poder hacer operaciones con números más grandes que el tamaño de los registros.
+### Punteros
+
+A continuación mencionamos la utilidad de algunos punteros importantes:
+
+ - `ebp` y `esp` marcan el inicio y el tope de la pila, respectivamente.
+ - `edi` y `esi` se suelen usar para operaciones de copia de Strings
+ - `eip`: o _instruction pointer_, apunta a la dirección de memoria en la cual se ubica la instrucción que se está ejecutando en ese momento.
 
 ### Manejo de Memoria
 
@@ -41,6 +54,14 @@ Existen 6 bloques importantes en la memoria completa:
  - **BSS**: Memoria variable reservada antes de ejecutar el _main_ de un programa en C.
  - **Data**: Constantes.
  - **Text**: Instrucciones en ASM a ejecutar.
+
+### El programa en memoria y su ejecución
+
+En el bloque `Data` se ubica una copia de las instrucciones que componen el programa que se está ejecutando. Debido a lo anterior, este bloque suele ser _de solo lectura_. Para saber en qué instrucción se está en cada momento del programa, se almacena en `eip` el valor de la instrucción actual, el cual es incrementado en una posición cada vez que se finaliza de ejecutar una instrucción, excepto en casos en los que se ejecuta una instrucción `jmp`
+
+Las instrucciones `cmp` y `test` actualiza
+
+Las instrucciones `jmp` ejecutan un salto incondicional hacia una nueva dirección de memoria indicada en la misma instrucción. También existen _jump condicionales_, los cuales se ejecutan según el estado de flags del registro `flags`. [Acá](http://unixwiz.net/techtips/x86-jumps.html) se pueden ver los tipos de saltos.
 
 ### La Pila (_Stack_)
 
@@ -62,10 +83,10 @@ Para eliminar un frame, se siguen los pasos inversos de la segunda imagen, es de
 
 ### Shellcode
 
-¿Cómo se guarda el código que ejecutamos en `Data`? Al igual que cualquier dato del computador: con bits y bytes. Esto quiere decir que una variable con la forma y valor adecuado podría perfectamente ser interpretada como un programa, ya que el lenguaje de los datos y el lenguaje de las aplicaciones comparten el mismo alfabeto.
-
-Acá entra en juego el concepto de shellcode. Un `shellcode` es un programa que permite elevar privón como valor interno de un programa compatible con la entrega de un `input` ejecutable.
+¿Cómo se guarda el código que ejecutamos en `Data`? Al igual que cualquier dato del computador: usando `0s` y `1s`. Esto quiere decir que una variable con la forma y valor adecuado podría perfectamente ser interpretada como un programa si logramos que `EIP` apunte a la zona de memoria en que se encuentra guardada.
 
 ### El Ataque
 
 ### Uso en CTFs
+
+Por temas de tiempo y de alcance, no contaremos en esta iteración del curso con material especial para preparar payloads en CTFs. Sin embargo, veremos en la clase en vivo el siguiente tutorial elaborado por [padragnix](https://padraignix.github.io/reverse-engineering/2019/09/28/buffer-overflow-practical-case-study). 
