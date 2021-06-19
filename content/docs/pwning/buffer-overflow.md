@@ -73,20 +73,80 @@ Al entrar a un nuevo frame, se guarda la dirección de memoria actual dentro de 
 
 El siguiente conjunto de imágenes muestra cómo se opera en la pila y cómo se crean frames.
 
-![](../2021-06-17-00-41-38.png)
+![](../2021-06-18-14-05-47.png)
 
-![](../2021-06-17-00-41-49.png)
+![](../2021-06-18-14-06-41.png)
 
-![](../2021-06-17-00-42-07.png)
+![](../2021-06-18-14-07-38.png)
 
 Para eliminar un frame, se siguen los pasos inversos de la segunda imagen, es decir, se cargan los valores de más arriba de la pila como `esp`, `ebp` y `eip`.
 
 ### Shellcode
 
+![](../2021-06-18-11-56-26.png)
+
 ¿Cómo se guarda el código que ejecutamos en `Data`? Al igual que cualquier dato del computador: usando `0s` y `1s`. Esto quiere decir que una variable con la forma y valor adecuado podría perfectamente ser interpretada como un programa si logramos que `EIP` apunte a la zona de memoria en que se encuentra guardada.
+
+La representación en texto de un código ejecutable es conocida como `shellcode` cuando ésta permite levantar una `shell` luego de ser ejecutada.
+
+Es posible encontrar un listado de shellcodes clasificados por OS y arquitectura de procesador en [este enlace](https://www.exploit-db.com/shellcodes) o [acá](http://shell-storm.org/shellcode/). También es posible crear shellcodes propios usando herramientas especiales o incluso a mano, como muestra [este tutorial](https://www.exploit-db.com/docs/english/13610-building-your-own-ud-shellcodes-part-1.pdf).
 
 ### El Ataque
 
-### Uso en CTFs
+Un ataque de Buffer Overflow se aprovecha de las nulas protecciones que algunos lenguajes de bajo nivel poseen sobre el acceso a memoria. Para ejemplificarlo, contaremos con el siguiente programa:
 
-Por temas de tiempo y de alcance, no contaremos en esta iteración del curso con material especial para preparar payloads en CTFs. Sin embargo, veremos en la clase en vivo el siguiente tutorial elaborado por [padragnix](https://padraignix.github.io/reverse-engineering/2019/09/28/buffer-overflow-practical-case-study). 
+```c++
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("usage: %s name", argv[0]);
+        exit(1);
+    }
+    char password = 'a';
+    char  nombre[4];
+    strcpy(nombre, argv[1]);
+    printf("hola %s. Veremos si tienes acceso...\n", nombre);
+    if (password == '#') {
+        printf("Acceso otorgado! (password=%c)\n", password);
+    } else {
+        printf("Acceso denegado (password=%c)\n", password);
+    }
+    exit(0);
+}
+```
+
+Las variables `password` y `nombre` se almacenan  en la pila de forma consecutiva. El espacio morado corresponde a cada byte en la pila de la variable `nombre`, y el espacio verde al único `char` de la variable `password`. Si guardamos "Ana" en `nombre`, el stack quedaría así:
+
+![](../2021-06-18-15-15-29.png)
+
+El `\0` final corresponde al byte nulo, usado para marcar el fin de una cadena de texto.
+
+En cambio, si entregásemos el valor `Dani#` como `nombre`, el char de `password` se vería sobreescrito por el `#`, lo que nos dejaría entrar a la branch _Acceso otorgado!_.
+
+![](../2021-06-18-22-13-56.png)
+
+Esta misma estrategia de overflow en variables se puede usar para sobreescribir más allá de las variables locales:
+
+Supongamos que estamos en una función con una variable local `nombre`. Más allá de esta variable encontraremos en la pila dos valores: `ret` (Dirección de retorno del `EIP` al finalizar la función) y `EBP`  (puntero a la base de la pila del frame inferior). Si agrandamos `nombre` lo suficiente, podremos sobreescribir `ret` con un valor a nuestra elección, el cual podría apuntar a una dirección de memoria en la que sabemos que hay código útil.
+
+![](../2021-06-18-22-34-46.png)
+
+La mejor referencia para entender paso a paso un Buffer Overflow la pueden encontrar en el artículo [Smashing the Stack for Fun and Profit](./smash-stacking.pdf) del colectivo Hacker _Aleph One_.
+)
+
+### Limitaciones:
+
+Si bien lo anterior fue un problema sumamente grabe hace varios años, hoy en día existen una serie de mitigaciones en distintos niveles para evitar este tipo de comportamientos anómalos, acá mencionamos algunas:
+
+* **A nivel de sist. Operativo**: Mitigaciones que dependen del sist. operativo usado para ejecutar el programa. Hoy en día todas se encuentran activas por defecto, salvo para la ejecución de programas antiguos que no las soportan.
+ * **Write XOR Execute**: Característica que limita el uso de la memoria de un proeso para que ésta sea escribible O ejecutable, pero no ambas a la vez.
+ * **ASLR**: Direcciones de memoria de una aplicación se aleatorizan en cada ejecución, con lo que se dificulta la posibilidad de saltar a un espacio específico.
+ * **DEP**: Marcar algunas páginas de memoria como explícitamente no ejecutables.
+* **A nivel de compilación**: Estas mitigaciones son flags del compilador que dificultan la explotación de buffer overflows.
+ * **Stack Canaries**: Valores aleatorios en la pila que se colocan al entrar a un frame y luego se revisan al salir de él, de esta forma, se dificulta la modificación del stack a través de overflows, ya que es necesario adivinar el valor original del canario colocado.
+
+ ### Uso en CTFs
+
+Por temas de tiempo y de alcance, no contaremos en esta iteración del curso con material especial para preparar payloads en CTFs. Sin embargo, veremos en la clase en vivo el siguiente tutorial elaborado por [padragnix](https://padraignix.github.io/reverse-engineering/2019/09/28/buffer-overflow-practical-case-study). El link incluye harto material relacionado e incluso una presentación de PowerPoint para revisar.

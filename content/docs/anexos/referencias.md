@@ -154,7 +154,9 @@ A continuación se mencionan las referencias usadas para la realización de cada
 
 ### Buffer Overflow
 - [Jumps x86](http://unixwiz.net/techtips/x86-jumps.html)
-- [Shellcode](https://en.wikipedia.org/wiki/Shellcode)
+- [Shellcodes](https://en.wikipedia.org/wiki/Shellcode)
+- [Más Shellcodes](http://shell-storm.org/shellcode/)
+- [Smashing the Stack for Fun and Profit](https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf)
 - [Caso de Estudio práctico de Buffer Overflow](https://padraignix.github.io/reverse-engineering/2019/09/28/buffer-overflow-practical-case-study/)
 
 ## OSINT
