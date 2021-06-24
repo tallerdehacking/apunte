@@ -27,3 +27,8 @@ Los capítulos de la barra lateral se muestran en el orden que se planean aborda
 ### Preparación del entorno de trabajo
 
 Para preparar el entorno de trabajo, recomendamos revisar los anexos "Kali Linux" y "VPN".
+
+### ¿Cuál es la flag del examen?
+
+¿Qué flag?
+
