@@ -56,15 +56,4 @@ donde están los archivos del apunte 😆️)
 
 Eduardo
 
---=-Trj5CpGFuFO49/Bjo0nX
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: 8bit
-
-<html x-evo-bgcolor="#2d2d2d" x-evo-text="#eeeeec" x-evo-link="#8d8d8d" x-evo-vlink="#eeeeec"><head x-evo-selection="anchorElem=[8] anchorOffset=341"><style id="x-evo-theme-sheet">html { background-color : #2d2d2d; }
-html { color : #eeeeec; }
-a { color : #8d8d8d; }
-a:visited { color : #eeeeec; }
-</style></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;" data-evo-draft=""><div style="width:71ch;">Estimadxs, </div><div style="width:71ch;"><br></div><div style="width:71ch;">Disculpen la demora con la pregunta 3, ha sido una semana muy ocupada en el trabajo y recién pude ponerme a verla 😥️. Les escribo porque creo que será un poco complicado dejar un servidor con acceso a usuario para que lxs estudiantes puedan conectarse.</div><div style="width:71ch;"><br></div><div style="width:71ch;">El problema es que tengo la impresión de que es muy probable que algún estudiante que resuelva la tarea primero olvide borrar los archivos que usó para resolverla, lo que permitirá a cualquier otra persona que ingrese después el poder conseguir la flag usando la pista que la primera persona que resolvió la tarea dejó sin intención.</div><div style="width:71ch;"><br></div><div style="width:71ch;">Para solucionar lo anterior, dejé un proceso en el cron que cada minuto ejecuta un comando que borra la única carpeta escribible del usuario.</div><div style="width:71ch;"><br></div><div style="width:71ch;">¿Pueden revisar si lo que subí es efectivo para mitigar el problema anterior? Admito que lo hice un poco apurado, por lo que temo que se me haya pasado algo. El servidor es server.cc5325.xor.cl, el puerto es 3003, el usuario es "wifi" y la contraseña es el nombre y primer apellido (en minúscula, sin espacios) del periodista que habla en la noticia de los Hackers del WiFi de TVN del 2017.</div><div style="width:71ch;"><br></div><div style="width:71ch;">Dejé también las preguntas para el examen con sus flags en la carpeta /root para que les echen un ojo cuando puedan. La clave del usuario root se las mando por Signal eso sí (tal vez soy muy paranóico pero temo que algún día se me quede un mail guardado en la misma carpeta donde están los archivos del apunte 😆️)</div><div style="width:71ch;"><br></div><div style="width:71ch;">¡Saludos y muy buena semana!</div><div style="width:71ch;"><br></div><div style="width:71ch;">Eduardo</div><div style="width: 71ch;" class="-x-evo-signature-wrapper"><span class="-x-evo-signature" id="none"></span></div></body></html>
-
---=-Trj5CpGFuFO49/Bjo0nX--
 
