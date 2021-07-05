@@ -30,5 +30,5 @@ Para preparar el entorno de trabajo, recomendamos revisar los anexos "Kali Linux
 
 ### ¿Cuál es la flag del examen?
 
-¿Qué flag?
+Te puedo decir cuál no es la flag del examen: CC5325{3stA_n0_e5_l4_fl4g}
 

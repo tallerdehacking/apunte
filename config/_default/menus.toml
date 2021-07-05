@@ -70,7 +70,7 @@
   weight = 25
 
   [[main]]
-  name = "Tareas"
+  name = "Evaluaciones"
   url = "/tareas/"
   weight = 27
 
