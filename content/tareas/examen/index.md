@@ -16,7 +16,7 @@ Luego del examen, se abrirá una **competencia** con un conjunto de preguntas ma
 
 ## Cómo participar
 
-Para participar del CTF, necesitan conectarse a la **VPN del CEC** y luego ingresar con su navegador web a [http://server.cc5325.xor.cl](este enlace). Necesitarán crearse usuarios, cuyos nombres deben ser los mismos que tienen asociados en Discord. Los equipos para participar tienen que ser los mismos que los de la **Tarea 3**.
+Para participar del CTF, necesitan conectarse a la **VPN del CEC** y luego ingresar con su navegador web a [este enlace](http://server.cc5325.xor.cl). Necesitarán crearse usuarios, cuyos nombres deben ser los mismos que tienen asociados en Discord. Los equipos para participar tienen que ser los mismos que los de la **Tarea 3**.
 
 Una persona integrante del grupo deberá crear el equipo en la plataforma e invitar a los otros integrantes. El nombre del equipo debe ser el mismo que el indicado a inicios del curso.
 
