@@ -32,7 +32,7 @@ Para optar a la nota máxima en el examen, necesitan resolver **grupalmente** lo
 
 Todxs lxs integrantes del grupo recibirán la misma nota, dependiendo de las preguntas completadas por el equipo, así que les recomendamos que se dividan los ejercicios entre todxs para resolver el examen más rápidamente.
 
-Cada una de las preguntas obligatorias vale $$\frac{6}{n}$$ puntos del exámen, donde $$n$$ es la cantidad de preguntas obligatorias.
+Cada una de las preguntas obligatorias vale $\frac{6}{n}$ puntos del exámen, donde $n$ es la cantidad de preguntas obligatorias.
 
 Si no pueden encontrar una flag, tienen la opción de **escribir un writeup grupal por pregunta**, en el cual deben detaller todo lo que intentaron y se les ocurrió para resolver la máquina. Con el writeup pueden optar a un máximo de **la mitad del puntaje de la pregunta**. El writeup deben enviarlo a través de la plataforma "Correo" de U-Cursos antes del fin del plazo del examen.
 
