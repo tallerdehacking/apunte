@@ -123,6 +123,28 @@ original, pero se ven claras diferencias y es menos legible.
 
 ![Ghidra Decompiled](../ghidra-decompiled.png)
 
+### Cutter
+[Cutter](https://cutter.re) es una herramienta _open source_ similar a las anteriores pero con
+una interfaz más moderna. Al ejecutar Cutter, vemos una ventana donde podemos
+seleccionar un tema y el idioma.
+
+![Cutter Welcome](../cutter-welcome.png)
+
+Al continuar, veremos una ventana donde podemos escoger un archivo.
+
+![Cutter Project](../cutter-project.png)
+
+Una vez se escoge un archivo, se abre el espacio de trabajo de Cutter. Lo primero que se ve
+es un resumen ("overview") con información del archivo.
+
+![Cutter Overview](../cutter-overview.png)
+
+A la izquierda podemos ver una lista de funciones. Abajo, tenemos varias pestañas, con
+el disassembly, hexdump, decompilación, gráficos y otras visualizaciones más. Por ejemplo,
+podemos seleccionar la función `loc.hex1` y ver su diagrama en la pestaña `Graph`.
+
+![Cutter Graph](../cutter-graph.png)
+
 ## Decompilación de Bytecode
 
 El bytecode es una especie de código compilado, pero no a lenguaje de máquina, sino que a un lenguaje intermedio
