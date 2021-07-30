@@ -6,6 +6,12 @@ Este apunte fue recopilado por Eduardo Riveros y Diego Vargas, profesores del cu
 
 # Agradecimientos
 
-En esta sección se nombrarán, en orden cronológico, a las personas que han colaborado de una forma u otra en el diseño y la redacción de este apunte.
+En esta sección se nombrarán, en orden cronológico, a las personas que han colaborado de una forma u otra en el diseño y la redacción de este apunte, o con la ejecución del ramo.
 
-
+* Diego Vargas Jensen `(Profesor de cátedra Otoño 2021)`
+* Eduardo Riveros Roca `(Profesor de cátedra Otoño 2021)`
+* Sergio Leiva Valdebenito `(Profesor Auxiliar Otoño 2021)`
+* Alejandra Alarcón Valenzuela `(Ayudante Otoño 2021)`
+* Benjamín Hurtado Torrealba  `(Ayudante Otoño 2021)`
+* Sebastián Donoso Díaz `(Ayudante Otoño 2021)`
+* Blaz Korecic Amador `(Estudiante Otoño 2021)`
