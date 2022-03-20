@@ -6,3 +6,5 @@ resources
 /venv/
 /.idea/
 .vscode
+.DS_Store
+*.lock
