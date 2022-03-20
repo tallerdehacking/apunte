@@ -10,12 +10,6 @@ menu:
 weight: 040
 
 ---
-
-## Criptografía Clásica
-
-* [**Classic, yet complicated** (Hack The Box)](https://app.hackthebox.eu/challenges/22)
-* [**xorxorxor** (Hack The Box)](https://app.hackthebox.eu/challenges/191) 
-
 ## Stego
 
 ### HackTheBox
@@ -37,3 +31,9 @@ weight: 040
 ### TryHackMe
 
 * [CTF Collection 1](https://tryhackme.com/room/ctfcollectionvol1) (no todos todavía)
+
+
+## Criptografía Clásica
+
+* [**Classic, yet complicated** (Hack The Box)](https://app.hackthebox.eu/challenges/22)
+* [**xorxorxor** (Hack The Box)](https://app.hackthebox.eu/challenges/191) 
