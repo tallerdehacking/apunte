@@ -32,6 +32,7 @@ weight: 050
 
 * [rsactftool](https://app.hackthebox.com/challenges/rsactftool)
 * [Lost Modulus](https://app.hackthebox.com/challenges/lost-modulus)
+* [Weak RSA](https://app.hackthebox.com/challenges/weak-rsa) (Retirado)
 ### Otros
 
 
