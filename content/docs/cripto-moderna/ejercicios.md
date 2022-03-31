@@ -30,8 +30,8 @@ weight: 050
 
 ### Hack The Box
 
-* []
-
+* [rsactftool](https://app.hackthebox.com/challenges/rsactftool)
+* [Lost Modulus](https://app.hackthebox.com/challenges/lost-modulus)
 ### Otros
 
 
