@@ -37,7 +37,7 @@ Un informante anónimo dejó pistas para recuperar la llave de descifrado, pero 
 
 _(Esto no hubiese pasado si estuviesen impresos en papel :()_
 
-[Descargar Archivos](../p1.zip)
+[Descargar Archivos](./p1.zip)
 
 ### P2: BinAES
 
@@ -47,9 +47,9 @@ Seguridad y minimalismo. ¿Así funciona, verdad?
 
 ¡Nunca sabrás que dice el archivo cifrado!
 
-Servidor: `5.161.93.52:25101` (Recuerda conectarte a la VPN del CEC)
+Servidor: `server.tallerdehacking.dcc.uchile.cl:25102` (Recuerda conectarte a la VPN del CEC)
 
-[Archivo cifrado](../p2.txt)
+[Archivo cifrado](./p2.txt)
 
 ## P3: PlayStation
 
@@ -60,3 +60,5 @@ Sabemos que reusó algo del código de Sony en la implementación de firma elect
 Nos conseguimos código interno relacionado a firmas, dos firmas con sus archivos respectivos y un archivo cifrado que sabemos tiene algo valioso.
 
 ¿Nos ayudas a descifrar el archivo?
+
+[Archivo](./p3.zip)
