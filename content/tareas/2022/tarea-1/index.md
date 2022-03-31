@@ -1,7 +1,7 @@
 ---
 title: "Tarea 1 2022/1"
 description: "Stego y Criptografía Moderna"
-date: 2022-04-01T09:19:42+01:00
+date: 2022-03-31T09:19:42+01:00
 draft: false
 weight: 50
 ---
