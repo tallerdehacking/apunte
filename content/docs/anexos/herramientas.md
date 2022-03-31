@@ -17,7 +17,7 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 
 ## Criptografía Moderna
 
-* [RsaCtfTool](https://app.hackthebox.com/challenges/weak-rsa)
+* [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool)
 ## Aplicaciones Web
 
 * [FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
