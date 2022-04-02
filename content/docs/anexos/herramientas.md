@@ -18,6 +18,8 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 ## Criptografía Moderna
 
 * [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool)
+* [Factorización prima](https://www.alpertron.com.ar/ECM.HTM)
+* [ASN.1 Decoder](https://lapo.it/asn1js/)
 ## Aplicaciones Web
 
 * [FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)

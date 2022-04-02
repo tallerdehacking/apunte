@@ -37,6 +37,8 @@ Un informante anónimo dejó pistas para recuperar la llave de descifrado, pero 
 
 _(Esto no hubiese pasado si estuviesen impresos en papel :()_
 
+(En este ejercicio la flag NO parte con CC5325. Encontrarán la flag en una imagen.)
+
 [Descargar Archivos](./p1.zip)
 
 ### P2: BinAES
