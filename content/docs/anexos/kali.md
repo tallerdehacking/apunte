@@ -17,7 +17,7 @@ Para facilitar tanto al equipo docente como a los estudiantes la solución de pr
 Recomendamos este método para personas con computadores con 8GB o más de RAM, además de al menos 25 GB libres en el disco duro.
 
 * Primero, instala [VirtualBox](https://www.virtualbox.org/wiki/Downloads) en tu computador. Las instrucciones para hacer esto varían según tu sistema operativo.
-* Mientras tanto, baja la imagen de máquina virtual oficial de Kali Linux desde [acá](https://images.kali.org/virtual-images/kali-linux-2021.1-vbox-amd64.ova) (Enlace viene de [esta página](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download))
+* Mientras tanto, baja la imagen de máquina virtual oficial de Kali Linux desde [acá](https://kali.download/virtual-images/kali-2022.1/kali-linux-2022.1-virtualbox-amd64.ova) (Enlace viene de [esta página](https://www.kali.org/get-kali/#kali-virtual-machines))
 * Después de instalar VirtualBox, es recomendable instalar el pack de extensiones. Está disponible en el mismo link de descarga de VirtualBox, en la sección VirtualBox Oracle VM VirtualBox Extension Pack. Esto es principalmente para que la máquina virtual use la resolución de pantalla de la ventana en la que está, y no tengamos solo un cuadro pequeño para ver.  
 * Una vez esté instalado el programa y haya terminado de bajar la imagen, haz doble click en la segunda. Si el doble click no te sirve, ve a "File" y luego a "Import Appliance" en el menú superior, de forma de seleccionar el archivo descargado.
 
