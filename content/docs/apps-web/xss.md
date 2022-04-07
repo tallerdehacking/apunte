@@ -10,7 +10,7 @@ menu:
 weight: 030
 ---
 
-El Cross-Site Scripting, o XSS (punto 7 en el OWASP Top 10), se refiere a una clase de vulnerabilidades que
+El Cross-Site Scripting, o XSS (incluido en el punto 3 del OWASP Top 10), se refiere a una clase de vulnerabilidades que
 intentan introducir código JavaScript en un sitio web, el cual será ejecutado en el navegador de otros usuarios.
 Dependiendo de la aplicación en específico, las repercusiones de esto varían desde meras molestias hasta
 la completa ruptura de confidencialidad e integridad del sistema.

@@ -112,16 +112,16 @@ seguridad más comunes en aplicaciones web. Estos riesgos usualmente se traducen
 condiciones, por lo que es importante que al menos conozcan que existen y entiendan por qué surgen.
 Con la excepción de algunos casos muy particulares, todas las vulnerabilidades que ustedes encuentren
 corresponderán a uno (o a veces más de uno) de los riesgos en la lista. Estos son:
-1. Injection
-2. Broken Authentication
-3. Sensitive Data Exposure
-4. XML External Entities (XXE)
-5. Broken Access Control
-6. Security Misconfiguration
-7. Cross-Site Scripting (XSS)
-8. Insecure Deserialization
-9. Using Components With Known Vulnerabilities
-10. Insufficient Logging & Monitoring
+1. Broken Access Control
+2. Cryptographic Failures
+3. Injection
+4. Insecure Design
+5. Security Misconfiguration
+6. Vulnerable and Outdated Components
+7. Identification and Authentication Failures
+8. Software and Data Integrity Failures
+9. Security Logging and Monitoring Failures
+10. Server-Side Request Forgery
 
 La mayoría de los nombres son bastante autodescriptivos, sin embargo si desean conocer estos riesgos
 más en detalle, por favor visiten el proyecto de OWASP y lean su documentación.

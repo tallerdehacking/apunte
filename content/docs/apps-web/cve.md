@@ -11,7 +11,7 @@ weight: 070
 ---
 
 Muchas veces ustedes se encontrarán con sistemas (web u otro tipo) que utilizan software con vulnerabilidades
-conocidas (punto 9 del OWASP Top 10). Estas vulnerabilidades se catalogan como _Common Vulnerabilities and
+conocidas (punto 6 del OWASP Top 10). Estas vulnerabilidades se catalogan como _Common Vulnerabilities and
 Exposures_ (CVE), el cual es un sistema que intenta proveer información y documentación sobre
 vulnerabilidades conocidas públicamente. Esto se suele documentar junto a su puntaje
 [CVSS](https://www.first.org/cvss/v3.1/specification-document) (_Common Vulnerabilities Scoring System_).
