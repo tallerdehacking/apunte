@@ -10,7 +10,7 @@ menu:
 weight: 040
 ---
 
-En términos generales, una inyección (punto 1 del OWASP Top 10) es un ataque que intenta confundir al servidor
+En términos generales, una inyección (punto 3 del OWASP Top 10) es un ataque que intenta confundir al servidor
 de forma que interprete datos como si fueran código. Esto tiene un potencial muy grande de explotación, aunque
 usualmente está restringido por factores como filtros, configuraciones de seguridad y tecnologías usadas.
 
