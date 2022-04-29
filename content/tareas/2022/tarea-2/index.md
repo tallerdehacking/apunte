@@ -44,7 +44,7 @@ Puedes ocuparlos para ganar acceso?
 
 **Nota:** Recuerden estar conectados a la VPN del CEC.
 
-http://server.tallerdehacking.dcc.uchile.cl:8081
+[http://server.tallerdehacking.dcc.uchile.cl:8081](http://server.tallerdehacking.dcc.uchile.cl:8081)
 
 ### P2
 
@@ -53,7 +53,7 @@ Ni siquiera vale la pena que intentes romperlo.
 
 **Nota:** Recuerden estar conectados a la VPN del CEC.
 
-http://server.tallerdehacking.dcc.uchile.cl:8082/
+[http://server.tallerdehacking.dcc.uchile.cl:8082/](http://server.tallerdehacking.dcc.uchile.cl:8082/)
 
 ## P3
 
@@ -64,4 +64,4 @@ Parece que ha estado jugando mucho últimamente 😐 Así que no le puso tanto c
 **Nota:** Recuerden estar conectados a la VPN del CEC.
 **Nota 2:** A veces no carga la imagen de fondo de los mensajes, no sé bien por qué.
 
-http://server.tallerdehacking.dcc.uchile.cl:54321/
+[http://server.tallerdehacking.dcc.uchile.cl:54321/](http://server.tallerdehacking.dcc.uchile.cl:54321/)
