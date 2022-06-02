@@ -2,7 +2,7 @@
 title: "Tarea 2 2022/1"
 description: "Apps web"
 date: 2022-04-29T09:19:42+01:00
-draft: false
+draft: true
 weight: 60
 ---
 ## Indicaciones generales
@@ -49,11 +49,8 @@ Ni siquiera vale la pena que intentes romperlo.
 
 ## P3
 
-Le pedí a un amigo que está aprendiendo a hacer páginas que me hiciera una página para compartir mensajes, pero le dije que limitara un poco las cosas que se pudieran mandar.
+Iba a publicar la flag de esta pregunta aquí, pero se me cayó en este ejecutable y se machucó un poco.
 
-Parece que ha estado jugando mucho últimamente 😐 Así que no le puso tanto cariño. Me dijo que dejó un par de mensajes ocultos, pero en verdad me dio lata. A ver si me pueden ayudar
+    28,32,72,73,41,63,65,74,29,45,57,74,25,22,33,77,29,63,77,20,25,44,19,73,34,32,50,11,34,32,58,74,25,2,54,77,45,21,12,79,33,44,45,75,53,21,11,2,54,2,45,15,41,75,20,60,
 
-**Nota:** Recuerden estar conectados a la VPN del CEC.
-**Nota 2:** A veces no carga la imagen de fondo de los mensajes, no sé bien por qué.
-
-[http://server.tallerdehacking.dcc.uchile.cl:54321/](http://server.tallerdehacking.dcc.uchile.cl:54321/)
+[Ejecutable](./Encode.jar)
