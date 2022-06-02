@@ -28,26 +28,23 @@ weight: 60
 
 ## Problemas
 
-    ### P1
+### P1
 
-    Conecté un pendrive que encontré tirado en la calle a mi computador y me cifró un archivo importante :(
+Conecté un pendrive que encontré tirado en la calle a mi computador y me cifró un archivo importante :(
 
-    Logré sacar una imagen del pendrive, pero no sé en qué formato está ni qué contiene.
+Logré sacar una imagen del pendrive, pero no sé en qué formato está ni qué contiene.
 
-    ¿Me ayudas?
+¿Me ayudas?
 
 [Archivos de la tarea](./t3p1.tar.gz)
 
 ### P2
 
-Yo mismo creé este servidor con un método de autorización infranqueable.
-Ni siquiera vale la pena que intentes romperlo.
+Franky me contó que un grupo de espías enemigos nos está investigando. Logró de capturar tráfico en su red. Al parecer no son muy buenos... Así que no hay de qué preocuparse, pero a ver si pillas algo interesante.
 
-**Nota:** Recuerden estar conectados a la VPN del CEC.
+[Captura de paquetes](./p2.pcapng)
 
-[http://server.tallerdehacking.dcc.uchile.cl:8082/](http://server.tallerdehacking.dcc.uchile.cl:8082/)
-
-## P3
+### P3
 
 Iba a publicar la flag de esta pregunta aquí, pero se me cayó en este ejecutable y se machucó un poco.
 
