@@ -2,7 +2,7 @@
 title: "Tarea 2 2022/1"
 description: "Apps web"
 date: 2022-04-29T09:19:42+01:00
-draft: true
+draft: false
 weight: 60
 ---
 ## Indicaciones generales
