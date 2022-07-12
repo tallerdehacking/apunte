@@ -43,7 +43,7 @@ IP Servicio: 172.17.69.241
 
 ### P2
 
-Hay que mantener la historia de la herramienta de tarbajo en la cabeza
+Hay que mantener la historia de la herramienta de trabajo en la cabeza
 
 [Sitio](http://172.17.69.241:7777)
 
