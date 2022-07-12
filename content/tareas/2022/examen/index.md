@@ -1,5 +1,5 @@
 ---
-title: "Tarea 3 2022/1"
+title: "Examen 2022/1"
 description: "Examen"
 date: 2022-07-11T08:00:00-04:00
 draft: false
