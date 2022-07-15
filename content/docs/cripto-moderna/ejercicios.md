@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "cripto-moderna"
-weight: 050
+weight: 30050
 ---
 
 ## Recursos Generales

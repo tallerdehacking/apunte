@@ -7,8 +7,7 @@ images: []
 menu:
   docs:
     parent: "stego"
-weight: 030
-
+weight: 20040
 ---
 
 Este capítulo mostrará algunas técnicas de esteganografía en texto, imágenes y audio. También listaremos las herramientas y algoritmos necesarios para extraer la información, además de consejos y estrategias para casos no listados en este apunte.

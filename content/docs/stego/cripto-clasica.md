@@ -7,8 +7,7 @@ images: []
 menu:
   docs:
     parent: "stego"
-weight: 020
-
+weight: 20030
 ---
 
 Los cifradores clásicos son aquellos que han tenido un uso histórico masivo, pero que hoy en día no se utilizan, en parte debido a lo fácil que resulta romperlos con ayuda de un computador.  Además, estos cifradores suelen trabajar solamente con letras del alfabeto inglés, lo que limita los tipos de mensajes que se pueden cifrar.

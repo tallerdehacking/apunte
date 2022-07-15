@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pwning"
-weight: 020
+weight: 70020
 ---
 
 ## Permisos de Usuario en Linux

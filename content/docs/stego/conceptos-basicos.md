@@ -7,8 +7,7 @@ images: []
 menu:
   docs:
     parent: "stego"
-weight: 015
-
+weight: 20020
 ---
 
 En términos generales, para poder comunicar un valor entre un emisor y un receptor, es necesario que ambas partes se comuniquen mediante un lenguaje en común. En el caso de computadores, esta información se encuentra "codificada" en algún formato. Hay formatos y representaciones de datos comunes y estandarizadas, mientras que hay otras más esotéricas. 

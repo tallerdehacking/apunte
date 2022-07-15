@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "cripto-moderna"
-weight: 030
+weight: 30030
 ---
 
 En esta sección hablaremos de tres tipos de cifrado: **One-time pad**, **cifradores de bloque** y **cifradores de flujo**.
@@ -171,8 +171,8 @@ Es posible encontrar más información sobre este cifrador (y sus problemas) [en
 
 ChaCha es una familia de cifradores de flujo basada en una variante de Salsa20. Estos cifradores definen un estado inicial compuesto por "palabras" de 32 bit dispuestas en una matriz de 4x4:
 
-|      |      |      |      |
-|------|------|------|------|
+|             |             |             |             |
+| ----------- | ----------- | ----------- | ----------- |
 | (00) `expa` | (01) `nd 3` | (02) `2-by` | (03) `te k` |
 | (04) `  K ` | (05) `  K ` | (06) `  K ` | (07) `  K ` |
 | (08) `  K ` | (09) `  K ` | (10) `  K ` | (11) `  K ` |

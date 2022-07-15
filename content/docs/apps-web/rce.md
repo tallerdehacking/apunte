@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "apps-web"
-weight: 050
+weight: 40050
 ---
 
 El Remote Code Execution (RCE) se refiere a la ejecución de comandos de sistema, o de algún lenguaje instalado, sin tener acceso a una

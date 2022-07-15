@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "reversa"
-weight: 040
+weight: 60040
 ---
 
 ## Decompilación

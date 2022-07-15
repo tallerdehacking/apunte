@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "reversa"
-weight: 030
+weight: 60030
 ---
 
 La deobfuscación de ejecutables es similar a la deobfuscación de JavaScript que vimos en los capítulos de

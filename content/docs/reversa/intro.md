@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "reversa"
-weight: 010
+weight: 60010
 ---
 
 ## Motivación

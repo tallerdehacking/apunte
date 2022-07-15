@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "anexos"
-weight: 030
+weight: 90020
 ---
 
 Para poder tener acceso a la máquina que se usará en los CTF y tareas, necesitan conectarse por VPN a la red de la Universidad. A continuación se enumeran los pasos necesarios para hacer esto.

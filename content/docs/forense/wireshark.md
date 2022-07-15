@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "forense"
-weight: 050
+weight: 50040
 ---
 
 Algunos problemas de tipo CTF de categoría forense requieren analizar logs de tráfico de red, los cuales suelen guardarse con la aplicación Wireshark. En esta sección describiremos brevemente algunos conceptos relacionados con el modelo de Internet y luego explicaremos algunas funcionalidades de Wireshark.
