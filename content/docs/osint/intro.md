@@ -17,6 +17,8 @@ Esto se puede hacer de manera manual, pero, dependiendo del ámbito de la búsqu
 para automatizar el proceso de cierta forma. Este tema rara vez aparece en competencias de CTF, pero de todas
 formas se pueden encontrar con challenges de este tipo.
 
+<!-- CC5325{4pun73_f149} -->
+
 La información obtenida mediante este método incluye:
 * Datos personales (nombre, rut, email, dirección, etc)
 * Personas, empresas o entidades relacionadas
