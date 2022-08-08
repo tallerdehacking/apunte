@@ -66,7 +66,8 @@ Con eso nos dan otro mensaje codificado. Esta vez fueron bien amables y nos dije
 
 In order to generate the invite code, make a POST request to \/api\/invite\/generate.
 
-Usamos la misma página anterior, y obtenemos otro código, de nuevo encodeado. Esta vez no nos dicen cómo, pero "se ve" que es base64. Con eso obtenemos el código.
+Usamos la misma página anterior, y obtenemos otro código, de nuevo encodeado. Esta vez no nos dicen cómo, pero "se ve" que es base64.
+Par descubrirlo podemos hacerlo de manera visual o usando herramientas como https://www.dcode.fr/identification-chiffrement. Con eso obtenemos el código.
 
 ### ¿Cómo que "se ve" que es base64?
 
