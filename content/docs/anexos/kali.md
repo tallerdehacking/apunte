@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "anexos"
-weight: 030
+weight: 90030
 ---
 
 Para facilitar tanto al equipo docente como a los estudiantes la solución de problemas relacionados con el ambiente de trabajo durante el transcurso de las actividades del curso, requerimos que utilicen **Kali Linux** para resolver las tareas y los ejercicios propuestos. A continuación, les explicamos dos formas en las que pueden usar Kali Linux en su computador sin tener que hacer cambios importantes o irreversibles a su configuración actual.

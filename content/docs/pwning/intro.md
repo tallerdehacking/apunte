@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pwning"
-weight: 010
+weight: 70010
 ---
 
 _Pwn_ (Suele pronunciarse como la palabra española "pon") es una palabra de la jerga [leetspeak](https://en.wikipedia.org/wiki/Leet), nacida de una derivación del término _Own_ (Poseer en inglés), y se refiere en este contexto a la capacidad de unx hacker de controlar una máquina que no es suya a partir del aprovechamiento de vulnerabilidades en ella.

@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "apps-web"
-weight: 060
+weight: 40060
 ---
 
 En el capítulo anterior vimos cómo ejecutar comandos de manera remota en un servidor, sin tener acceso a una

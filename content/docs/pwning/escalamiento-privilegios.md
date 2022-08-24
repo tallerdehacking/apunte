@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pwning"
-weight: 030
+weight: 70030
 ---
 
 Teniendo acceso de usuario limitado a una máquina, y entendiendo mejor cómo funcionan los permisos y privilegios en Linux, podemos intentar ejecutar un _escalamiento de privilegios_, con el objetivo de conseguir acceso a un usuario con más permisos en la máquina. En el caso de un CTF, esto nos puede servir para acceder a archivos cuya lectura se encuentra limitada a ciertos usuarios. Estos archivos podrían contener pistas o incluso las flags que estamos buscando.

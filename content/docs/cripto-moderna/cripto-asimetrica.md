@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "cripto-moderna"
-weight: 040
+weight: 30040
 ---
 
 ![Criptografía de llave pública](../public_key_crypto.png)

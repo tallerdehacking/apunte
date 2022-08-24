@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "prologo"
-weight: 010
+weight: 010010
 ---
 
 Este apunte recoge los contenidos planificados para el curso **CC5325 - Taller de Hacking Competitivo** del [Departamento de Ciencias de la Computación](https://dcc.uchile.cl) de la [Facultad de Ciencias Físicas y Matemáticas](https://ingenieria.uchile.cl) de la [Universidad de Chile](https://uchile.cl). El objetivo de este curso es entregar a el o la estudiante las herramientas básicas necesarias para introducirse en el mundo de competencias y desafíos de ciberseguridad, además de motivarle a conocer más varios conceptos relacionados con ciberseguridad en el mundo profesional.

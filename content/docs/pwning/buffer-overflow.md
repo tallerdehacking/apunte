@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pwning"
-weight: 040
+weight: 70040
 ---
 
 ### Buffer Overflow
