@@ -66,7 +66,7 @@
 
   [[main]]
   name = "Writeups"
-  url = "/writeups/misc/registro_htb"
+  url = "/writeups/"
   weight = 25
 
   [[main]]
