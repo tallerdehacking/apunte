@@ -18,10 +18,11 @@ weight: 050
 
 ### Hack The Box
 
-* [BabyEncryption](https://app.hackthebox.com/challenges/babyencryption)
 * [Flippin Bank](https://app.hackthebox.eu/challenges/Flippin-Bank)
 * [Broken Decryptor](https://app.hackthebox.eu/challenges/Broken-Decryptor)
+* [BabyEncryption](https://app.hackthebox.com/challenges/babyencryption)
 * [How the columns have turned](https://app.hackthebox.com/challenges/how-the-columns-have-turned) (Retirado)
+* [AESWCM](https://app.hackthebox.com/challenges/aeswcm) (Retirado)
 
 ### Otros
 
