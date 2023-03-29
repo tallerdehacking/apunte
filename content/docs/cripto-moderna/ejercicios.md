@@ -18,9 +18,10 @@ weight: 050
 
 ### Hack The Box
 
+* [BabyEncryption](https://app.hackthebox.com/challenges/babyencryption)
 * [Flippin Bank](https://app.hackthebox.eu/challenges/Flippin-Bank)
-
 * [Broken Decryptor](https://app.hackthebox.eu/challenges/Broken-Decryptor)
+* [How the columns have turned](https://app.hackthebox.com/challenges/how-the-columns-have-turned) (Retirado)
 
 ### Otros
 
@@ -30,9 +31,12 @@ weight: 050
 
 ### Hack The Box
 
+* [Fast Carmichael](https://app.hackthebox.com/challenges/fast-carmichael) (Retirado)
 * [rsactftool](https://app.hackthebox.com/challenges/rsactftool)
 * [Lost Modulus](https://app.hackthebox.com/challenges/lost-modulus)
 * [Weak RSA](https://app.hackthebox.com/challenges/weak-rsa) (Retirado)
+* [Baby Time Capsule](https://app.hackthebox.com/challenges/baby-time-capsule)
+
 ### Otros
 
 

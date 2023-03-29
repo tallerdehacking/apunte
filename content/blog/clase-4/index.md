@@ -13,4 +13,4 @@ weight: 40
 ## Enlaces útiles
 
 * [RSA Numbers](https://en.wikipedia.org/wiki/RSA_numbers)
-* [Laboratorio 1 CC5312](https://users.dcc.uchile.cl/~eriveros/cc5312/laboratorios/laboratorio-1/)
+* [Laboratorio 1 CC5327, otoño 2022](https://introalaseguridad.dcc.uchile.cl/tareas/tarea-1/)
