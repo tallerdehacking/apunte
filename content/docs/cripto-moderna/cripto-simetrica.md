@@ -103,7 +103,7 @@ Si bien este modo es muy fácil de implementar, el mayor problema que posee es q
 #### CBC
 
 ![Cifrado CBC](../cbc_enc.png)
-![Descifrado CBC](../cbc_enc.png)
+![Descifrado CBC](../cbc_dec.png)
 
 **Cipher Block Chaining** es un modo en el que el cifrado de cada bloque depende del resultado del cifrado del bloque anterior. Como caso especial, el primer bloque utiliza un valor público llamado _Vector de Inicialización_ `(IV)`. Es importante que este valor sea aleatorio en cada sesión de cifrado, con el objetivo de impedir algunos tipos de ataques.
 
@@ -113,9 +113,54 @@ El cambio anterior con respecto a ECB ayuda a que si ciframos exactamente la mis
 
 Si contamos con feedback acerca del estado de un mensaje cifrado (específicamente, si el mensaje está bien formado o no), es posible ejecutar un ataque denominado [Padding Oracle Attack](https://en.wikipedia.org/wiki/Padding_oracle_attack). En el curso [CC5312 Seguridad Computacional](https://users.dcc.uchile.cl/~eriveros/cc5312/anexos/padding-oracle/) se explica cómo ejecutar este ataque.
 
-##### Maleabilidad del mensaje cifrado si el IV no cambia
+##### Maleabilidad del mensaje cifrado 
 
-Si tanto el IV como la llave se mantienen en un servicio que permite elegir los mensajes a cifrar, es posible armar mensajes cifrados a medida sin necesidad de conocer la llave ni el IV. Veremos cómo hacer esto en las clases.
+Revisemos de nuevo la imagen de Descifrado CBC y agreguemos al diagrama el estado justo antes de hacer XOR con el bloque anterior. A este estado le llamaremos $M$: 
+
+![Descifrado CBC](../cbc_malleability.svg)
+
+Enfoquémonos primero en los bytes verdes. $IV_0$ es el primer byte del vector de inicialización. Si modificamos $IV_0$, podemos notar que el valor del primer caracter del texto plano ($P_{0,0}$) cambiará, debido a que ese caracter se obtiene combinando con $\oplus$ (xor) $M_{0,0}$ e $IV_0$.
+
+**¿Pero por qué esto me genera un cambio solo en el primer byte si se supone que el block cipher revuelve los datos?**
+
+Es verdad, un cifrador de bloque revuelve los datos de entrada. Esto quiere decir que si cambio un caracter en mi bloque de texto plano manteniendo la llave constante, el dato cifrado sera muy distinto al que tenía antes. Lo mismo en el caso de descifrar: si cambio un byte del dato cifrado, el texto descifrado será irreconocible comparado con el original.
+
+Sin embargo, el valor descifrado por el block cipher en el modo CBC es un valor intermedio ($M$). Tanto este valor intermedio como el vector de inicialización **sí tienen una dependencia lineal** con respecto al valor descifrado. 
+
+Si conozco el texto original y quiero cambiar el primer caracter por un caracter $x$, puedo cambiar $IV_0$ por el siguiente valor:
+
+$$\tilde{IV_0} = IV_0 \oplus P_{0,0} \oplus x$$
+
+Lo anterior se cumple ya que sabemos que
+
+$$P_{0,0} = M_{0,0} \oplus IV_0$$
+
+Por lo que al reemplazar $IV_0$ por $\tilde{IV_0}$ tenemos que:
+
+$$\tilde{P_{0,0}} = M_{0,0} \oplus IV_0 \oplus P_{0,0} \oplus x$$
+
+reemplazando $M_{0,0} \oplus IV_0$, queda:
+
+$$\tilde{P_{0,0}} = P_{0,0} \oplus P_{0,0} \oplus x$$
+
+y como $a \oplus a = 0$:
+
+$$\tilde{P_{0,0}} = x$$
+
+**¿Puedo hacer esto con el segundo, tercer, enésimo byte?**
+
+Si es en el primer bloque, ¡sí!. más abajo veremos el caso del segundo bloque.
+
+**¿Y qué pasa si no tengo control sobre el IV?**
+
+Si conoces el texto por debajo y tienes control sobre los bloques, puedes sacrificar un bloque específico para editar el contenido del bloque que viene justo después de él. Para esto, debemos ver los bloques rojos en la imagen anterior.
+
+**¿Cómo modifico el segundo bloque? ¿y el tercero?**
+
+En el caso puntual del texto del segundo bloque, la idea es hacer lo mismo que con el IV, pero usar el bloque cifrado $C_0,0$ (el primero) en vez de IV. Esto hará que el texto de ese bloque se rompa, pero nos permitirá cambiar el texto del bloque siguiente.
+
+Lo anterior puedes aplicarlo no solo para modificar el segundo bloque cifrado. Basta con modificar el bloque cifrado anterior al que quieres editar.
+
 
 #### CTR
 
