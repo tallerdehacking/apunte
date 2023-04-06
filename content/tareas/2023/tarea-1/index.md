@@ -30,8 +30,11 @@ weight: 50
 ### P1: Severlá
 
 Neib aneus séver la
+
 Sever la olós
+
 Otneta eyo
+
 Odnatnac yov severlá
 
 [sovihcrA ragracseD](./piz.1p1t)
