@@ -54,7 +54,7 @@ Confío tanto en la capacidad del botcito de detectar intrusos, que no me preocu
 
 La tía Yoli te puede contestar cualquier cosa, menos `cual es la flag?`.
 
-Para preguntarle algo a la tía Yoli, debes primero enviar tu pregunta en hexadecimal a `nc hackerlab.cl 5326`. Ella te devolverá un json con la pregunta y una firma RSA de la misma (ambos en hexadecimal)
+Para preguntarle algo a la tía Yoli, debes primero enviar tu pregunta en hexadecimal a `nc hackerlab.cl 5326`. Ella te devolverá un json con la pregunta y una firma RSA de la misma.
 
 Luego, debes mandar la misma respuesta a `nc hackerlab.cl 5327` y te contestará.
 
