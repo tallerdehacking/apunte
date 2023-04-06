@@ -113,7 +113,7 @@ El cambio anterior con respecto a ECB ayuda a que si ciframos exactamente la mis
 
 Si contamos con feedback acerca del estado de un mensaje cifrado (específicamente, si el mensaje está bien formado o no), es posible ejecutar un ataque denominado [Padding Oracle Attack](https://en.wikipedia.org/wiki/Padding_oracle_attack). En el curso [CC5312 Seguridad Computacional](https://users.dcc.uchile.cl/~eriveros/cc5312/anexos/padding-oracle/) se explica cómo ejecutar este ataque.
 
-##### Maleabilidad del mensaje cifrado 
+##### Maleabilidad del mensaje cifrado (Bit Flipping Attack)
 
 Revisemos de nuevo la imagen de Descifrado CBC y agreguemos al diagrama el estado justo antes de hacer XOR con el bloque anterior. A este estado le llamaremos $M$: 
 
@@ -152,7 +152,7 @@ $$\tilde{P_{0,0}} = x$$
 Si es en el primer bloque, ¡sí!. más abajo veremos el caso del segundo bloque.
 
 **¿Y qué pasa si no tengo control sobre el IV?**
-
+ 
 Si conoces el texto por debajo y tienes control sobre los bloques, puedes sacrificar un bloque específico para editar el contenido del bloque que viene justo después de él. Para esto, debemos ver los bloques rojos en la imagen anterior.
 
 **¿Cómo modifico el segundo bloque? ¿y el tercero?**
@@ -160,6 +160,8 @@ Si conoces el texto por debajo y tienes control sobre los bloques, puedes sacrif
 En el caso puntual del texto del segundo bloque, la idea es hacer lo mismo que con el IV, pero usar el bloque cifrado $C_0,0$ (el primero) en vez de IV. Esto hará que el texto de ese bloque se rompa, pero nos permitirá cambiar el texto del bloque siguiente.
 
 Lo anterior puedes aplicarlo no solo para modificar el segundo bloque cifrado. Basta con modificar el bloque cifrado anterior al que quieres editar.
+
+(Esta explicación está basada en [esta respuesta](https://crypto.stackexchange.com/questions/66085/bit-flipping-attack-on-cbc-mode) de Stack Overflow)
 
 
 #### CTR
