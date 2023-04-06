@@ -7,7 +7,7 @@ weight: 50
 ---
 ## Indicaciones generales
 
-* Cuentan con **3x semanas** para desarrollar y ejecutar esta tarea desde el día de su lanzamiento. Revisen U-Cursos para ver la fecha de entrega más actualizada.
+* Cuentan con **3 semanas** para desarrollar y ejecutar esta tarea desde el día de su lanzamiento. Revisen U-Cursos para ver la fecha de entrega más actualizada.
 * La ejecución de esta tarea es **grupal**, con el grupo armado a inicios del curso.
 * Se requiere que cada integrante del grupo esté "a cargo" de un problema de los entregados. Se debe explicitar el problema del cual cada integrante esté a cargo.
 * Dentro de un mismo grupo, **se pueden discutir libremente los problemas durante la ejecución de la tarea**. Sin embargo, **los problemas no se pueden discutir entre integrantes de grupos distintos, salvo en situaciones guiadas por el equipo docente en bloque de clase** (como por ejemplo, horarios de consultas en auxiliares o cátedras).
@@ -34,7 +34,7 @@ Sever la olós
 Otneta eyo
 Odnatnac yov severlá
 
-[sovihcrA ragracseD](./piz.1t1p)
+[sovihcrA ragracseD](./piz.1p1t)
 
 ### P2: Botcito
 
