@@ -37,7 +37,7 @@ Otneta eyo
 
 Odnatnac yov severlá
 
-[sovihcrA ragracseD](./piz.1p1t)
+[sovihcrA ragracseD](./gpj.ALREVES)
 
 ### P2: Botcito
 
