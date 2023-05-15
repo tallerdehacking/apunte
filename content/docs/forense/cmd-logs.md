@@ -25,7 +25,7 @@ Estos comandos pueden ser útiles tanto en forensics como en otras preguntas de 
   * **Buscar una palabra en un archivo**:
   * **Buscar una palabra en una carpeta y sus subcarpetas**:
   * **Buscar una [expresión regular](https://regexr.com)**: 
-* `awk`: Pequeño pero potente lenguaje de programación que permite realizar operaciones sobre archivos de texto semi estructurados. Les recomiendo [este tutorial](http://www.hcs.harvard.edu/~dholland/computers/awk.html) para aprender a utilizarlo.
+* `awk`: Pequeño pero potente lenguaje de programación que permite realizar operaciones sobre archivos de texto semi estructurados. Les recomiendo [este tutorial](http://www.hcs.harvard.edu/~dholland/computers/awk.html) (link caído, acá está el [manual](https://www.gnu.org/software/gawk/manual/gawk.html)) para aprender a utilizarlo.
   * **Mostrar solo la tercera columna de un archivo CSV**: `awk -F"," '{print $2} < archivo.csv'`
 * `sed`: Utilidad que facilita el reemplazar caracteres por otros en un archivo de texto.
   * **Reemplazar en todo un archivo los números por `x`**: `echo "1-hola 2-adios 9213-chao" | sed "s/[0-9]/x/g"`
