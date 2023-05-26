@@ -6,10 +6,7 @@ draft: false
 weight: 80
 ---
 
-{{< youtube S4C1PZr17wQ >}}
-
-**Nota 1: En el video digo que la tarea se entrega este jueves. El plazo se cambió un poco después de que grabé el video**.
-**Nota 2: El audio quedó un poco duplicado. Si se entiende muy mal me avisan e intento grabarlo nuevamente**.
+{{< youtube dF_hguWPk_Y >}}
 
 [Diapositivas (PDF)](forense-1.pdf)
 
@@ -17,3 +14,4 @@ weight: 80
 
 * [Regexr](https://regexr.com)
 * [Guía AWK](http://www.hcs.harvard.edu/~dholland/computers/awk.html)
+* [Git - Plumbing and Porcelain](https://git-scm.com/book/en/v2)
