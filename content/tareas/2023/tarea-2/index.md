@@ -32,12 +32,18 @@ weight: 50
 
 Un amigo me está enseñando a hacer páginas web y decidí sorprenderlo con una página con gatitos. Dejé algunos mensajes escondidos mientras la hacía, pero me aseguré de que no haya forma de encontrarlos.
 
+[Sitio](https://t2p1.cc5325.hackerlab.cl)
+
 ### P2: 10000 reGex
 
 Me encantan las ReGex, ¿y a quién no?
 Hice una página para rendirles homenaje. Si te gustan tanto como a mí, vas a poder adivinarlas todas sin problema!
 
+[Sitio](https://t2p2.cc5325.hackerlab.cl)
+
 ## P3
 
 No me preguntes por la flag, porque no te la daré.
 Flag: /tmp/flag.txt
+
+[Sitio](https://t2p3.cc5325.hackerlab.cl)
