@@ -40,7 +40,11 @@ Más encima intenté sacar un respaldo para analizarlo y terminé formateando mi
 
 **Importante: A pesar de lo que encuentres en el disco, no necesitas visitar ningún link ni pagar nada en criptomonedas para resolver este problema.**
 
-### P2: Disponible en unas horas!
+### P2: Tesoro
+
+Dejé un tesoro escondido pero ahora ni yo lo puedo encontrar, porque perdí mi mapa :( Sólo tengo un brújula y una regla muy precisa. Me ayudas a buscarlo?
+
+[Mi mapa](../p2)
 
 ## P3: Compresión
 
