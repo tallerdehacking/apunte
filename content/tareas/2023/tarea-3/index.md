@@ -44,10 +44,10 @@ Más encima intenté sacar un respaldo para analizarlo y terminé formateando mi
 
 Dejé un tesoro escondido pero ahora ni yo lo puedo encontrar, porque perdí mi mapa :( Sólo tengo un brújula y una regla muy precisa. Me ayudas a buscarlo?
 
-[Mi mapa](../p2)
+[Mi mapa](p2)
 
 ## P3: Compresión
 
 Desarrollé un nuevo algoritmo de compresión que encripta archivos. Ni siquiera necesitas ponerle una clave! No he implementado todavía la decompresión, eso te lo dejo a ti.
 
-[Descarga archivo](../p3.zip)
+[Descarga archivo](p3.zip)
