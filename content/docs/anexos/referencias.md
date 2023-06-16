@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "anexos"
-weight: 050
+weight: 9999
 ---
 
 A continuación se mencionan las referencias usadas para la realización de cada capítulo del apunte. También se agregan algunas referencias extra que podrían ser útiles para profundizar en contenidos.

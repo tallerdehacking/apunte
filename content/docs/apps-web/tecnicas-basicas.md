@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "apps-web"
-weight: 020
+weight: 302
 ---
 
 En este capítulo hablaremos de algunas de las técnicas más básicas utilizadas para en análisis web.

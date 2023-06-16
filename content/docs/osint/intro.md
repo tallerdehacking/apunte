@@ -7,8 +7,7 @@ images: []
 menu:
   docs:
     parent: "osint"
-weight: 010
-
+weight: 701
 ---
 
 _Open Source Intelligence_ (OSINT) es una metodología para recolectar y analizar información mediante fuentes

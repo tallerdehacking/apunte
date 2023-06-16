@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "apps-web"
-weight: 070
+weight: 307
 ---
 
 Muchas veces ustedes se encontrarán con sistemas (web u otro tipo) que utilizan software con vulnerabilidades

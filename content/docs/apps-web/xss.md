@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "apps-web"
-weight: 030
+weight: 303
 ---
 
 El Cross-Site Scripting, o XSS (incluido en el punto 3 del OWASP Top 10), se refiere a una clase de vulnerabilidades que

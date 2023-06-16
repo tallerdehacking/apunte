@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pwning"
-weight: 050
+weight: 605
 ---
 
 ### Escalamiento de Privilegios

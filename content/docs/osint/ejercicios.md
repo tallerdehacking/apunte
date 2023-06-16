@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "osint"
-weight: 070
+weight: 707
 
 ---
 

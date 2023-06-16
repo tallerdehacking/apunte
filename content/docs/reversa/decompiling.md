@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "reversa"
-weight: 020
+weight: 502
 ---
 
 Con decompilación nos referiremos a la acción de tomar un programa compilado, ya sea a código binario o
