@@ -7,8 +7,7 @@ images: []
 menu:
   docs:
     parent: "stego"
-weight: 040
-
+weight: 105
 ---
 ## Stego
 

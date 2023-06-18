@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "cripto-moderna"
-weight: 020
+weight: 202
 ---
 
 Las funciones de _hash_ son utilizadas como un bloque fundamental en muchos otros componentes criptográficos, tales como firmas digitales, cifrado de llave pública, verificación de integridad de archivos, autentificación de mensajes, contraseñas, entre otros. 

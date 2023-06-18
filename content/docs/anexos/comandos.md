@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "anexos"
-weight: 045
+weight: 9905
 ---
 
 Una _Shell_ o _Terminal_ en la práctica es una interfaz de usuario de texto que permite la ejecución de comandos y programas de tipo script.

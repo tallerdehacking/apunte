@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "cripto-moderna"
-weight: 030
+weight: 203
 ---
 
 En esta sección hablaremos de tres tipos de cifrado: **One-time pad**, **cifradores de bloque** y **cifradores de flujo**.
