@@ -48,8 +48,14 @@
   url = "/docs/osint/"
 
 [[docs]]
-  name = "Anexos"
+  name = "Hardware"
   weight = 90
+  identifier = "hardware"
+  url = "/docs/hardware/"
+
+[[docs]]
+  name = "Anexos"
+  weight = 100
   identifier = "anexos"
   url = "/docs/anexos/"
 

@@ -79,3 +79,8 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 * [Have I Been Pwned](https://haveibeenpwned.com/)
 * [theHarvester](https://github.com/laramies/theHarvester)
 * [Shodan](https://www.shodan.io/)
+
+## Hardware
+
+ * [Logic 1](https://support.saleae.com/logic-software/legacy-software/older-software-releases)
+ * [Logic 2](https://www.saleae.com/downloads/)
