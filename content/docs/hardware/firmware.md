@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "hardware"
-weight: 020
+weight: 801
 
 ---
 
@@ -35,7 +35,7 @@ interesantes.
 * **U-Boot**: Es un _boot loader_ que empaqueta las instrucciones para iniciar el
 kernel del sistema operativo.
 * **LZMA**: Es un algoritmo de compresión. Contiene algunos datos utilizados por el dispositivo.
-* **SquashFS**: Es el sistema de archivos de un sistema operativo, comprimidos en un solo archivo. 
+* **SquashFS**: Es el sistema de archivos de un sistema operativo, comprimidos en un solo archivo.
 
 ![Binwalk](../binwalk.png)
 

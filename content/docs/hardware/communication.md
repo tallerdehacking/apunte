@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "hardware"
-weight: 030
+weight: 802
 
 ---
 

@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "hardware"
-weight: 010
+weight: 800
 
 ---
 
@@ -38,7 +38,7 @@ enviada entre dispositivos a través de cables o bus de comunicación.
 En la práctica, estas dos técnicas suelen utilizarse en conjunto; se conecta directamente
 a la interfaz serial (por ejemplo UART) del dispositivo que se quiere hackear,
 con lo cual se fuerza un dump del _firmware_. Luego, se analiza este _firmware_
-para encontrar vulnerabilidades y luego explotarlas en el dispositivo mismo. 
+para encontrar vulnerabilidades y luego explotarlas en el dispositivo mismo.
 
 Por restricciones de tiempo, hay muchas cosas que no veremos en este ramo. Por ejemplo
 decodificar ondas de radio, leer el protocolo USB, explotar PLCs, entre muchos otros.
