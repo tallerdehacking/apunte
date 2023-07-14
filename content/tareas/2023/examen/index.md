@@ -1,7 +1,7 @@
 ---
 title: "Examen 2023/1"
 description: "Examen"
-date: 2023-07-14T14:00:00-04:00
+date: 2023-07-14T13:55:00-04:00
 draft: false
 weight: 70
 ---
