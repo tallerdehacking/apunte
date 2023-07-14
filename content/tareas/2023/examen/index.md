@@ -43,4 +43,4 @@ weight: 70
 
 ### P3
 
-[El archivo de esta pregunta se llama firmware.squashfs y está en esta carpeta. La imagen no incluye nada útil para resolver la pregunta](./tplink.jpg)
+![El archivo de esta pregunta se llama firmware.squashfs y está en esta carpeta. La imagen no incluye nada útil para resolver la pregunta](./tplink.jpg)
