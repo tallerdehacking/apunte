@@ -42,7 +42,7 @@ weight: 70
 
 
 ### P3
-
-![La imagen no incluye nada útil para resolver la pregunta](./tplink.jpg)
+![Esta imagen es decorativa y no tiene nada que ver con la pregunta.](./tplink.jpg)
+Creemos que el firmware de uno de nuestros routers ha sido comprometido con algún tipo de malware. ¿Puedes revisarlo y llegar al fondo de esto?
 
 [Archivo](./firmware.squashfs)
