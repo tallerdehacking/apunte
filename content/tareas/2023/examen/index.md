@@ -1,7 +1,7 @@
 ---
 title: "Examen 2023/1"
 description: "Examen"
-date: 2023-07-14T14:00:00-04:00
+date: 2023-07-14T13:55:00-04:00
 draft: false
 weight: 70
 ---
@@ -42,5 +42,8 @@ weight: 70
 
 
 ### P3
+![Esta imagen es decorativa y no tiene nada que ver con la pregunta.](./tplink.png)
 
-[El archivo de esta pregunta se llama firmware.squashfs y está en esta carpeta. La imagen no incluye nada útil para resolver la pregunta](./tplink.jpg)
+Creemos que el firmware de uno de nuestros routers ha sido comprometido con algún tipo de malware. ¿Puedes revisarlo y llegar al fondo de esto?
+
+[Archivo](./firmware.squashfs)
