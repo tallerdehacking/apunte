@@ -167,7 +167,7 @@ Lo anterior puedes aplicarlo no solo para modificar el segundo bloque cifrado. B
 #### CTR
 
 ![Cifrado CTR](../ctr_enc.png)
-![Descifrado CTR](../ctr_enc.png)
+![Descifrado CTR](../ctr_dec.png)
 
 
 **Counter Mode** es un modo que permite paralelizar el cifrado y descifrado de un mensaje, dado que la parte que pasa por el cifrador de bloque es un valor predeterminado y predecible. Además, el descifrado se ejecuta con el algoritmo de cifrado del cifrador de bloque elegido.
