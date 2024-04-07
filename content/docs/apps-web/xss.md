@@ -22,8 +22,8 @@ Existen 3 tipos:
 * **Reflejado**: El payload no se almacena permanentemente, sino que viene codificado en alguna variable
   (como un parámetro GET).
 
-* **DOM**: Este tipo de XSS no puede ser ejecutado por medio de variables ni datos almacenados, sino que se debe
-realizar una serie de acciones específicas en el mismo navegador de la víctima.
+* **DOM**: Este tipo de XSS surge cuando el código JavaScript de la página contiene una vulnerabilidad que permite
+ inyectar más codigo JavaScript a partir de variables reflejadas o almacenadas. 
 
 ## JavaScript
 
