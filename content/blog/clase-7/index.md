@@ -1,6 +1,6 @@
 ---
-title: "Aplicaciones Web 3: Reverse Shell y CVE"
-description: "Introducción a aplicaciones web y técnicas básicas"
+title: "Aplicaciones Web 3: Pérdida de control de acceso"
+description: "Pérdida de control de acceso: PoLP, IDOR y Forced Browsing."
 date: 2024-04-19T18:20:00+01:00
 draft: false
 weight: 70
@@ -12,9 +12,4 @@ weight: 70
 
 ## Enlaces útiles
 
-* [Pwncat](https://github.com/calebstewart/pwncat)
-* [CVSS Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)
-* [CVE Details](https://www.cvedetails.com/vulnerability-list/vendor_id-16542/Laravel.html)
-* [Exploit DB](https://www.exploit-db.com/)
-* [Metasploit](https://github.com/rapid7/metasploit-framework)
-* [ScriptKiddie](https://app.hackthebox.eu/machines/ScriptKiddie)
+[Labs Portswigger](https://portswigger.net/web-security/all-labs#access-control-vulnerabilities)
