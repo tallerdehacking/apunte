@@ -1,12 +1,12 @@
 ---
 title: "Aplicaciones Web 3: Reverse Shell y CVE"
 description: "Introducción a aplicaciones web y técnicas básicas"
-date: 2021-04-13T09:19:42+01:00
+date: 2024-04-19T18:20:00+01:00
 draft: false
 weight: 70
 ---
 
-{{< youtube gGmSIihtkqc >}}
+{{< youtube JOVTwyAjuGw >}}
 
 [Diapositivas (PDF)](web-3.pdf)
 
