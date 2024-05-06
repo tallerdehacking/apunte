@@ -104,7 +104,7 @@ En problemas de forense, puede que sea necesario tratar con soportes de almacena
 * **Recuperación de Archivos Eliminados**: Cuando se elimina un archivo de un soporte de almacenamiento, en general no se borra, sino que se elimina de un _índice_ del mismo soporte. Si escaneáramos byte a byte el soporte de almacenamiento, existe la posibilidad de recuperar el archivo de forma total o parcial, siempre y cuando ese espacio de memoria no haya sido sobreescrito por otro archivo.
 * **Uso de Archivos Temporales para recuperar información**: Algunos programas de edición de archivos guardan versiones temporales de estos en carpetas especiales. En algunos casos es posible recuperar el contenido de un documento importante a partir de los archivos temporales. 
 * **Reparación de componentes físicas del dispositivo de almacenamiento**: En casos más complejos, es posible que el soporte de almacenamiento se encuentre dañado físicamente. El daño podría ser bajo, como por ejemplo, sectores del disco duro ilegibles. Sin embargo, también podría extenderse de tal forma que el dispositivo no es reconocible por el sistema operativo. En el primer caso, muchas veces es posible reparar el sistema de archivos de forma manual. En el segundo caso, puede ser necesario incluso contratar servicios de recuperación de datos especializados.
-* **Reparación de sistemas de archivo**: A veces el daño no ocurre a nivel de hardware, sino que está relacionado con los datos almacenados en el soporte que identifican el contenido dentro del dispositivo. Por ejemplo, podría dañarse el índice del disco o su tabla de particiones, para lo cual se requeriría regenerarla o repararla para poder acceder a su contenido.
+* **Reparación de sistemas de archivos**: A veces el daño no ocurre a nivel de hardware, sino que está relacionado con los datos almacenados en el soporte que identifican el contenido dentro del dispositivo. Por ejemplo, podría dañarse el índice del disco o su tabla de particiones, para lo cual se requeriría regenerarla o repararla para poder acceder a su contenido.
 
 ### Herramientas
 
@@ -115,9 +115,11 @@ En problemas de forense, puede que sea necesario tratar con soportes de almacena
 * [**Recuva** (Windows, software privativo)](https://www.ccleaner.com/recuva)
 
 
-## Otros tipos de recuperación de información
+## Imágenes Forenses
 
-Lamentablemente, en el curso no alcanzaremos a ver los siguientes conceptos. Sin embargo, les dejamos algunas referencias para que, en caso que les interesen, los puedan ver por su cuenta:
+En casos más realistas, es posible que se les proporcionen imágenes forenses tanto de discos duros/SSDs como de memoria RAM. Estas imágenes pueden ser creadas y revisadas con aplicaciones especiales. Algunas son comerciales, como [EnCase Forensic](https://www.opentext.com/products/encase-forensic), mientras que otras son abiertas o gratuitas:
 
-* **Recuperación de información en RAM**: La memoria RAM en un computador se destaca por ser de rápido acceso (comparada con la memoria secundaria), pero volátil. Al cortar la energía del computador, los datos almacenados en RAM se pierden en forma parcial o total. En los casos en los que se requiera recuperar información presente en RAM, suele generarse una imagen del estado completo del sistema (almacenamiento secundario y RAM), para posteriormente analizarla con mayor tranquilidad. 
-* **Recuperación de información en máquinas virtuales**: En algunos problemas de CTF, se entregan imágenes del estado completo de una máquina virtual, las cuales contienen fundamentalmente la RAM del sistema al momento de estar ejecutándose. Existen programas especiales para revisar esta información.
+* [**FTK Imager**](https://www.exterro.com/digital-forensics-software/ftk-imager) Herramienta popular utilizada para generar y revisar imágenes forenses (extensión .E01)
+* [**Volatility** (Multiplataforma, Open source)](https://volatilityfoundation.org/) Herramienta en Python para revisar y explorar imágenes de memoria RAM. Existen dos versiones de uso común (Volatility 2 y Volatility 3), cada una con plugins específicos.
+* [**Autopsy** (Linux y Windows)](https://github.com/sleuthkit/autopsy) Permite abrir imágenes forenses generadas por FTK Imager y otras aplicaciones (contando con los plugins adecuados)
+* [**Linux Memory Extractor (LiME)**](https://github.com/504ensicsLabs/LiME) Herramienta para extraer una imagen de memoria de un dispositivo con kernel de Linux compatible.
