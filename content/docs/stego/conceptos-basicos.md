@@ -17,7 +17,7 @@ En términos generales, para poder comunicar un valor entre un emisor y un recep
 
 En los computadores que usamos todos los días, la mínima unidad de información posible de guardar es un **Bit**. La costumbre indica que ocho bits forman un **Byte** (B) u octeto. Además, 1024 bytes son un **Kibibyte** (KiB), 1024 kibibytes son un **mebibyte** (MiB), 1024 mebibytes son un **gibibyte** (GiB)
 
-La información de un byte se puede suele de alguna de las formas siguientes:
+La información de un byte se puede representar de las siguientes formas:
 
 ### Binario
 
@@ -28,11 +28,11 @@ Con 8 dígitos entre 0 y 1 es posible representar cualquier byte en base binaria
 S  T  U  V  W  X  Y  Z
 ```
 
-Recordando que las variables $[S..Z]$ corresponden a un valor en $[0..1]$, el número de arriba equivale al resultado de la fórmula $S2⁷ + T2⁶ + U2⁵ + V2⁴ + W2³ + X2² + Y2¹ + Z2⁰$
+Recordando que las variables $[S..Z]$ corresponden a un valor en $\lbrace 0,1\rbrace$, el número de arriba equivale al resultado de la fórmula $S2⁷ + T2⁶ + U2⁵ + V2⁴ + W2³ + X2² + Y2¹ + Z2⁰$
 
 ### Octal
 
-Similar al caso anterior, pero ahora son 3 dígitos con valores entre $[0..7]$:
+Similar al caso anterior, pero ahora son 3 dígitos con valores entre $[0,\dots,7]$:
 
 ```
 8² 8¹ 8⁰
