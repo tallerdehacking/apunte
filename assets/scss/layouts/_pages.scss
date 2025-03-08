@@ -1,10 +1,22 @@
-.docs-content > h2[id]::before,
-.docs-content > h3[id]::before,
-.docs-content > h4[id]::before {
+.docs-content>h2[id]::before,
+.docs-content>h3[id]::before,
+.docs-content>h4[id]::before {
   display: block;
   height: 6rem;
   margin-top: -6rem;
   content: "";
+}
+
+table {
+  width: 100%;
+
+  thead {
+    font-weight: bolder;
+  }
+
+  td {
+    padding: 2vh;
+  }
 }
 
 .anchor {
