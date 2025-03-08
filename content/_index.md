@@ -1,7 +1,7 @@
 ---
 title : "Apuntes Taller de Hacking Competitivo"
 lead: "Sitio con videos y material para el curso."
-date: 2025-10-06T08:47:36+00:00
+date: 2025-03-06T08:47:36+00:00
 draft: false
 images: []
 ---
