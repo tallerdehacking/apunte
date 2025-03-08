@@ -1,0 +1,66 @@
+# Writeup PX Tarea X
+**Equipo**: Arbolito
+**Integrantes**:
+- Cosme Fulanito
+- Señor X
+- Abeja Anónima
+---
+
+^ Esas tres líneas de arriba simbolizan un cambio de sección.
+
+Los títulos se escriben anteponiendo `#` según su nivel:
+
+# Título
+## Sub título
+### Sub sub título
+#### Sub sub sub título
+
+Para separar dos párrafos, hay que escribir **dos** saltos de línea. Un solo salto de línea
+no
+afecta
+el flujo del texto (esto sirve para que el texto plano no se escape hacia la derecha.)
+
+De acá en adelante escriben el Writeup. Un pequeño resumen de Markdown:
+* Se hacen listas con un asterisco (o guión) antes de cada elemento
+    * Las listas pueden anidarse.
+
+1. También pueden hacerse listas numéricas
+1. Todos los números pueden ser 1. Al renderearse se corregirán a los números correspondientes.
+    1. Los números igual pueden anidarse.
+    1. Y continúan según su nivel.
+
+- [ ] Otro tipo de listas son las checkbox, soportadas por algunas extensiones de Markdown.
+
+Para escribir en negrita, se rodea el texto con **dos asteriscos** o __dos guiones bajos__
+
+Para escribir en cursiva, se rodea el texto con *un asterisco* o _un guión bajo_
+
+El texto en monoespacio (código) en la misma línea `se escribe rodeándolo de backticks.` Lo que está dentro de backticks no recibe formato de Markdown: `__esto__ no *está* en negrita ni cursiva.`
+
+Para código multilínea, escribirlo entre 2 líneas solo con 3 backticks cada una:
+
+```
+Acá va mi texto en código.
+```
+
+Si después de los backticks de la primera línea del texto en código multilínea colocan el nombre del lenguaje de programación,
+algunos visores lo colorean:
+
+```python
+
+def hackear_el_mundo(x):
+    print(f"{x} hackeó el mundo!")
+
+```
+
+Una cita se escribe dejando margen en cada línea. Aunque algunos visores lo interpretan como código.
+
+    Si tú lo deseas puedes volar,
+    Solo tienes que confiar mucho en ti.- Steve Jobs
+
+Un enlace se inserta con corchetes y paréntesis: `[colocando el texto acá](y el enlace acá)`. Por ejemplo, [este enlace](https://cc5325.xor.cl).
+
+
+Markdown es muy versátil para llevar notas. ¡Incluso algunos visores/editores permiten escribir en LaTeX!  
+
+El visor/editor que les recomiendo es [Joplin](https://joplinapp.org/), pero si conocen otro, pueden también utilizarlo.
