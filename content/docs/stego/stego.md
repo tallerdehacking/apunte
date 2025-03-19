@@ -26,6 +26,7 @@ La esteganografía en texto consiste en esconder información dentro de un archi
   * **Caracteres invisibles**: Escondidos al final del texto o entre espacios de palabras, corresponde a un rango de 128 caracteres Unicode que no se muestran pero cuentan como tales. Estos caracteres codifican un mensaje ASCII con sus últimos bytes.
   * **Caracteres Homoglifos**: Corresponden a caracteres Unicode muy parecidos visualmente a los caracteres del mensaje contenedor, pero que sin embargo equivalen a un código Unicode completamente distinto.
   * **_Butt Ugly Latin Wide_**: Similar al caso anterior, pero usando un conjunto más grande de caracteres homoglifos, los cuales no se parecen completamente a los caracteres reemplazados, pero mantienen la legibilidad. Esta técnica hace parecer al mensaje contenedor como una "nota de secuestro".
+  * **Censura de PDFs**: A veces, para esconder texto en un PDF, se colocan objetos delante del texto. En algunos casos tu visor de PDF te permite seleccionar el texto debajo de los archivos. En otros casos puedes usar una herramienta para editar archivos vectoriales (como [Inkscape](https://inkscape.org)) para editar el pdf y remover los objetos que tapan el texto. En casos más extremos el texto pudo haber sido pasado a imagen o a dibujo vectorial. Queda como ejercicio para el lector pensar cómo recuperarlo en ese caso.
 
 ### Herramientas
 
