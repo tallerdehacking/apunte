@@ -15,3 +15,4 @@ En esta sección se nombrarán, en orden cronológico, a las personas que han co
 * Benjamín Hurtado Torrealba  `(Ayudante Otoño 2021)`
 * Sebastián Donoso Díaz `(Ayudante Otoño 2021)`
 * Blaz Korecic Amador `(Estudiante Otoño 2021)`
+* Cristóbal Stamm `(Estudiante Otoño 2025)`

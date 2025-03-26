@@ -6,7 +6,6 @@ draft: false
 images: []
 ---
 
-# Calendario 2025/1
 
 | Semana 	| Auxiliar (lunes) 	| CTF (jueves) 	| Unidad 	    |
 |--------	|------------------	|--------------	|--------	    |
