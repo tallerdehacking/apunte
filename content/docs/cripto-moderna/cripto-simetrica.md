@@ -38,9 +38,9 @@ Existen muchos diseños de cifradores de bloque. A continuación mencionaremos a
 
 **Estandarizado** en el año 1977
 
-**Largo de llave:** 56 bytes (+ 8 de paridad)
+**Largo de llave:** 56 bits (+ 8 de paridad)
 
-**Largo de bloque:** 64 bytes
+**Largo de bloque:** 64 bits
 
 **Rondas:** 16
 
@@ -89,7 +89,7 @@ Algunos tipos de _padding_:
 #### ECB
 
 ![Cifrado ECB](../ecb_enc.png)
-![Descifrado ECB](../ecb_enc.png)
+![Descifrado ECB](../ecb_dec.png)
 
 **Electronic Codebook** es el modo de cifrado más simple. Cada bloque se cifra por separado usando siempre la misma llave, concatenándose todo para generar el texto cifrado.
 
