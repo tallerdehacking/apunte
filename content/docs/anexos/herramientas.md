@@ -20,7 +20,7 @@ A continuación se agrupan enlaces a herramientas útiles para cada una de las s
 * [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool)
 * [Factorización prima](https://www.alpertron.com.ar/ECM.HTM)
 * [ASN.1 Decoder](https://lapo.it/asn1js/)
-* [yafu](https://sourceforge.net/projects/yafu/files/1.34/yafu-1.34.zip/download)
+* [yafu (factorización prima de alto rendimiento)](https://sourceforge.net/projects/yafu/files/1.34/yafu-1.34.zip/download)
 ## Aplicaciones Web
 
 * [FoxyProxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
