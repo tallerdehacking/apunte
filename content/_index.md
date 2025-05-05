@@ -18,8 +18,8 @@ images: []
 | 6      	| 21 de abril      	| 24 de abril  	| Análisis forense 2      	|
 | 7      	| 28 de abril      	| -           	| Feriado 1 de mayo       	|
 | 8      	| 5 de mayo        	| 8 de mayo    	| Aplicaciones web 1      	|
+| 9      	| 12 de mayo       	| 15 de mayo   	| Aplicaciones web 2      	|
 | RA2    	| -                	| -            	| Receso Académico 2       	|
-| 9      	| 19 de mayo       	| 22 de mayo   	| Aplicaciones web 2      	|
 | 10     	| 26 de mayo       	| 29 de mayo   	| Aplicaciones web 3      	|
 | 11     	| 2 de junio       	| 5 de junio   	| Ingeniería reversa 1       	|
 | 12     	| 9 de junio       	| 12 de junio  	| Ingeniería reversa 2      	|
