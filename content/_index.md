@@ -24,5 +24,5 @@ images: []
 | 11     	| 2 de junio       	| 5 de junio   	| Ingeniería reversa 1       	|
 | 12     	| 9 de junio       	| 12 de junio  	| Ingeniería reversa 2      	|
 | 13     	| 16 de junio      	| 19 de junio  	| Pwning 1       	|
-| 14     	| 23 de junio      	| 26 de junio  	| Pwning 2       	|
-| 15     	| 30 de junio      	| 3 de julio   	| Hardware hacking + OSINT       	|
+| 14     	| 23 de junio      	| 26 de junio  	| OSINT       	|
+| 15     	| 30 de junio      	| 3 de julio   	| Hardware hacking       	|
