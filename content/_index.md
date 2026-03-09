@@ -10,7 +10,7 @@ images: []
 
 | Semana 	| Auxiliar (lunes) 	| CTF (jueves) 	| Unidad 	    |
 |--------	|------------------	|--------------	|--------	    |
-| 1      	| -                	| 12 de marzo  	| OSINT y Esteganografía (presencail)  |
+| 1      	| -                	| 12 de marzo  	| OSINT y Esteganografía (presencial)  |
 | 2      	| 16 de marzo      	| 19 de marzo  	| Criptografía 1       	|
 | 3      	| 23 de marzo      	| 26 de marzo  	| Criptografía 2       	|
 | 4      	| 30 de marzo      	| 2 de abril   	| Pwning (Asíncrono)       	|
